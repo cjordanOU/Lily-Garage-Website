@@ -1,14 +1,18 @@
-/* --- Applies to All HTML elements --- */
+/* ------ ------ Applies to All HTML elements ------ ------ */
 * {
     box-sizing: border-box;
     font-family:'Open Sans', sans-serif;
 }
 
+/* ------ ------ Standard HTML Styles ------ ------ */
+
+/* ------ body ------ */
 body {
     margin: 0;
     background-color: #434343;
 }
 
+/* ------ header ------ */
 header {
     height: 100px;
     background: linear-gradient(to right, #43ccff,#99e4ff);
@@ -16,6 +20,7 @@ header {
     width: 100%;
     padding-left: 3%;
     box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    z-index: 100;
 }
 
 header h1 a{
@@ -52,6 +57,64 @@ header nav a:hover {
     -webkit-transition: 0.2s;
 }
 
+/* ------ main ------ */
+main {
+    width: 75%;
+    background: rgba(235, 235, 235, .925);
+    border-radius: 8px;
+    position: absolute;
+    margin: 150px 3% 4vh 3%;
+    display: inline-block;
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    padding:0vh 2vw;
+    padding-bottom: 3vh;
+}
+
+/* ------ ------ Class Styles ------ ------ */
+
+/* ------ menuItem ------ */
+.menuItem {
+    background-color: white;
+    border-radius: 8px;
+    padding: .15vh 1vw;
+}
+
+.menuItem:not(:first-child) {
+    /* Applies to all menuItem's except for the first */
+    margin-top: 2vh;
+}
+
+.menuItem h2 {
+    text-decoration: underline;
+    padding-left: .5vw;
+}
+
+.menuItem h3 {
+    border-bottom: 2px solid black;
+    margin-bottom: .75vh;
+    padding-left: 1vw;
+}
+
+.menuItem ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 1.5vw;
+}
+
+.menuItem ul li {
+    font-weight: bold;
+    background-color: lightgrey;
+    border-radius: 2px;
+    padding-left: .35vw;
+}
+
+.menuItem ul p {
+    margin-top: 4px;
+    text-indent: 1.65vw;
+}
+
+/* ------ ------ ID Styles ------ ------ */
+
 #background {
     height: 100vh;
     width: 100vw;
@@ -59,16 +122,4 @@ header nav a:hover {
     position: fixed;
     /*background: url('img/bg1.png') no-repeat;*/
     filter: blur(0px);
-}
-
-main {
-    width: 75%;
-    height: 80%;
-    background: rgba(235, 235, 235, .925);
-    border-radius: 8px;
-    position: absolute;
-    margin: 150px 3% 0 3%;
-    display: inline-block;
-    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
-    padding:0vh 2vw;
 }
