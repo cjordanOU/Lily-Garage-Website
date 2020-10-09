@@ -1,3 +1,11 @@
+/* --------------------------------------------------------------------------------------- */
+/* -------------- Created by Jerrod Dutcher, Cameron Jordan, James Moseley, -------------- */
+/* ---------------------------- Trent Toyryla, Alden Metzmaker --------------------------- */
+/* --------------------------------------------------------------------------------------- */
+/* ------------------- This stylesheet is for desktop browser styling -------------------- */
+/* --------------------------------------------------------------------------------------- */
+
+
 /* ------ ------ Applies to All HTML elements ------ ------ */
 * {
     box-sizing: border-box;
@@ -6,36 +14,33 @@
 
 /* ------ ------ Standard HTML Styles ------ ------ */
 
-/* ------ body ------ */
-body {
+/* ------ body & html ------ */
+body, html {
     margin: 0;
     background-color: #434343;
+    width: 100%;
+    min-width: 100%;
+    top: 0;
 }
 
 /* ------ header ------ */
 header {
-    height: 100px;
+    height: 9.5vh;
+    max-height: 9.5vh;
     background: linear-gradient(to right, #43ccff,#99e4ff);
     position: fixed;
     width: 100%;
-    padding-left: 3%;
+    padding: 2.375vh 3%;
     box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
     z-index: 100;
-}
-
-header h1 a{
-    font-family: 'Permanent Marker', cursive;
-    width: 22%;
-    display: inline-block;
-    color: hotpink;
-    height: 100%;
-    text-decoration: none;
-    float:left;
+    top: 0;
 }
 
 header nav {
-    width: 50%;
+    width: 40%;
     display: inline-block;
+    height: 4.75vh;
+    padding-left: 4vw;
 }
 
 header nav a {
@@ -48,6 +53,7 @@ header nav a {
     padding: 10px;
     transition: 0.2s;
     -webkit-transition: 0.2s;
+    height: 4.75vh;
 }
 
 header nav a:hover {
@@ -62,12 +68,49 @@ main {
     width: 75%;
     background: rgba(235, 235, 235, .925);
     border-radius: 8px;
-    position: absolute;
-    margin: 150px 3% 4vh 3%;
-    display: inline-block;
+    padding: 1vh 1.5vw;
+    margin: 13vh 2vw 4.75vh;
     box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
-    padding:0vh 2vw;
-    padding-bottom: 3vh;
+}
+
+/* ------ footer ------ */
+footer {
+    width: 100%;
+    height: 11vh;
+    background-color: rgb(20, 20, 29);
+    padding: 1vh 1vw;
+    color: rgb(190, 192, 194);
+  }
+
+footer div {
+    display: inline-block;
+    vertical-align: top;
+    width:32vw;
+    text-align: center;
+    height: 9vh;
+    padding-top: .55vh;
+}
+
+footer div:first-child {
+    padding-top: 0;
+}
+
+footer div nav {
+    float: none;
+}
+
+footer div nav a, footer div address a {
+    color: rgb(109, 143, 175);
+    text-decoration: none;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+}
+
+footer div nav a:hover, footer div address a:hover {
+    color: rgb(197, 219, 240);
+    text-decoration: underline;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
 }
 
 /* ------ ------ Class Styles ------ ------ */
@@ -113,13 +156,58 @@ main {
     text-indent: 1.65vw;
 }
 
+
+.logo {
+    font-family: 'Permanent Marker', cursive;
+    width: auto;
+    display: inline-block;
+    color: hotpink;
+    text-decoration: none;
+    float:left;
+    font-size: 2.1em;
+    top: 50%;
+    line-height: 4.75vh;
+    vertical-align: middle;
+    height: 4.75vh;
+}
+
+.logoSmall {
+    font-family: 'Permanent Marker', cursive;
+    width: auto;
+    color: whitesmoke;
+    text-decoration: none;
+    float:none;
+    font-size: 1.4em;
+    top: 50%;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    margin: 0;
+}
+
+.logoSmall:hover {
+    font-family: 'Permanent Marker', cursive;
+    width: auto;
+    color: rgb(221, 221, 221);
+    text-decoration: none;
+    float: none;
+    font-size: 1.4em;
+    top: 50%;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+}
+
+.noMargin {
+    margin: 0;
+}
+
+.noFloat {
+    float: none;
+    display: block;
+}
+
 /* ------ ------ ID Styles ------ ------ */
 
-#background {
-    height: 100vh;
-    width: 100vw;
-    z-index: 0;
-    position: fixed;
-    /*background: url('img/bg1.png') no-repeat;*/
-    filter: blur(0px);
+#footCopy {
+    color: rgb(190, 192, 194);
+    margin: .1vh 0;
 }
