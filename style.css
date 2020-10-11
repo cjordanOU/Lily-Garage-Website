@@ -27,7 +27,7 @@ body, html {
 header {
     height: 9.5vh;
     max-height: 9.5vh;
-    background: linear-gradient(to right, #43ccff,#99e4ff);
+    background: #0091ea;
     position: fixed;
     width: 100%;
     padding: 2.375vh 3%;
@@ -46,8 +46,7 @@ header nav {
 header nav a {
     margin: 0 1%;
     display: inline-block;
-    background: #000000;
-    color: #cc9900;
+    color: whitesmoke;
     text-decoration: none;
     text-align: center;
     padding: 10px;
@@ -58,7 +57,7 @@ header nav a {
 
 header nav a:hover {
     text-decoration: underline;
-    background-color: #434343;
+    background-color: #00578d;
     transition: 0.2s;
     -webkit-transition: 0.2s;
 }
@@ -161,14 +160,22 @@ footer div nav a:hover, footer div address a:hover {
     font-family: 'Permanent Marker', cursive;
     width: auto;
     display: inline-block;
-    color: hotpink;
+    color: #ebc321;
     text-decoration: none;
-    float:left;
+    float: left;
     font-size: 2.1em;
     top: 50%;
     line-height: 4.75vh;
     vertical-align: middle;
     height: 4.75vh;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+}
+
+.logo:hover {
+    color: #eb8d21;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
 }
 
 .logoSmall {
@@ -179,8 +186,6 @@ footer div nav a:hover, footer div address a:hover {
     float:none;
     font-size: 1.4em;
     top: 50%;
-    transition: 0.2s;
-    -webkit-transition: 0.2s;
     margin: 0;
 }
 
