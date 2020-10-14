@@ -25,6 +25,7 @@ body, html {
 
 /* ------ header ------ */
 header {
+    /* Entire header box area */
     height: 9.5vh;
     max-height: 9.5vh;
     background: #0091ea;
@@ -37,6 +38,7 @@ header {
 }
 
 header nav {
+    /* Header nav bar, buttons that show locations, menu, and contact */ 
     width: 40%;
     display: inline-block;
     height: 4.75vh;
@@ -44,6 +46,7 @@ header nav {
 }
 
 header nav a {
+    /* Header nav bar links */
     margin: 0 1%;
     display: inline-block;
     color: whitesmoke;
@@ -56,6 +59,7 @@ header nav a {
 }
 
 header nav a:hover {
+    /* Header nav bar links when hovered over */
     text-decoration: underline;
     background-color: #00578d;
     transition: 0.2s;
@@ -64,6 +68,7 @@ header nav a:hover {
 
 /* ------ main ------ */
 main {
+    /* Main webpage area, where main webpage content is */
     width: 75%;
     background: rgba(235, 235, 235, .925);
     border-radius: 8px;
@@ -74,6 +79,7 @@ main {
 
 /* ------ footer ------ */
 footer {
+    /* Entire footer box area */
     width: 100%;
     height: 11vh;
     background-color: rgb(20, 20, 29);
@@ -82,6 +88,7 @@ footer {
   }
 
 footer div {
+    /* The three divs of the footer styling */
     display: inline-block;
     vertical-align: top;
     width:32vw;
@@ -91,14 +98,17 @@ footer div {
 }
 
 footer div:first-child {
+    /* Applies to the first of the three div of the footer */
     padding-top: 0;
 }
 
 footer div nav {
+    /* The nav bar inside of the footer divs */
     float: none;
 }
 
 footer div nav a, footer div address a {
+    /* Links inside nav bar and adress links */
     color: rgb(109, 143, 175);
     text-decoration: none;
     transition: 0.2s;
@@ -106,6 +116,7 @@ footer div nav a, footer div address a {
 }
 
 footer div nav a:hover, footer div address a:hover {
+    /* Links inside nav bar and adress links when hovered over */
     color: rgb(197, 219, 240);
     text-decoration: underline;
     transition: 0.2s;
@@ -116,6 +127,7 @@ footer div nav a:hover, footer div address a:hover {
 
 /* ------ menuItem ------ */
 .menuItem {
+    /* menuItem div; dinner, breakfast, etc... */
     background-color: white;
     border-radius: 8px;
     padding: .15vh 1vw;
@@ -127,23 +139,27 @@ footer div nav a:hover, footer div address a:hover {
 }
 
 .menuItem h2 {
+    /* Larger heading text inside of menuItem */
     text-decoration: underline;
     padding-left: .5vw;
 }
 
 .menuItem h3 {
+    /* Smaller heading text inside of menuItem */
     border-bottom: 2px solid black;
     margin-bottom: .75vh;
     padding-left: 1vw;
 }
 
 .menuItem ul {
+    /* List area inside of menuItem */
     list-style-type: none;
     margin: 0;
     padding-left: 1.5vw;
 }
 
 .menuItem ul li {
+    /* Individual list item inside of menuItem */
     font-weight: bold;
     background-color: lightgrey;
     border-radius: 2px;
@@ -151,12 +167,14 @@ footer div nav a:hover, footer div address a:hover {
 }
 
 .menuItem ul p {
+    /* Text description for menu items */
     margin-top: 4px;
     text-indent: 1.65vw;
 }
 
 
 .logo {
+    /* The large website logo text, appears on header etc... */
     font-family: 'Permanent Marker', cursive;
     width: auto;
     display: inline-block;
@@ -173,12 +191,14 @@ footer div nav a:hover, footer div address a:hover {
 }
 
 .logo:hover {
+    /* The large website logo text when hovered on */
     color: #eb8d21;
     transition: 0.2s;
     -webkit-transition: 0.2s;
 }
 
 .logoSmall {
+    /* The small website logo text, appears on footer */
     font-family: 'Permanent Marker', cursive;
     width: auto;
     color: whitesmoke;
@@ -190,6 +210,7 @@ footer div nav a:hover, footer div address a:hover {
 }
 
 .logoSmall:hover {
+    /* The small website logo text when hovered on */
     font-family: 'Permanent Marker', cursive;
     width: auto;
     color: rgb(221, 221, 221);
@@ -202,10 +223,12 @@ footer div nav a:hover, footer div address a:hover {
 }
 
 .noMargin {
+    /* Sets the margin of the element to 0 */
     margin: 0;
 }
 
 .noFloat {
+    /* Sets the float value of an element to 0 */
     float: none;
     display: block;
 }
@@ -213,6 +236,7 @@ footer div nav a:hover, footer div address a:hover {
 /* ------ ------ ID Styles ------ ------ */
 
 #footCopy {
+    /* The copyright text on the footer */
     color: rgb(190, 192, 194);
     margin: .1vh 0;
 }
