@@ -9,7 +9,7 @@
 /* ------ ------ Applies to All HTML elements ------ ------ */
 * {
     box-sizing: border-box;
-    font-family:'Open Sans', sans-serif;
+    font-family:"Comic Sans MS", cursive, sans-serif;
 }
 
 /* ------ ------ Standard HTML Styles ------ ------ */
@@ -17,10 +17,14 @@
 /* ------ body & html ------ */
 body, html {
     margin: 0;
-    background-color: #434343;
     width: 100%;
     min-width: 100%;
     top: 0;
+	background-color: #B2AC88;
+	background-image: radial-gradient(closest-side, transparent 95%, rgba(255, 203, 164) 90%),
+	radial-gradient(closest-side, transparent 95%, rgb(255,203,164) 99%); 
+	background-size:40px 40px;
+	background-position:0 0, 20px 20px;
 }
 
 /* ------ header ------ */
@@ -28,7 +32,8 @@ header {
     /* Entire header box area */
     height: 9.5vh;
     max-height: 9.5vh;
-    background: #0091ea;
+    background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 9%, rgba(9,9,121,1) 37%, rgba(0,212,255,1) 73%);
     position: fixed;
     width: 100%;
     padding: 2.375vh 3%;
@@ -82,7 +87,8 @@ footer {
     /* Entire footer box area */
     width: 100%;
     height: 11vh;
-    background-color: rgb(20, 20, 29);
+    background: rgb(2,0,36);
+	background: linear-gradient(270deg, rgba(2,0,36,1) 9%, rgba(9,9,121,1) 37%, rgba(90,212,255,1) 73%);
     padding: 1vh 1vw;
     color: rgb(190, 192, 194);
   }
@@ -237,6 +243,7 @@ footer div nav a:hover, footer div address a:hover {
 
 #footCopy {
     /* The copyright text on the footer */
-    color: rgb(190, 192, 194);
+    color: rgb(255, 255, 255);
     margin: .1vh 0;
 }
+
