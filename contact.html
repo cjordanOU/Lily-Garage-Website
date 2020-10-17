@@ -36,12 +36,105 @@
 
         <!-- Main Webpage Content-->
         <main>
+			<form id="contactForm" onsubmit="feedbackFormValidate()">
             <h1>Contact Information</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<fieldset>
+				<legend> Personal Information </legend>
+				<table>
+					<tr>
+						<td>First Name: </td>
+						<td colspan="3"><input type="text" name="firstName" size="40"
+						title="Initail captial, then lowercase and no spaces"
+						pattern="^[A-Z][a-z]*$" required></td>
+					</tr>
+					<tr>
+						<td>Last Name: </td>
+						<td colspan="3"><input type="text" name="lastName" size="40"
+						title="Initail captial, then lowercase and no spaces"
+						pattern="^[A-Z[a-z]*$" required></td>
+					</tr>
+					<tr>
+						<td>Gender: </td>
+						<td><input type="radio" name="gender">Male</td>
+						<td><input type="radio" name="gender">Female</td>
+						<td><input type="radio" name="gender">Other</td>
+						<td><input type="radio" name="gender">Prefer not to say</td>
+					</tr>
+				</table>
+			</fieldset>
+			<fieldset>
+				<legend> Contact Information </legend>
+					<table>
+						<tr>
+							<td>E-mail Address: </td>
+							<td colspan="3"><input type="text" name="email" size="40"
+							title="Hint: llgrestaurant@gmail.com"
+							pattern="^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})$" required></td>
+						</tr>
+						<tr>
+							<td>Phone Number: </td>
+							<td><input type="radio" name="phonenumer">Home</td>
+							<td><input type="radio" name="phonenumer">Personal</td>
+							<td><input type="radio" name="phonenumer">Business</td>
+						<tr>
+							<td></td>
+							<td colspan="3"><input type="text" name"email" size"40"
+							title="Hint: 012-345-6789"
+							pattern="^(\d{3}-)?\d{3}-\d{4}$" required></td>
+						</tr>
+						<tr>
+							<td colspan="2"> Preferred Contact Method: </td>
+							<td>E-mails: <input type="checkbox" name="emails" value="true"></td>
+							<td>Calls: <input type="checkbox" name="phone" value="true"></td>
+						</tr>
+					</table>
+				</fieldset>
+				<fieldset>
+					<legend>Contact Reason: </legend>
+						<table>
+							<tr>
+								<td>Reason: <select name="reason">
+												<option> --- </option>
+												<option> Complaint </option>
+												<option> Feedback </option>
+												<option> Inquiry </option>
+												<option> Job Opportinity </option>
+												<option> Large Party Inquiry </option>
+												<option> Marketing Opportunites </option>
+												<option> Other </option>
+											</select>
+								</td>
+							</tr>
+							<tr>
+								<td>Store Location: <select name="location">
+														<option> --- </option>
+														<option> Ann Arbor, MI </option>
+														<option> Climax, MI </option>
+														<option> Colon, MI </option>
+														<option> Flushing, MI </option>
+														<option> Mount Pleasant, MI </option>
+														<option> Pinckney, MI </option>
+														<option> Setagaya-Ku, Tokyo </option>
+													</select>
+								</td>
+							</tr>
+							<tr>
+								<td>Message: </td>
+								<td colspan="3"><textarea name="message" rows="6" cols="38">
+												</textarea>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3"><input type="submit" name="sub" value="Submit"></td>
+							</tr>
+						</table>
+				</fieldset>
+			</form>
         </main>
 
         <!-- Webpage Footer-->
         <footer>
+		<table>
             <div>
                 <p class="logoSmall">Lily's Lil Garage</p>
                 <nav>
@@ -61,8 +154,5 @@
             </div>
             <div>
                 <p class="noMargin">Our Motto</p>
-                <p>A great place to get great food!</p>
-            </div>
-        </footer>
-    </body>
+                
 </html>
