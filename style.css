@@ -39,7 +39,7 @@ header {
 
 header nav {
     /* Header nav bar, buttons that show locations, menu, and contact */ 
-    width: 40%;
+    width: 50%;
     display: inline-block;
     height: 4.75vh;
     padding-left: 4vw;
