@@ -176,6 +176,7 @@ footer div nav a:hover, footer div address a:hover {
     /* Text description for menu items */
     margin-top: 4px;
     text-indent: 1.65vw;
+    margin-bottom: 0;
 }
 
 
@@ -239,6 +240,13 @@ footer div nav a:hover, footer div address a:hover {
     display: block;
 }
 
+.price {
+    margin-top: 0;
+    margin-bottom: 12px!important;
+    font-style: italic;
+    font-size: .75em;
+}
+
 /* ------ ------ ID Styles ------ ------ */
 
 #footCopy {
@@ -246,4 +254,3 @@ footer div nav a:hover, footer div address a:hover {
     color: rgb(255, 255, 255);
     margin: .1vh 0;
 }
-
