@@ -74,7 +74,7 @@ header nav a:hover {
 /* ------ main ------ */
 main {
     /* Main webpage area, where main webpage content is */
-    width: 75%;
+    width: 95%;
     background: rgba(235, 235, 235, .925);
     border-radius: 8px;
     padding: 1vh 1.5vw;
@@ -245,6 +245,48 @@ footer div nav a:hover, footer div address a:hover {
     margin-bottom: 12px!important;
     font-style: italic;
     font-size: .75em;
+}
+
+.parallaxBG {
+    min-height: 75vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5vh 5vw;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+
+.parallaxText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+.parallaxText h2 {
+    color: white;
+    font-size: 3em;
+}
+
+.parallaxText a {
+    background: red;
+    padding: 1.5%;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+}
+
+.parallaxText a:hover {
+    background: salmon;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
 }
 
 /* ------ ------ ID Styles ------ ------ */
