@@ -31,41 +31,48 @@
                 <a href="locations.html" title="View our store locations">Locations</a>
                 <a href="menu.html" title="Browse our menu">Menu</a>
                 <a href="contact.html" title="View our contact information">Contact</a>
-		<a href="aboutUs.html" title="Select your preffered location">About Us</a>
-		<a href="orderOnline.html" title="Click here to make an online order">Order Online</a>
+				<a href="aboutUs.html" title="Select your preffered location">About Us</a>
+				<a href="orderOnline.html" title="Click here to make an online order">Order Online</a>
             </nav>
         </header>
 
         <!-- Main Webpage Content-->
         <main>
+			<!-- Contact Submission Form -->
 			<form id="contactForm" onsubmit="feedbackFormValidate()">
-            <h1>Contact Information</h1>
-			<fieldset>
-				<legend> Personal Information </legend>
-				<table>
-					<tr>
-						<td>First Name: </td>
-						<td colspan="3"><input type="text" name="firstName" size="40"
-						title="Initail captial, then lowercase and no spaces"
-						pattern="^[A-Z][a-z]*$" required></td>
-					</tr>
-					<tr>
-						<td>Last Name: </td>
-						<td colspan="3"><input type="text" name="lastName" size="40"
-						title="Initail captial, then lowercase and no spaces"
-						pattern="^[A-Z[a-z]*$" required></td>
-					</tr>
-					<tr>
-						<td>Gender: </td>
-						<td><input type="radio" name="gender">Male</td>
-						<td><input type="radio" name="gender">Female</td>
-						<td><input type="radio" name="gender">Other</td>
-						<td><input type="radio" name="gender">Prefer not to say</td>
-					</tr>
-				</table>
-			</fieldset>
-			<fieldset>
-				<legend> Contact Information </legend>
+				<h1>Contact Information</h1>
+				
+				<!-- Personal Information -->
+				<fieldset>
+					<legend> Personal Information </legend>
+					<table>
+						<tr>
+							<td>First Name: </td>
+							<td colspan="3"><input type="text" name="firstName" size="40"
+							title="Initail captial, then lowercase and no spaces"
+							pattern="^[A-Z][a-z]*$" required></td>
+						</tr>
+
+						<tr>
+							<td>Last Name: </td>
+							<td colspan="3"><input type="text" name="lastName" size="40"
+							title="Initail captial, then lowercase and no spaces"
+							pattern="^[A-Z[a-z]*$" required></td>
+						</tr>
+
+						<tr>
+							<td>Gender: </td>
+							<td><input type="radio" name="gender">Male</td>
+							<td><input type="radio" name="gender">Female</td>
+							<td><input type="radio" name="gender">Other</td>
+							<td><input type="radio" name="gender">Prefer not to say</td>
+						</tr>
+					</table>
+				</fieldset>
+
+				<!-- Contact Information -->
+				<fieldset>
+					<legend> Contact Information </legend>
 					<table>
 						<tr>
 							<td>E-mail Address: </td>
@@ -73,17 +80,21 @@
 							title="Hint: llgrestaurant@gmail.com"
 							pattern="^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})$" required></td>
 						</tr>
+
 						<tr>
 							<td>Phone Number: </td>
 							<td><input type="radio" name="phonenumer">Home</td>
 							<td><input type="radio" name="phonenumer">Personal</td>
 							<td><input type="radio" name="phonenumer">Business</td>
+						</tr>
+
 						<tr>
 							<td></td>
 							<td colspan="3"><input type="text" name="email" size="40"
 							title="Hint: 012-345-6789"
 							pattern="^(\d{3}-)?\d{3}-\d{4}$" required></td>
 						</tr>
+
 						<tr>
 							<td colspan="2"> Preferred Contact Method: </td>
 							<td>E-mails: <input type="checkbox" name="emails" value="true"></td>
@@ -91,11 +102,14 @@
 						</tr>
 					</table>
 				</fieldset>
+
+				<!-- Contact Reason -->
 				<fieldset>
 					<legend>Contact Reason: </legend>
-						<table>
-							<tr>
-								<td>Reason: <select name="reason">
+					<table>
+						<tr>
+							<td>Reason: 
+								<select name="reason">
 									<option> --- </option>
 									<option> Complaint </option>
 									<option> Feedback </option>
@@ -104,34 +118,41 @@
 									<option> Large Party Inquiry </option>
 									<option> Marketing Opportunites </option>
 									<option> Other </option>
-									</select>
-								</td>
-							</tr>
-							<tr>
-								<td>Store Location: <select name="location">
-														<option> --- </option>
-														<option> Ann Arbor, MI </option>
-														<option> Climax, MI </option>
-														<option> Colon, MI </option>
-														<option> Flushing, MI </option>
-														<option> Mount Pleasant, MI </option>
-														<option> Pinckney, MI </option>
-														<option> Setagaya-Ku, Tokyo </option>
-													</select>
-								</td>
-							</tr>
-							<tr>
-								<td>Message: </td>
-								<td colspan="3"><textarea name="message" rows="6" cols="38">
-												</textarea>
-								</td>
-							</tr>
-							<tr>
-								<td colspan="3"><input type="submit" name="sub" value="Submit"></td>
-							</tr>
-						</table>
+								</select>
+							</td>
+						</tr>
+
+						<tr>
+							<td>Store Location:
+								<select name="location">
+									<option> --- </option>
+									<option> Ann Arbor, MI </option>
+									<option> Climax, MI </option>
+									<option> Colon, MI </option>
+									<option> Flushing, MI </option>
+									<option> Mount Pleasant, MI </option>
+									<option> Pinckney, MI </option>
+									<option> Setagaya-Ku, Tokyo </option>
+								</select>
+							</td>
+						</tr>
+
+						<!-- Message Input Box-->
+						<tr>
+							<td colspan="3">
+								<label>Message:</label>
+								<textarea name="message" rows="6" cols="38"></textarea>
+							</td>
+						</tr>
+
+						<!-- Submit Button -->
+						<tr>
+							<td colspan="3"><input type="submit" name="sub" value="Submit"></td>
+						</tr>
+					</table>
 				</fieldset>
 			</form>
+
         </main>
 
         <!-- Webpage Footer-->
@@ -156,6 +177,7 @@
             <div>
                 <p class="noMargin">Our Motto</p>
                 <p>A great place to get great food!</p>
-            </div>
-        </footer>
+			</div>
+		</footer>
+	</body>
 </html>
