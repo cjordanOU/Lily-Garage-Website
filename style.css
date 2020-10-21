@@ -176,7 +176,7 @@ footer div nav a:hover, footer div address a:hover {
     /* Text description for menu items */
     margin-top: 4px;
     text-indent: 1.65vw;
-    margin-bottom: 0;
+    margin-bottom: 1.3em;
 }
 
 
@@ -314,10 +314,12 @@ footer div nav a:hover, footer div address a:hover {
 }
 
 .mediumBreak {
+    /* creates a 10vh line break */
     height: 10vh;
 }
 
 .linkButton {
+    /* A nice looking button that can be used to link to other pages */
     display: block;
     margin-top: 2vh;
     text-align: center;
@@ -332,11 +334,23 @@ footer div nav a:hover, footer div address a:hover {
 }
 
 .linkButton:hover {
+    /* what changes when the linkButton is hovered over */
     color: whitesmoke;
     background-color: black;
     transition: 0.2s;
     -webkit-transition: 0.2s;
     box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+}
+
+.messageContent {
+    /* The style applied to the sent message on contactResponse */
+    font-size: .75em;
+    font-style: italic;
+}
+
+.largeQuote {
+    /* The style applied on the quotes around the sent message on contactResponse */
+    font-size: 1.5em;
 }
 
 /* ------ ------ ID Styles ------ ------ */
@@ -348,25 +362,29 @@ footer div nav a:hover, footer div address a:hover {
 }
 
 
-/* ------ ------ Background Image References ------ ------ */
+/* ------ ------ Homepage Specific ID Styles ------ ------ */
 
 #homePic1 {
+    /* Adds the RestaurantOutside.jpg to the parallax class and adds a gradient sweeping in from the left */
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.801), transparent), url('Images/RestaurantOutside.jpg');
 }
 
 #homeSlideshowContainer {
+    /* The container for the slideshow, NOT the actual image */
     margin: auto;
     width: 50%;
     margin-bottom: 7vh;
 }
 
 #homeSlideshowContainer img {
+    /* The image inside of the slideshow container */
     width: 100%;
     max-width: 100%;
     box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
 }
 
 #homeSlideshowContainer a {
+    /* Button inside the slideshow container that brings the user to the menu */
     display: block;
     margin-top: 2vh;
     text-align: center;
@@ -380,6 +398,7 @@ footer div nav a:hover, footer div address a:hover {
 }
 
 #homeSlideshowContainer a:hover {
+    /* when the slideshow button is hovered over */
     color: whitesmoke;
     background-color: black;
     transition: 0.2s;
@@ -388,6 +407,7 @@ footer div nav a:hover, footer div address a:hover {
 }
 
 #homeLocation {
+    /* The container for the location portion of the home page */
     margin: auto;
     margin-top: 7vh;
     margin-bottom: 7vh;
@@ -396,16 +416,19 @@ footer div nav a:hover, footer div address a:hover {
 }
 
 #homeLocation hr {
+    /* The horizontal line in the location portion of the homepage */
     margin-bottom: 4vh;
 }
 
 #homeLocation section {
+    /* The container for the text and link in the location portion of the homepage */
     display: inline-block;
     width: 60%;
     float: left;
 }
 
 #homeLocation img {
+    /* The image inside of the location portion of the homepage */
     display: inline-block;
     width: 40%;
     max-width: 40%;
