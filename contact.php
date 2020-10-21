@@ -30,7 +30,7 @@
         <!-- Main Webpage Content-->
         <main>
 			<!-- Contact Submission Form -->
-			<form id="contactForm" onsubmit="feedbackFormValidate()">
+			<form action="contactResponse.php" method="post" id="contactForm" onsubmit="feedbackFormValidate()">
 				<h1>Contact Information</h1>
 				
 				<!-- Personal Information -->
@@ -74,22 +74,22 @@
 
 						<tr>
 							<td>Phone Number: </td>
-							<td><input type="radio" name="phonenumer">Home</td>
-							<td><input type="radio" name="phonenumer">Personal</td>
-							<td><input type="radio" name="phonenumer">Business</td>
+							<td><input type="radio" name="phoneType">Home</td>
+							<td><input type="radio" name="phoneType">Personal</td>
+							<td><input type="radio" name="phoneType">Business</td>
 						</tr>
 
 						<tr>
 							<td></td>
-							<td colspan="3"><input type="text" name="email" size="40"
+							<td colspan="3"><input type="text" name="phoneNumber" size="40"
 							title="Hint: 012-345-6789"
 							pattern="^(\d{3}-)?\d{3}-\d{4}$" required></td>
 						</tr>
 
 						<tr>
 							<td colspan="2"> Preferred Contact Method: </td>
-							<td>E-mails: <input type="checkbox" name="emails" value="true"></td>
-							<td>Calls: <input type="checkbox" name="phone" value="true"></td>
+							<td>E-mails: <input type="checkbox" name="contactEmail" value="true"></td>
+							<td>Calls: <input type="checkbox" name="contactPhone" value="true"></td>
 						</tr>
 					</table>
 				</fieldset>
