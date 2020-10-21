@@ -105,7 +105,7 @@
 									<option> Complaint </option>
 									<option> Feedback </option>
 									<option> Inquiry </option>
-									<option> Job Opportinity </option>
+									<option> Job Opportunity </option>
 									<option> Large Party Inquiry </option>
 									<option> Marketing Opportunites </option>
 									<option> Other </option>
