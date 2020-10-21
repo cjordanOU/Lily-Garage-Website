@@ -59,40 +59,35 @@
             }
 
             if ($reason == 'Complaint') {
-                echo "<h2>Submitted</h2>";
+                echo "<h2>$reason Submitted</h2>";
                 echo "<p>$firstName $lastName at $email -- Our apologies that your service with us was not satisfactory. We have recieved your complaint and will take action immediately. Thank you for sharing your experience with us.</p>";
-                echo "<p class='messageContent'>$message</p>";
+                echo "<p class='messageContent'><span class='largeQuote'>&quot;</span>$message<span class='largeQuote'>&quot;</span></p>";
             }
 
             if ($reason == 'Feedback') {
-                echo "<h2>Submitted</h2>";
+                echo "<h2>$reason Submitted</h2>";
                 echo "<p>$firstName $lastName at $email -- Thank you for your feedback, we appreciate you sharing it with us!</p>";
-                echo "<p class='messageContent'>$message</p>";
+                echo "<p class='messageContent'><span class='largeQuote'>&quot;</span>$message<span class='largeQuote'>&quot;</span></p>";
             }
 
             if ($reason == 'Inquiry' || $reason == 'Marketing Opportunites' || $reason == 'Other') {
-                echo "<h2>Submitted</h2>";
+                echo "<h2>$reason Request Submitted</h2>";
                 echo "<p>$firstName $lastName at $email -- Thank you for contacting us, we will get back to you as soon as possible.</p>";
-                echo "<p class='messageContent'>$message</p>";
+                echo "<p class='messageContent'><span class='largeQuote'>&quot;</span>$message<span class='largeQuote'>&quot;</span></p>";
             }
 
             if ($reason == 'Job Opportunity') {
-                echo "<h2>Submitted</h2>";
+                echo "<h2>$reason Request Submitted</h2>";
                 echo "<p>$firstName $lastName at $email -- Thank you for reaching out to us, we would love to have you working on our team! We will get back to you as soon as possible.</p>";
-                echo "<p class='messageContent'>$message</p>";
+                echo "<p class='messageContent'><span class='largeQuote'>&quot;</span>$message<span class='largeQuote'>&quot;</span></p>";
             }
 
             if ($reason == 'Large Party Inquiry') {
-                echo "<h2>Submitted</h2>";
+                echo "<h2>$reason Submitted</h2>";
                 echo "<p>$firstName $lastName at $email -- Thank you for contacting us, we will get back to you as soon as possible about your large party inquiry.</p>";
-                echo "<p class='messageContent'>$message</p>";
+                echo "<p class='messageContent'><span class='largeQuote'>&quot;</span>$message<span class='largeQuote'>&quot;</span></p>";
             }
 
-            /*else {
-                echo "<h2>Submitted</h2>";
-                echo "<p>$firstName $lastName at $email -- your message has been sent.</p>";
-                echo "<p>Please expect a response within the next 48 hours, thank you!";
-            }*/
             ?>
 
         </main>
