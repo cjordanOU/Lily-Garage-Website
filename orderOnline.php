@@ -29,8 +29,23 @@
 
         <!-- Main Webpage Content-->
         <main>
-            <h1>This webpage is currently under construction!</h1>
-            <p>Come back soon!</p>
+            <?php
+
+            // Recieves data from locations.php using POST and declares it as a variable.
+            $storeLocation = $_POST['storeLocation'];
+
+
+            // Prompts the user to select a location to order from on the locations page
+            if ($storeLocation == null) {
+                echo "<h2>Please select a store first from our locations page!";
+            }
+
+            else {
+                echo "<h2>Now ordering for: $storeLocation</h2>";
+                include('orderForm.php');
+            }
+
+            ?>
         </main>
 
         <!-- Webpage Footer-->
