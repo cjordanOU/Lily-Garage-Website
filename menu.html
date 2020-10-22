@@ -24,18 +24,10 @@
         <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     </head>
+
     <body>
         <!-- ------ ------ Webpage Header ------ ------ -->
-        <header>
-            <a href="home.html" class="logo" title="Return to the homepage">Lily's Lil Garage</a>
-            <nav>
-                <a href="locations.html" title="View our store locations">Locations</a>
-                <a href="menu.html" title="Browse our menu">Menu</a>
-                <a href="contact.html" title="View our contact information">Contact</a>
-		<a href="aboutUs.html" title="Select your preffered location">About Us</a>
-		<a href="orderOnline.html" title="Click here to make an online order">Order Online</a>
-            </nav>
-        </header>
+        <?php include('header.php'); ?>
 
         <!-- ------ ------ Main Webpage Content ------ ------ -->
         <main>
@@ -308,28 +300,6 @@
         </main>
 
         <!-- ------ ------ Webpage Footer ------ ------ -->
-        <footer>
-            <div>
-                <p class="logoSmall">Lily's Lil Garage</p>
-                <nav>
-                    <a href="home.html" title="Return to the homepage">Home</a>
-                    <a href="locations.html" title="View our store locations">Locations</a>
-                    <a href="menu.html" title="Browse our menu">Menu</a>
-                    <a href="contact.html" title="View our contact information">Contact</a>
-                </nav>
-                <p id="footCopy">Copyright &copy; 2020</p>
-            </div>
-            <div>
-                <address>
-                    <a class="noFloat" href="tel:555-555-5555" title="Call our phone number">555-555-5555</a>
-                    <a class="noFloat" href="mailto:storeEmailHere" title="Send us an email">STORE EMAIL HERE</a>
-                    <p class="noMargin">2200 N Squirrel Rd Rochester MI</p>
-                </address>
-            </div>
-            <div>
-                <p class="noMargin">Our Motto</p>
-                <p>A great place to get great food!</p>
-            </div>
-        </footer>
+        <?php include('footer.php'); ?>
     </body>
 </html>
