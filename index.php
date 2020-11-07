@@ -20,6 +20,9 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+        <!-- Scripts -->
+        <script src="Scripts/mainScripts.js"></script> 
     </head>
     <body>
         <section id="background"></section>
@@ -29,15 +32,15 @@
 
         <!-- Main Webpage Content-->
         <main>
-            <h1>Welcome to Lily's Lil Garage</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        
             <!-- First Parallax Class, image of restaurant blurred -->
             <div class="parallaxBG blur2" id="homePic1"></div>
             <div class="parallaxText">
                 <h2>Welcome to Lily's Lil Garage</h2>
                 <a href="orderOnline.html">Order Online Now</a>
             </div>
+            
+            <h1>Welcome to Lily's Lil Garage</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             
             <div>
                 <br><br>
