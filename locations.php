@@ -19,7 +19,10 @@
         
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		
+        <!-- Scripts -->
+        <script src="Scripts/mainScripts.js"></script> 
     </head>
     <body>
         <section id="background"></section>
@@ -37,9 +40,14 @@
 							<center>
 								<img src="Images/garageMountPleasant.jpg" alt="garage0" style="width:100%; height:100%;">
 									<h3> LLG Mount Pleasant </h3>
-										1217 S. Crapo St. <br>
+									<p>1217 S. Crapo St. <br>
 										Mount Pleasant, MI 48858 <br>
-									<a class="linkButton" href="menu.html" title="Browse our menu">Menu</a>
+									</p>
+									<!-- Sets the user's store location to the specific store on orderOnline.php -->
+									<form action="orderOnline.php" method="post">
+										<input type="hidden" name="storeLocation" value="Mount Pleasant">
+										<input type="submit" class="linkButton" name="submitButton" value="Order Online Now!" title="Browse our menu">
+									</form>
 									<h4> Store Number: </h4>
 									<p> (012) 345-6789 </p>
 									<h4> Hours: </h4>
@@ -59,9 +67,14 @@
 							<center>
 								<img src="Images/garageAnnArbor.jpg" alt="garage1" style="width:83%; height:100%;">
 									<h3> LLG Ann Arbor </h3>
-										514 Hiscock St. <br>
+									<p>514 Hiscock St. <br>
 										Ann Arbor, MI 48103 <br>
-									<a class="linkButton" href="menu.html" title="Browse our menu">Menu</a>
+									</p>
+									<!-- Sets the user's store location to the specific store on orderOnline.php -->
+									<form action="orderOnline.php" method="post">
+										<input type="hidden" name="storeLocation" value="Ann Arbor">
+										<input type="submit" class="linkButton" name="submitButton" value="Order Online Now!" title="Browse our menu">
+									</form>
 									<h4> Store Number: </h4>
 									<p> (123) 456-7890 </p>
 									<h4> Hours: </h4>
@@ -81,9 +94,14 @@
 							<center>
 								<img src="Images/garagePickney.jpg" alt="garage2" style="width:100%; height:100%;">
 									<h3> LLG Pickney </h3>
-										4082 Patterson Lake Rd <br>
+									<p>4082 Patterson Lake Rd <br>
 										Pinckney, MI 48169 <br>
-									<a class="linkButton" href="menu.html" title="Browse our menu">Menu</a>
+									</p>
+									<!-- Sets the user's store location to the specific store on orderOnline.php -->
+									<form action="orderOnline.php" method="post">
+										<input type="hidden" name="storeLocation" value="Pickney">
+										<input type="submit" class="linkButton" name="submitButton" value="Order Online Now!" title="Browse our menu">
+									</form>
 									<h4> Store Number: </h4>
 									<p> (234) 567-8910 </p>
 									<h4> Hours: </h4>
@@ -103,9 +121,14 @@
 							<center>
 								<img src="Images/garageFlushing.jpg" alt="garage3" style="width:100%; height:100%;">
 									<h3> LLG Flushing </h3>
-										165 Boman St <br>
+									<p>165 Boman St <br>
 										Flushing, MI 48433 <br>
-									<a class="linkButton" href="menu.html" title="Browse our menu">Menu</a>
+									</p>
+									<!-- Sets the user's store location to the specific store on orderOnline.php -->
+									<form action="orderOnline.php" method="post">
+										<input type="hidden" name="storeLocation" value="Flushing">
+										<input type="submit" class="linkButton" name="submitButton" value="Order Online Now!" title="Browse our menu">
+									</form>
 									<h4> Store Number: </h4>
 									<p> (345) 678-9012 </p>
 									<h4> Hours: </h4>
@@ -128,9 +151,14 @@
 							<center>
 								<img src="Images/garageColon.jpg" alt="garage4" style="width:100%; height:100%;">
 									<h3> LLG Colon </h3>
-										129 W. State St <br>
+									<p>129 W. State St <br>
 										Colon, MI 49040 <br>
-									<a class="linkButton" href="menu.html" title="Browse our menu">Menu</a>
+									</p>
+									<!-- Sets the user's store location to the specific store on orderOnline.php -->
+									<form action="orderOnline.php" method="post">
+										<input type="hidden" name="storeLocation" value="Colon">
+										<input type="submit" class="linkButton" name="submitButton" value="Order Online Now!" title="Browse our menu">
+									</form>
 									<h4> Store Number: </h4>
 									<p> (456) 789-0123 </p>
 									<h4> Hours: </h4>
@@ -150,9 +178,14 @@
 							<center>
 								<img src="Images/garageClimax.jpg" alt="garage5" style="width:100%; height:100%;">
 									<h3> LLG Climax </h3>
-										126 W. Maple St. <br>
+									<p>126 W. Maple St. <br>
 										Climax, MI 49034 <br>
-									<a class="linkButton" href="menu.html" title="Browse our menu">Menu</a>
+									</p>
+									<!-- Sets the user's store location to the specific store on orderOnline.php -->
+									<form action="orderOnline.php" method="post">
+										<input type="hidden" name="storeLocation" value="Climax">
+										<input type="submit" class="linkButton" name="submitButton" value="Order Online Now!" title="Browse our menu">
+									</form>									
 									<h4> Store Number: </h4>
 									<p> (567) 890-1234 </p>
 									<h4> Hours: </h4>
@@ -172,10 +205,15 @@
 							<center>
 								<img src="Images/garageSetagaya-Ku.jpg" alt="garage5" style="width:100%; height:100%;">
 									<h3> LLG Setagaya-Ku </h3>
-										26-3, Kamikitazawa 3-Chōme <br>
+									<p>26-3, Kamikitazawa 3-Chōme <br>
 										Setagaya-Ku, Tokyo <br>
 										Japan 156-0057 <br>
-									<a class="linkButton" href="menu.html" title="Browse our menu">Menu</a>
+									</p>
+									<!-- Sets the user's store location to the specific store on orderOnline.php -->
+									<form action="orderOnline.php" method="post">
+										<input type="hidden" name="storeLocation" value="Setagaya-Ku">
+										<input type="submit" class="linkButton" name="submitButton" value="Order Online Now!" title="Browse our menu">
+									</form>
 									<h4> Store Number: </h4>
 									<p> (678) 901-2345 </p>
 									<h4> Hours: </h4>
