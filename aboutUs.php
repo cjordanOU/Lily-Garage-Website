@@ -32,9 +32,16 @@
 
         <!-- Main Webpage Content-->
         <main>
-            <h1>About Lily's Lil Garage</h1>
-            <p>At Lily’s Lil’ Garage, our goal is for good tasting food to hit you like a Mack Truck. We make all of our food with the precision and care of a mechanic working on a car. Lily’s started off with nothing but a garage, a grill, and a maple tree out back. From there we stretched into a multi-location franchise spread throughout Michigan. We also have a location in Japan where we source our A5 Wagyu Beef for our signature Radiator Burger.</p>
-            <h3>Lily’s Little Garage: Taking that home-made taste across the state!</h3>
+            <!-- Parallax Top Image -->
+            <div class="parallaxBG-small" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.801), transparent), url('Images/garagePickney.jpg'); background-position: left 220%"></div>
+            <div class="parallaxText2" style="left:750px">
+                <h2>About Us</h2>
+            </div>
+
+            <div class="standardPad">
+                <p>At Lily’s Lil’ Garage, our goal is for good tasting food to hit you like a Mack Truck. We make all of our food with the precision and care of a mechanic working on a car. Lily’s started off with nothing but a garage, a grill, and a maple tree out back. From there we stretched into a multi-location franchise spread throughout Michigan. We also have a location in Japan where we source our A5 Wagyu Beef for our signature Radiator Burger.</p>
+                <h3>Lily’s Little Garage: Taking that home-made taste across the state!</h3>
+            <div>
         </main>
 
         <!-- Webpage Footer-->
