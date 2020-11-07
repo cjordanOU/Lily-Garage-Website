@@ -34,12 +34,27 @@
 
         <!-- ------ ------ Main Webpage Content ------ ------ -->
         <main>
-            <!-- Main Large Header -->
-            <h1>The Menu</h1>
+            <!-- Parallax Top Image -->
+            <div class="parallaxBG-small" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.801), transparent), url('Images/garageAnnArbor.jpg'); background-position: left top"></div>
+            <div class="parallaxText2">
+                <h2>Menu</h2>
+            </div>
             
+            <!-- ------ Menu Selection ------ -->
+            <div>
+                <nav class="menuBar">
+                    <a href="#dinner" title="Jump to our Dinner selection">Dinner</a>
+                    <a href="#appetizers" title="Jump to our Appetizers and Sides selection">Appetizers &amp; Sides</a>
+                    <a href="#drinks" title="Jump to our Drinks Selection">Drinks</a>
+                    <a href="#desserts" title="Jump to our Desserts Selection">Desserts</a>
+                    <a href="#lunch" title="Jump to our lunch Selection">Lunch</a>
+                    <a href="#breakfast" title="Jump to our Breakfast Selection">Breakfast</a>
+                </nav>
+            </div>
+
             <!-- ------ Dinner Menu ------ -->
-            <div class="menuItem">
-                <h2>Dinner</h2>
+            <div class="menuItem" style="margin-top:0!important">
+                <h2 id="dinner">Dinner</h2>
 
                 <!-- Entrées -->
                 <h3>Entrées</h3>
@@ -104,10 +119,10 @@
 
             <!-- ------ Appetizers and Sides Menu ------ -->
             <div class="menuItem">
-                <h2>Appetizers & Sides</h2>
+                <h2 id="appetizers">Appetizers & Sides</h2>
 
                 <!-- Finger Foods -->
-                <h3>Example Section</h3>
+                <h3>Finger Foods</h3>
                 <ul>
                     <li>Mozzarella Sticks  <span class="price">$8.99</span></li>
                     <p>Mozzarella with a nice golden breading, fried to perfection.</p>
@@ -140,7 +155,7 @@
 
             <!-- ------ Drinks and Desserts Menu ------  -->
             <div class="menuItem">
-                <h2>Drinks & Desserts</h2>
+                <h2 id="drinks">Drinks</h2>
 
                 <!-- Non-Alcoholic Beverages -->
                 <h3>Non-Alcoholic Beverages</h3>
@@ -171,7 +186,7 @@
                 </ul>
 
                 <!-- Desserts -->
-                <h3>Desserts</h3>
+                <h3 id="desserts">Desserts</h3>
                 <ul>
                     <li>Stoplight Brownies  <span class="price">$5.99</span></li>
                     <p>Brownies with red, yellow, and green m&ms on top.</p>
@@ -187,7 +202,7 @@
 
             <!-- ------ Lunch Menu ------ -->
             <div class="menuItem">
-                <h2>Lunch</h2>
+                <h2 id="lunch">Lunch</h2>
 
                 <!-- Plates -->
                 <h3>Plates</h3>
@@ -239,7 +254,7 @@
 
             <!-- ------ Breakfast Menu ------ -->
             <div class="menuItem">
-                <h2>Breakfast</h2>
+                <h2 id="breakfast">Breakfast</h2>
 
                 <!-- Combos -->
                 <h3>Combos</h3>
