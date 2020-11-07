@@ -32,10 +32,16 @@
 
         <!-- Main Webpage Content-->
         <main>
-			<!-- Contact Submission Form -->
-			<form action="contactResponse.php" method="post" id="contactForm" onsubmit="feedbackFormValidate()">
-				<h1>Contact Information</h1>
+			<!-- Parallax Top Image -->
+				<div class="parallaxBG-small" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.801), transparent), url('Images/garageFlushing.jpg'); background-position: left 320%"></div>
+				<div class="parallaxText2" style="left:750px">
+                	<h2>Contact Us</h2>
+				</div>
+				<br>
 				
+			<!-- Contact Submission Form -->
+			<form class="standardPad" action="contactResponse.php" method="post" id="contactForm" onsubmit="feedbackFormValidate()">
+
 				<!-- Personal Information -->
 				<fieldset>
 					<legend> Personal Information </legend>
@@ -146,7 +152,7 @@
 					</table>
 				</fieldset>
 			</form>
-
+			<br>
         </main>
 
         <!-- Webpage Footer-->
