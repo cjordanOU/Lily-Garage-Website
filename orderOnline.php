@@ -31,7 +31,7 @@
         <?php include('header.php'); ?>
 
         <!-- Main Webpage Content-->
-        <main>
+        <main class="standardPad">
             <?php
 
             // Recieves data from locations.php using POST and declares it as a variable.
