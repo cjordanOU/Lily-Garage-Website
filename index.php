@@ -32,16 +32,18 @@
 
         <!-- Main Webpage Content-->
         <main>
-            <!-- First Parallax Class, image of restaurant blurred -->
-            <div class="parallaxBG blur2" id="homePic1"></div>
-            <div class="parallaxText">
+            <!-- First Parallax Class -->
+            <div class="parallaxBG-large" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.801), transparent), url('Images/RestaurantOutsideBlur.jpg');"></div>
+            <div class="parallaxText1">
                 <h2>Welcome to Lily's Lil Garage</h2>
                 <a href="orderOnline.html">Order Online Now</a>
             </div>
             
-            <h1>Welcome to Lily's Lil Garage</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            
+            <div class="standardPad">
+                <h1>Welcome to Lily's Lil Garage</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
             <div>
                 <br><br>
             </div>
