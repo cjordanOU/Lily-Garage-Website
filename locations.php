@@ -32,8 +32,15 @@
 
         <!-- Main Webpage Content-->
         <main>
-			<h1> Locations </h1>
-			<table>
+			<!-- Parallax Top Image -->
+			<div class="parallaxBG-small" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.801), transparent), url('Images/garageGeneric.jpg'); background-position: right 320%;"></div>
+			<div class="parallaxText2" style="left:750px">
+				<h2>Locations</h2>
+			</div>
+			<br>
+
+			<!-- Location Table -->
+			<table class="standardPad">
 				<tr>
 					<td>
 						<fieldset>
