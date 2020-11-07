@@ -15,17 +15,6 @@
 /* ------ ------ Standard HTML Styles ------ ------ */
 
 /* ------ body & html ------ */
-/*body, html {
-    margin: 0;
-    width: 100%;
-    min-width: 100%;
-    top: 0;
-	background-color: #B2AC88;
-	background-image: radial-gradient(closest-side, transparent 95%, rgba(255, 203, 164) 90%),
-	radial-gradient(closest-side, transparent 95%, rgb(255,203,164) 99%); 
-	background-size:40px 40px;
-	background-position:0 0, 20px 20px;
-}*/
 
 html {
     margin: 0;
@@ -33,6 +22,9 @@ html {
     min-width: 100%;
     top: 0;
     background-color: #212121;
+    background-image: radial-gradient(closest-side, transparent 95%, #212121 90%), radial-gradient(closest-side, transparent 95%, #272727 99%);
+    background-size:40px 40px;
+	background-position:0 0, 20px 20px;
 }
 
 body {
@@ -100,6 +92,7 @@ header nav a:hover {
 
 header nav a:last-child:hover {
     background-color: white;
+    border-color: white;
     color: black;
 }
 
