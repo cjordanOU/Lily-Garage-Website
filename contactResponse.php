@@ -31,7 +31,7 @@
         <?php include('header.php'); ?>
 
         <!-- Main Webpage Content-->
-        <main>
+        <main class="standardPad">
             
             <!-- PHP code -->
             <?php
