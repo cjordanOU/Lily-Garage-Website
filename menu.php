@@ -23,28 +23,38 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        
+        <!-- Scripts -->
+        <script src="Scripts/mainScripts.js"></script> 
     </head>
+
     <body>
         <!-- ------ ------ Webpage Header ------ ------ -->
-        <header>
-            <a href="home.html" class="logo" title="Return to the homepage">Lily's Lil Garage</a>
-            <nav>
-                <a href="locations.html" title="View our store locations">Locations</a>
-                <a href="menu.html" title="Browse our menu">Menu</a>
-                <a href="contact.html" title="View our contact information">Contact</a>
-		<a href="aboutUs.html" title="Select your preffered location">About Us</a>
-		<a href="orderOnline.html" title="Click here to make an online order">Order Online</a>
-            </nav>
-        </header>
+        <?php include('header.php'); ?>
 
         <!-- ------ ------ Main Webpage Content ------ ------ -->
         <main>
-            <!-- Main Large Header -->
-            <h1>The Menu</h1>
+            <!-- Parallax Top Image -->
+            <div class="parallaxBG-small" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.801), transparent), url('Images/garageAnnArbor.jpg'); background-position: left top"></div>
+            <div class="parallaxText2">
+                <h2>Menu</h2>
+            </div>
             
+            <!-- ------ Menu Selection ------ -->
+            <div>
+                <nav class="menuBar">
+                    <a href="#dinner" title="Jump to our Dinner selection">Dinner</a>
+                    <a href="#appetizers" title="Jump to our Appetizers and Sides selection">Appetizers &amp; Sides</a>
+                    <a href="#drinks" title="Jump to our Drinks Selection">Drinks</a>
+                    <a href="#desserts" title="Jump to our Desserts Selection">Desserts</a>
+                    <a href="#lunch" title="Jump to our lunch Selection">Lunch</a>
+                    <a href="#breakfast" title="Jump to our Breakfast Selection">Breakfast</a>
+                </nav>
+            </div>
+
             <!-- ------ Dinner Menu ------ -->
-            <div class="menuItem">
-                <h2>Dinner</h2>
+            <div class="menuItem" style="margin-top:0!important">
+                <h2 id="dinner">Dinner</h2>
 
                 <!-- Entrées -->
                 <h3>Entrées</h3>
@@ -109,10 +119,10 @@
 
             <!-- ------ Appetizers and Sides Menu ------ -->
             <div class="menuItem">
-                <h2>Appetizers & Sides</h2>
+                <h2 id="appetizers">Appetizers & Sides</h2>
 
                 <!-- Finger Foods -->
-                <h3>Example Section</h3>
+                <h3>Finger Foods</h3>
                 <ul>
                     <li>Mozzarella Sticks  <span class="price">$8.99</span></li>
                     <p>Mozzarella with a nice golden breading, fried to perfection.</p>
@@ -145,7 +155,7 @@
 
             <!-- ------ Drinks and Desserts Menu ------  -->
             <div class="menuItem">
-                <h2>Drinks & Desserts</h2>
+                <h2 id="drinks">Drinks</h2>
 
                 <!-- Non-Alcoholic Beverages -->
                 <h3>Non-Alcoholic Beverages</h3>
@@ -176,7 +186,7 @@
                 </ul>
 
                 <!-- Desserts -->
-                <h3>Desserts</h3>
+                <h3 id="desserts">Desserts</h3>
                 <ul>
                     <li>Stoplight Brownies  <span class="price">$5.99</span></li>
                     <p>Brownies with red, yellow, and green m&ms on top.</p>
@@ -192,7 +202,7 @@
 
             <!-- ------ Lunch Menu ------ -->
             <div class="menuItem">
-                <h2>Lunch</h2>
+                <h2 id="lunch">Lunch</h2>
 
                 <!-- Plates -->
                 <h3>Plates</h3>
@@ -244,7 +254,7 @@
 
             <!-- ------ Breakfast Menu ------ -->
             <div class="menuItem">
-                <h2>Breakfast</h2>
+                <h2 id="breakfast">Breakfast</h2>
 
                 <!-- Combos -->
                 <h3>Combos</h3>
@@ -308,28 +318,6 @@
         </main>
 
         <!-- ------ ------ Webpage Footer ------ ------ -->
-        <footer>
-            <div>
-                <p class="logoSmall">Lily's Lil Garage</p>
-                <nav>
-                    <a href="home.html" title="Return to the homepage">Home</a>
-                    <a href="locations.html" title="View our store locations">Locations</a>
-                    <a href="menu.html" title="Browse our menu">Menu</a>
-                    <a href="contact.html" title="View our contact information">Contact</a>
-                </nav>
-                <p id="footCopy">Copyright &copy; 2020</p>
-            </div>
-            <div>
-                <address>
-                    <a class="noFloat" href="tel:555-555-5555" title="Call our phone number">555-555-5555</a>
-                    <a class="noFloat" href="mailto:storeEmailHere" title="Send us an email">STORE EMAIL HERE</a>
-                    <p class="noMargin">2200 N Squirrel Rd Rochester MI</p>
-                </address>
-            </div>
-            <div>
-                <p class="noMargin">Our Motto</p>
-                <p>A great place to get great food!</p>
-            </div>
-        </footer>
+        <?php include('footer.php'); ?>
     </body>
 </html>

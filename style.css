@@ -15,89 +15,113 @@
 /* ------ ------ Standard HTML Styles ------ ------ */
 
 /* ------ body & html ------ */
-body, html {
+
+html {
     margin: 0;
     width: 100%;
     min-width: 100%;
     top: 0;
-	background-color: #B2AC88;
-	background-image: radial-gradient(closest-side, transparent 95%, rgba(255, 203, 164) 90%),
-	radial-gradient(closest-side, transparent 95%, rgb(255,203,164) 99%); 
-	background-size:40px 40px;
+    background-color: #212121;
+    background-image: radial-gradient(closest-side, transparent 95%, #212121 90%), radial-gradient(closest-side, transparent 95%, #272727 99%);
+    background-size:40px 40px;
 	background-position:0 0, 20px 20px;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    background: rgb(225, 225, 225);
+    top: 0;
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
 }
 
 /* ------ header ------ */
 header {
     /* Entire header box area */
-    height: 9.5vh;
-    max-height: 9.5vh;
-    background: rgb(2,0,36);
-	background: linear-gradient(90deg, rgba(2,0,36,1) 9%, rgba(9,9,121,1) 37%, rgba(0,212,255,1) 73%);
+    height: 96px;
+    max-height: 96px;
+    background-color: black;
+    /*background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 9%, rgba(9,9,121,1) 37%, rgba(0,212,255,1) 73%);*/
     position: fixed;
-    width: 100%;
+    width: 1440px;
+    max-width: 1440px;
     padding: 2.375vh 3%;
-    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    /*box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);*/
     z-index: 100;
     top: 0;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
 }
 
 header nav {
     /* Header nav bar, buttons that show locations, menu, and contact */ 
-    width: 75%;
+    width: 70%;
     display: inline-block;
-    height: 4.75vh;
-    padding-left: 4vw;
+    height: 48px;
+    padding-left: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 header nav a {
     /* Header nav bar links */
-    margin: 0 1%;
     display: inline-block;
-    color: whitesmoke;
+    /*color: rgb(43, 43, 43);*/
+    color: rgb(190, 190, 190);
     text-decoration: none;
     text-align: center;
-    padding: 10px;
+    font-size: 18px;
     transition: 0.2s;
+    margin-right: 18px;
     -webkit-transition: 0.2s;
-    height: 4.75vh;
+    padding: 4px;
+    height: 34px;
+}
+
+header nav a:last-child {
+    border: 1px solid rgb(190, 190, 190);
+    margin-left: 72px;
 }
 
 header nav a:hover {
     /* Header nav bar links when hovered over */
-    text-decoration: underline;
-    background-color: #00578d;
+    color: rgb(196, 97, 5);
     transition: 0.2s;
     -webkit-transition: 0.2s;
+}
+
+header nav a:last-child:hover {
+    background-color: white;
+    border-color: white;
+    color: black;
 }
 
 /* ------ main ------ */
 main {
     /* Main webpage area, where main webpage content is */
-    width: 95%;
-    background: rgba(235, 235, 235, .925);
-    border-radius: 8px;
-    padding: 1vh 1.5vw;
-    margin: 13vh 2vw 4.75vh;
-    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    width: 100%;
+    padding: 92px 32px 18px 32px;
+    margin: 0;
+    /*box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);*/
 }
 
 /* ------ footer ------ */
 footer {
     /* Entire footer box area */
     width: 100%;
-    height: 11vh;
-    background: rgb(2,0,36);
-	background: linear-gradient(270deg, rgba(2,0,36,1) 9%, rgba(9,9,121,1) 37%, rgba(90,212,255,1) 73%);
+    height: 10.5vh;
+	/*background: linear-gradient(270deg, rgba(2,0,36,1) 9%, rgba(9,9,121,1) 37%, rgba(90,212,255,1) 73%);*/
     padding: 1vh 1vw;
-    color: rgb(190, 192, 194);
+    color: rgb(210, 212, 214);
+    background-color: #4e4e4e;
   }
 
 footer div {
     /* The three divs of the footer styling */
     display: inline-block;
     vertical-align: top;
-    width:32vw;
+    width:32%;
     text-align: center;
     height: 9vh;
     padding-top: .55vh;
@@ -115,7 +139,7 @@ footer div nav {
 
 footer div nav a, footer div address a {
     /* Links inside nav bar and adress links */
-    color: rgb(109, 143, 175);
+    color: rgb(133, 166, 197);
     text-decoration: none;
     transition: 0.2s;
     -webkit-transition: 0.2s;
@@ -176,19 +200,19 @@ footer div nav a:hover, footer div address a:hover {
     /* Text description for menu items */
     margin-top: 4px;
     text-indent: 1.65vw;
-    margin-bottom: 0;
+    margin-bottom: 1.3em;
 }
 
 
 .logo {
     /* The large website logo text, appears on header etc... */
     font-family: 'Permanent Marker', cursive;
-    width: auto;
+    width: 26%;
     display: inline-block;
     color: #ebc321;
     text-decoration: none;
     float: left;
-    font-size: 2.1em;
+    font-size: 2.5rem;
     top: 50%;
     line-height: 4.75vh;
     vertical-align: middle;
@@ -262,8 +286,8 @@ footer div nav a:hover, footer div address a:hover {
     /* Positions the parallaxText to be on top of the parallaxBG div */
     position: absolute;
     top: 62.5%;
-    left: 32.5%;
-    transform: translate(-50%, -20%);
+    left: 39.5%;
+    transform: translate(-45%, -65%);
     z-index: 2;
     width: 80%;
     padding: 20px;
@@ -314,10 +338,12 @@ footer div nav a:hover, footer div address a:hover {
 }
 
 .mediumBreak {
+    /* creates a 10vh line break */
     height: 10vh;
 }
 
 .linkButton {
+    /* A nice looking button that can be used to link to other pages */
     display: block;
     margin-top: 2vh;
     text-align: center;
@@ -332,11 +358,23 @@ footer div nav a:hover, footer div address a:hover {
 }
 
 .linkButton:hover {
+    /* what changes when the linkButton is hovered over */
     color: whitesmoke;
     background-color: black;
     transition: 0.2s;
     -webkit-transition: 0.2s;
     box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+}
+
+.messageContent {
+    /* The style applied to the sent message on contactResponse */
+    font-size: .75em;
+    font-style: italic;
+}
+
+.largeQuote {
+    /* The style applied on the quotes around the sent message on contactResponse */
+    font-size: 1.5em;
 }
 
 /* ------ ------ ID Styles ------ ------ */
@@ -348,25 +386,29 @@ footer div nav a:hover, footer div address a:hover {
 }
 
 
-/* ------ ------ Background Image References ------ ------ */
+/* ------ ------ Homepage Specific ID Styles ------ ------ */
 
 #homePic1 {
+    /* Adds the RestaurantOutside.jpg to the parallax class and adds a gradient sweeping in from the left */
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.801), transparent), url('Images/RestaurantOutside.jpg');
 }
 
 #homeSlideshowContainer {
+    /* The container for the slideshow, NOT the actual image */
     margin: auto;
     width: 50%;
     margin-bottom: 7vh;
 }
 
 #homeSlideshowContainer img {
+    /* The image inside of the slideshow container */
     width: 100%;
     max-width: 100%;
     box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
 }
 
 #homeSlideshowContainer a {
+    /* Button inside the slideshow container that brings the user to the menu */
     display: block;
     margin-top: 2vh;
     text-align: center;
@@ -380,6 +422,7 @@ footer div nav a:hover, footer div address a:hover {
 }
 
 #homeSlideshowContainer a:hover {
+    /* when the slideshow button is hovered over */
     color: whitesmoke;
     background-color: black;
     transition: 0.2s;
@@ -388,6 +431,7 @@ footer div nav a:hover, footer div address a:hover {
 }
 
 #homeLocation {
+    /* The container for the location portion of the home page */
     margin: auto;
     margin-top: 7vh;
     margin-bottom: 7vh;
@@ -396,16 +440,19 @@ footer div nav a:hover, footer div address a:hover {
 }
 
 #homeLocation hr {
+    /* The horizontal line in the location portion of the homepage */
     margin-bottom: 4vh;
 }
 
 #homeLocation section {
+    /* The container for the text and link in the location portion of the homepage */
     display: inline-block;
     width: 60%;
     float: left;
 }
 
 #homeLocation img {
+    /* The image inside of the location portion of the homepage */
     display: inline-block;
     width: 40%;
     max-width: 40%;

@@ -19,29 +19,29 @@
         
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		
+        <!-- Scripts -->
+        <script src="Scripts/mainScripts.js"></script> 
     </head>
     <body>
         <section id="background"></section>
 
         <!-- Webpage Header -->
-        <header>
-            <a href="home.html" class="logo" title="Return to the homepage">Lily's Lil Garage</a>
-            <nav>
-                <a href="locations.html" title="View our store locations">Locations</a>
-                <a href="menu.html" title="Browse our menu">Menu</a>
-                <a href="contact.html" title="View our contact information">Contact</a>
-				<a href="aboutUs.html" title="Select your preffered location">About Us</a>
-				<a href="orderOnline.html" title="Click here to make an online order">Order Online</a>
-            </nav>
-        </header>
+        <?php include('header.php'); ?>
 
         <!-- Main Webpage Content-->
         <main>
-			<!-- Contact Submission Form -->
-			<form id="contactForm" onsubmit="feedbackFormValidate()">
-				<h1>Contact Information</h1>
+			<!-- Parallax Top Image -->
+				<div class="parallaxBG-small" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.801), transparent), url('Images/garageFlushing.jpg'); background-position: left 320%"></div>
+				<div class="parallaxText2" style="left:750px">
+                	<h2>Contact Us</h2>
+				</div>
+				<br>
 				
+			<!-- Contact Submission Form -->
+			<form class="standardPad" action="contactResponse.php" method="post" id="contactForm" onsubmit="feedbackFormValidate()">
+
 				<!-- Personal Information -->
 				<fieldset>
 					<legend> Personal Information </legend>
@@ -83,22 +83,22 @@
 
 						<tr>
 							<td>Phone Number: </td>
-							<td><input type="radio" name="phonenumer">Home</td>
-							<td><input type="radio" name="phonenumer">Personal</td>
-							<td><input type="radio" name="phonenumer">Business</td>
+							<td><input type="radio" name="phoneType">Home</td>
+							<td><input type="radio" name="phoneType">Personal</td>
+							<td><input type="radio" name="phoneType">Business</td>
 						</tr>
 
 						<tr>
 							<td></td>
-							<td colspan="3"><input type="text" name="email" size="40"
+							<td colspan="3"><input type="text" name="phoneNumber" size="40"
 							title="Hint: 012-345-6789"
 							pattern="^(\d{3}-)?\d{3}-\d{4}$" required></td>
 						</tr>
 
 						<tr>
 							<td colspan="2"> Preferred Contact Method: </td>
-							<td>E-mails: <input type="checkbox" name="emails" value="true"></td>
-							<td>Calls: <input type="checkbox" name="phone" value="true"></td>
+							<td>E-mails: <input type="checkbox" name="contactEmail" value="true"></td>
+							<td>Calls: <input type="checkbox" name="contactPhone" value="true"></td>
 						</tr>
 					</table>
 				</fieldset>
@@ -114,7 +114,7 @@
 									<option> Complaint </option>
 									<option> Feedback </option>
 									<option> Inquiry </option>
-									<option> Job Opportinity </option>
+									<option> Job Opportunity </option>
 									<option> Large Party Inquiry </option>
 									<option> Marketing Opportunites </option>
 									<option> Other </option>
@@ -152,32 +152,10 @@
 					</table>
 				</fieldset>
 			</form>
-
+			<br>
         </main>
 
         <!-- Webpage Footer-->
-        <footer>
-            <div>
-                <p class="logoSmall">Lily's Lil Garage</p>
-                <nav>
-                    <a href="home.html" title="Return to the homepage">Home</a>
-                    <a href="locations.html" title="View our store locations">Locations</a>
-                    <a href="menu.html" title="Browse our menu">Menu</a>
-                    <a href="contact.html" title="View our contact information">Contact</a>
-                </nav>
-                <p id="footCopy">Copyright &copy; 2020</p>
-            </div>
-            <div>
-                <address>
-                    <a class="noFloat" href="tel:555-555-5555" title="Call our phone number">555-555-5555</a>
-                    <a class="noFloat" href="mailto:storeEmailHere" title="Send us an email">STORE EMAIL HERE</a>
-                    <p class="noMargin">2200 N Squirrel Rd Rochester MI</p>
-                </address>
-            </div>
-            <div>
-                <p class="noMargin">Our Motto</p>
-                <p>A great place to get great food!</p>
-			</div>
-		</footer>
+        <?php include('footer.php'); ?>
 	</body>
 </html>

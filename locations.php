@@ -19,36 +19,42 @@
         
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		
+        <!-- Scripts -->
+        <script src="Scripts/mainScripts.js"></script> 
     </head>
     <body>
         <section id="background"></section>
         
         <!-- Webpage Header -->
-        <header>
-            <a href="home.html" class="logo" title="Return to the homepage">Lily's Lil Garage</a>
-            <nav>
-                <a href="locations.html" title="View our store locations">Locations</a>
-                <a href="menu.html" title="Browse our menu">Menu</a>
-                <a href="contact.html" title="View our contact information">Contact</a>
-		<a href="aboutUs.html" title="Select your preffered location">About Us</a>
-		<a href="orderOnline.html" title="Click here to make an online order">Order Online</a>
-            </nav>
-        </header>
+        <?php include('header.php'); ?>
 
         <!-- Main Webpage Content-->
         <main>
-			<h1> Locations </h1>
-			<table>
+			<!-- Parallax Top Image -->
+			<div class="parallaxBG-small" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.801), transparent), url('Images/garageGeneric.jpg'); background-position: right 320%;"></div>
+			<div class="parallaxText2" style="left:750px">
+				<h2>Locations</h2>
+			</div>
+			<br>
+
+			<!-- Location Table -->
+			<table class="standardPad">
 				<tr>
 					<td>
 						<fieldset>
 							<center>
 								<img src="Images/garageMountPleasant.jpg" alt="garage0" style="width:100%; height:100%;">
 									<h3> LLG Mount Pleasant </h3>
-										1217 S. Crapo St. <br>
+									<p>1217 S. Crapo St. <br>
 										Mount Pleasant, MI 48858 <br>
-									<a class="linkButton" href="menu.html" title="Browse our menu">Menu</a>
+									</p>
+									<!-- Sets the user's store location to the specific store on orderOnline.php -->
+									<form action="orderOnline.php" method="post">
+										<input type="hidden" name="storeLocation" value="Mount Pleasant">
+										<input type="submit" class="linkButton" name="submitButton" value="Order Online Now!" title="Browse our menu">
+									</form>
 									<h4> Store Number: </h4>
 									<p> (012) 345-6789 </p>
 									<h4> Hours: </h4>
@@ -68,9 +74,14 @@
 							<center>
 								<img src="Images/garageAnnArbor.jpg" alt="garage1" style="width:83%; height:100%;">
 									<h3> LLG Ann Arbor </h3>
-										514 Hiscock St. <br>
+									<p>514 Hiscock St. <br>
 										Ann Arbor, MI 48103 <br>
-									<a class="linkButton" href="menu.html" title="Browse our menu">Menu</a>
+									</p>
+									<!-- Sets the user's store location to the specific store on orderOnline.php -->
+									<form action="orderOnline.php" method="post">
+										<input type="hidden" name="storeLocation" value="Ann Arbor">
+										<input type="submit" class="linkButton" name="submitButton" value="Order Online Now!" title="Browse our menu">
+									</form>
 									<h4> Store Number: </h4>
 									<p> (123) 456-7890 </p>
 									<h4> Hours: </h4>
@@ -90,9 +101,14 @@
 							<center>
 								<img src="Images/garagePickney.jpg" alt="garage2" style="width:100%; height:100%;">
 									<h3> LLG Pickney </h3>
-										4082 Patterson Lake Rd <br>
+									<p>4082 Patterson Lake Rd <br>
 										Pinckney, MI 48169 <br>
-									<a class="linkButton" href="menu.html" title="Browse our menu">Menu</a>
+									</p>
+									<!-- Sets the user's store location to the specific store on orderOnline.php -->
+									<form action="orderOnline.php" method="post">
+										<input type="hidden" name="storeLocation" value="Pickney">
+										<input type="submit" class="linkButton" name="submitButton" value="Order Online Now!" title="Browse our menu">
+									</form>
 									<h4> Store Number: </h4>
 									<p> (234) 567-8910 </p>
 									<h4> Hours: </h4>
@@ -112,9 +128,14 @@
 							<center>
 								<img src="Images/garageFlushing.jpg" alt="garage3" style="width:100%; height:100%;">
 									<h3> LLG Flushing </h3>
-										165 Boman St <br>
+									<p>165 Boman St <br>
 										Flushing, MI 48433 <br>
-									<a class="linkButton" href="menu.html" title="Browse our menu">Menu</a>
+									</p>
+									<!-- Sets the user's store location to the specific store on orderOnline.php -->
+									<form action="orderOnline.php" method="post">
+										<input type="hidden" name="storeLocation" value="Flushing">
+										<input type="submit" class="linkButton" name="submitButton" value="Order Online Now!" title="Browse our menu">
+									</form>
 									<h4> Store Number: </h4>
 									<p> (345) 678-9012 </p>
 									<h4> Hours: </h4>
@@ -137,9 +158,14 @@
 							<center>
 								<img src="Images/garageColon.jpg" alt="garage4" style="width:100%; height:100%;">
 									<h3> LLG Colon </h3>
-										129 W. State St <br>
+									<p>129 W. State St <br>
 										Colon, MI 49040 <br>
-									<a class="linkButton" href="menu.html" title="Browse our menu">Menu</a>
+									</p>
+									<!-- Sets the user's store location to the specific store on orderOnline.php -->
+									<form action="orderOnline.php" method="post">
+										<input type="hidden" name="storeLocation" value="Colon">
+										<input type="submit" class="linkButton" name="submitButton" value="Order Online Now!" title="Browse our menu">
+									</form>
 									<h4> Store Number: </h4>
 									<p> (456) 789-0123 </p>
 									<h4> Hours: </h4>
@@ -159,9 +185,14 @@
 							<center>
 								<img src="Images/garageClimax.jpg" alt="garage5" style="width:100%; height:100%;">
 									<h3> LLG Climax </h3>
-										126 W. Maple St. <br>
+									<p>126 W. Maple St. <br>
 										Climax, MI 49034 <br>
-									<a class="linkButton" href="menu.html" title="Browse our menu">Menu</a>
+									</p>
+									<!-- Sets the user's store location to the specific store on orderOnline.php -->
+									<form action="orderOnline.php" method="post">
+										<input type="hidden" name="storeLocation" value="Climax">
+										<input type="submit" class="linkButton" name="submitButton" value="Order Online Now!" title="Browse our menu">
+									</form>									
 									<h4> Store Number: </h4>
 									<p> (567) 890-1234 </p>
 									<h4> Hours: </h4>
@@ -181,10 +212,15 @@
 							<center>
 								<img src="Images/garageSetagaya-Ku.jpg" alt="garage5" style="width:100%; height:100%;">
 									<h3> LLG Setagaya-Ku </h3>
-										26-3, Kamikitazawa 3-Chōme <br>
+									<p>26-3, Kamikitazawa 3-Chōme <br>
 										Setagaya-Ku, Tokyo <br>
 										Japan 156-0057 <br>
-									<a class="linkButton" href="menu.html" title="Browse our menu">Menu</a>
+									</p>
+									<!-- Sets the user's store location to the specific store on orderOnline.php -->
+									<form action="orderOnline.php" method="post">
+										<input type="hidden" name="storeLocation" value="Setagaya-Ku">
+										<input type="submit" class="linkButton" name="submitButton" value="Order Online Now!" title="Browse our menu">
+									</form>
 									<h4> Store Number: </h4>
 									<p> (678) 901-2345 </p>
 									<h4> Hours: </h4>
@@ -211,29 +247,7 @@
         </main>
 
         <!-- Webpage Footer-->
-        <footer>
-            <div>
-                <p class="logoSmall">Lily's Lil Garage</p>
-                <nav>
-                    <a href="home.html" title="Return to the homepage">Home</a>
-                    <a href="locations.html" title="View our store locations">Locations</a>
-                    <a href="menu.html" title="Browse our menu">Menu</a>
-                    <a href="contact.html" title="View our contact information">Contact</a>
-                </nav>
-                <p id="footCopy">Copyright &copy; 2020</p>
-            </div>
-            <div>
-                <address>
-                    <a class="noFloat" href="tel:555-555-5555" title="Call our phone number">555-555-5555</a>
-                    <a class="noFloat" href="mailto:storeEmailHere" title="Send us an email">STORE EMAIL HERE</a>
-                    <p class="noMargin">2200 N Squirrel Rd Rochester MI</p>
-                </address>
-            </div>
-            <div>
-                <p class="noMargin">Our Motto</p>
-                <p>A great place to get great food!</p>
-            </div>
-        </footer>
+        <?php include('footer.php'); ?>
     </body>
 </html>
 
