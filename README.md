@@ -10,3 +10,4 @@ Next, make sure Apache is running from the XAMPP Control Panel.
 You should now be able to see the website running at http://localhost/Lily-Garage-Website/index.php
 
 # NOTE: You won't be able to display the pages properly without using apache or another PHP server.
+Sadly, PHP requires a webserver to process the webpage before displaying it in your browser, so you can't just open it like you can with an HTML document.
