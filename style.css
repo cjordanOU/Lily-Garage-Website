@@ -9,7 +9,8 @@
 /* ------ ------ Applies to All HTML elements ------ ------ */
 * {
     box-sizing: border-box;
-    font-family:"Comic Sans MS", cursive, sans-serif;
+    font-family:"Open Sans", cursive, sans-serif;
+    /*font-family:"Comic Sans MS", cursive, sans-serif;*/
 }
 
 /* ------ ------ Standard HTML Styles ------ ------ */
@@ -81,7 +82,10 @@ header nav a {
 
 header nav a:last-child {
     border: 1px solid rgb(190, 190, 190);
-    margin-left: 72px;
+    margin-left: 172px;
+    background-color: white;
+    border: 1px solid white;
+    color: black;
 }
 
 header nav a:hover {
@@ -92,16 +96,16 @@ header nav a:hover {
 }
 
 header nav a:last-child:hover {
-    background-color: white;
-    border-color: white;
-    color: black;
+    background-color: black;
+    border: 1px solid rgb(190, 190, 190);
+    color: white;
 }
 
 /* ------ main ------ */
 main {
     /* Main webpage area, where main webpage content is */
     width: 100%;
-    padding: 92px 32px 18px 32px;
+    padding: 92px 0 18px 0;
     margin: 0;
     /*box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);*/
 }
@@ -110,7 +114,7 @@ main {
 footer {
     /* Entire footer box area */
     width: 100%;
-    height: 10.5vh;
+    height: 104px;
 	/*background: linear-gradient(270deg, rgba(2,0,36,1) 9%, rgba(9,9,121,1) 37%, rgba(90,212,255,1) 73%);*/
     padding: 1vh 1vw;
     color: rgb(210, 212, 214);
@@ -156,15 +160,25 @@ footer div nav a:hover, footer div address a:hover {
 /* ------ ------ Class Styles ------ ------ */
 
 /* ------ menuItem ------ */
+.mTable{
+	width: 100%;
+	padding-left:15px;
+	padding-right:15px;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+
+.TEdit {
+padding:none;
+word-wrap:break-word;
+max-width: 150px;
+}
+
 .menuItem {
     /* menuItem div; dinner, breakfast, etc... */
     background-color: white;
-    border-radius: 8px;
     padding: .15vh 1vw;
-}
-
-.menuItem:not(:first-child) {
-    /* Applies to all menuItem's except for the first */
     margin-top: 2vh;
 }
 
@@ -203,6 +217,29 @@ footer div nav a:hover, footer div address a:hover {
     margin-bottom: 1.3em;
 }
 
+.menuBar {
+    height: 90px;
+    width: 85%;
+    margin: auto;
+    padding-top: 33px
+}
+
+.menuBar a {
+    padding: 12px;
+    color: #690f0f;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    width: 25%;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+}
+
+.menuBar a:hover {
+    border-bottom: 5px solid #690f0f;
+    transition: 0.5s;
+    -webkit-transition: 0.3s;
+}
 
 .logo {
     /* The large website logo text, appears on header etc... */
@@ -272,17 +309,29 @@ footer div nav a:hover, footer div address a:hover {
     font-size: .75em;
 }
 
-.parallaxBG {
-    /* Makes a parallax image background */
+.parallaxBG-large {
+    /* Makes a parallax image background (Large) */
     min-height: 75vh; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5vh 5vw;
+    /* Specify the background image in HTML using the style attribute */
 }
 
-.parallaxText {
+.parallaxBG-small {
+    /* Makes a parallax image background (Small) */
+    min-height: 300px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5vh 5vw;
+    /* Specify the background image in HTML using the style attribute */
+}
+
+.parallaxText1 {
     /* Positions the parallaxText to be on top of the parallaxBG div */
     position: absolute;
     top: 62.5%;
@@ -294,29 +343,41 @@ footer div nav a:hover, footer div address a:hover {
     text-align: center;
 }
 
-.parallaxText h2 {
+.parallaxText1 h2, .parallaxText2 h2 {
     /* Header2 Text for parallaxText */
     color: white;
     font-size: 3em;
 }
 
-.parallaxText a {
+.parallaxText1 a {
     /* The parallaxText button */
     position: absolute;
     transform: translateX(-175%);
     background: red;
-    padding: 1.5%;
+    padding: 24px;
     color: white;
     text-decoration: none;
     transition: 0.2s;
     -webkit-transition: 0.2s;
 }
 
-.parallaxText a:hover {
+.parallaxText1 a:hover {
     /* Changes color of the parallaxText button when hovered over */
     background: salmon;
     transition: 0.2s;
     -webkit-transition: 0.2s;
+}
+
+.parallaxText2 {
+    /* Positions the parallaxText to be on top of the parallaxBG div */
+    position: absolute;
+    top: 620px;
+    left: 700px;
+    transform: translate(-1100px, -415px);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
 }
 
 .blur1 {
@@ -377,6 +438,23 @@ footer div nav a:hover, footer div address a:hover {
     font-size: 1.5em;
 }
 
+.standardPad {
+    width: 85%;
+    margin: auto;
+}
+
+.headerFull {
+    height: 96px;
+    max-height: 96px;
+}
+
+.headerSmall {
+    height: 68px;
+    max-height: 68px;
+    padding: 1vh 3%;
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+}
+
 /* ------ ------ ID Styles ------ ------ */
 
 #footCopy {
@@ -387,11 +465,6 @@ footer div nav a:hover, footer div address a:hover {
 
 
 /* ------ ------ Homepage Specific ID Styles ------ ------ */
-
-#homePic1 {
-    /* Adds the RestaurantOutside.jpg to the parallax class and adds a gradient sweeping in from the left */
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.801), transparent), url('Images/RestaurantOutside.jpg');
-}
 
 #homeSlideshowContainer {
     /* The container for the slideshow, NOT the actual image */
@@ -410,7 +483,7 @@ footer div nav a:hover, footer div address a:hover {
 #homeSlideshowContainer a {
     /* Button inside the slideshow container that brings the user to the menu */
     display: block;
-    margin-top: 2vh;
+    margin-top: 15px;
     text-align: center;
     text-decoration: none;
     border: 1px solid black;
@@ -460,4 +533,46 @@ footer div nav a:hover, footer div address a:hover {
     max-height: 30vh;
     object-fit: cover;
     box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+}
+
+#orderHeader {
+    height: 150px;
+    max-height: 150px;
+}
+
+#orderHeader .logo {
+    padding-top: 25px;
+}
+
+#orderMain {
+    padding-top: 150px;
+    padding-bottom: 0;
+}
+
+#orderStoreInfo {
+    width: 70%;
+    color: white;
+    float: right;
+}
+
+#orderStoreInfo p, #orderStoreInfo h2 {
+    margin: 0;
+}
+
+#orderMenuSelections {
+    overflow: scroll;
+    height: 80vh;
+    width: 20%;
+}
+
+#orderMenuSelections a {
+    float:none;
+}
+
+#orderMenu {
+    width: 60%;
+}
+
+#orderBackground {
+    background: black;
 }
