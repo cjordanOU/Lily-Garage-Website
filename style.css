@@ -160,6 +160,13 @@ footer div nav a:hover, footer div address a:hover {
 /* ------ ------ Class Styles ------ ------ */
 
 /* ------ menuItem ------ */
+.locationBorder {
+    text-align: center;
+    border: 3px solid;
+    border-radius: 5px;
+    background-color: #a9a9a9;
+  }
+
 .mTable{
 	width: 100%;
 	padding-left:15px;
