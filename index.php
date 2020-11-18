@@ -15,16 +15,18 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
         
         <!-- Styles -->
-        <link href="style.css" rel="stylesheet">
-        
+        <link href="style.css" media="screen and (min-device-width: 1200px)" rel="stylesheet">
+        <link href="styleMobile.css" media="screen and (max-width: 1199px)" rel="stylesheet"/>
+
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
         <!-- Scripts -->
         <script src="Scripts/mainScripts.js"></script> 
+        <script src="Scripts/slideshow.js"></script>
     </head>
-    <body>
+    <body onload = startRotation()>
         <section id="background"></section>
         
         <!-- Webpage Header -->
@@ -49,7 +51,7 @@
             </div>
 
             <div id="homeSlideshowContainer">
-                <img src="Images/E85Special.JPG" alt="A slideshow of our delicious foods and drinks">
+                <img id="slideshowImage" src=" " alt="A slideshow of our delicious foods and drinks" width="720" height="420">
                 <p>Placeholder Text - I think we should put a slideshow of menu items here</p>
                 <a href="menu.html" title="Browse our menu">View Our Menu</a>
             </div>
