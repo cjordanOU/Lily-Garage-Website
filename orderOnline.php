@@ -45,8 +45,10 @@ require ('Includes/databaseHandler.php')
         <main id="orderMain">
             <div class="orderLeft">
                 <h4>Food Types</h4>
+                <a href="#handheld">test hand</a>
                 <p>combos</p>
                 <p>pancakes</p>
+                <a href="#combos">test combos</a>
                 <p>crepes</p>
                 <p>omelets</p>
                 <p>entree plates</p>
@@ -68,7 +70,7 @@ require ('Includes/databaseHandler.php')
 
                     if ($result-> num_rows > 0) {
                         while ($row = $result-> fetch_assoc()) {
-                            echo "<tr><td>". $row["food_name"] ."</td><td>". $row["price"] ."</td><td>". $row["description"] ."</td></tr>";
+                            echo "<tr id='". $row["food_category"] ."'><td>". $row["food_name"] ."</td><td>". $row["price"] ."</td><td>". $row["description"] ."</td></tr>";
                         }
                         echo "</table>";
                     }

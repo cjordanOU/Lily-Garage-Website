@@ -25,7 +25,8 @@ html {
     background-color: #212121;
     background-image: radial-gradient(closest-side, transparent 95%, #212121 90%), radial-gradient(closest-side, transparent 95%, #272727 99%);
     background-size:40px 40px;
-	background-position:0 0, 20px 20px;
+    background-position:0 0, 20px 20px;
+    scroll-padding-top: 70px;
 }
 
 body {
@@ -34,6 +35,7 @@ body {
     background: rgb(225, 225, 225);
     top: 0;
     box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    scroll-padding-top: 70px;
 }
 
 /* ------ header ------ */
@@ -554,7 +556,7 @@ max-width: 150px;
 }
 
 #orderMain {
-    padding-top: 150px;
+    margin-top: 150px;
     padding-bottom: 0;
 }
 
@@ -634,4 +636,8 @@ max-width: 150px;
 
 .orderCheckout {
     border-top: 2px solid gray;
+}
+
+.combos .pancakes .crepes .omelet .plates .handheld .pastas .wraps .appetizers .salads .non_alc .alc .desserts {
+
 }
