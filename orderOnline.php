@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html>
+<?php
+// links to database
+require ('Includes/databaseHandler.php')
+?>
+<html id="orderBackground">
     <head>
         <!-- Webpage Metadata-->
         <meta charset="UTF-8">
@@ -15,7 +19,7 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
         
         <!-- Styles -->
-        <link href="style.css" rel="stylesheet">
+        <link href="style.css" media="screen and (min-device-width: 800px)" rel="stylesheet">
         
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
@@ -25,28 +29,21 @@
         <script src="Scripts/mainScripts.js"></script> 
     </head>
     <body>
-        <section id="background"></section>
-        
-        <!-- Webpage Header -->
-        <?php include('header.php'); ?>
+        <header id="orderHeader">
+            <a href="index.php" class="logo" title="Return to the homepage">Lily's Lil Garage</a>
+            <div id="orderStoreInfo">
+                <h2>LLG Flushing</h2>
+                <p>165 Boman Street</p>
+                <p>Flushing, Michigan 48433</p>
+                <p>(345) 678-9012</p>
+            </div>
+        </header>
 
         <!-- Main Webpage Content-->
-        <main class="standardPad">
+        <main id="orderMain">
+
+
             <?php
-
-            // Recieves data from locations.php using POST and declares it as a variable.
-            $storeLocation = $_POST['storeLocation'];
-
-
-            // Prompts the user to select a location to order from on the locations page
-            if ($storeLocation == null) {
-                echo "<h2>Please select a store first from our locations page!";
-            }
-
-            else {
-                echo "<h2>Now ordering for: $storeLocation</h2>";
-                include('orderForm.php');
-            }
 
             ?>
         </main>
