@@ -42,20 +42,22 @@
             </div>
             
             <div class="standardPad">
-                <h1>Welcome to Lily's Lil Garage</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h1>Lily's Lil Garage</h1>
+                <p> Welcome to Lily's Lil Garage website where you can browse our menu, find all our current restaurant locations,
+					and even order food online for in-store pick-up of delivery. We strive to serve our community with the finest quality 
+					food to give that "home-made" feel.</p>
             </div>
 
             <div>
                 <br><br>
             </div>
 
-            <div id="homeSlideshowContainer">
-                <img id="slideshowImage" src=" " alt="A slideshow of our delicious foods and drinks" width="720" height="420">
-                <p>Placeholder Text - I think we should put a slideshow of menu items here</p>
-                <a href="menu.html" title="Browse our menu">View Our Menu</a>
-            </div>
-
+						<div id="homeSlideshowContainer">
+						<img id="slideshowImage" src=" " alt="A slideshow of our delicious foods and drinks" width="420" height="320">
+						<center><p>Feel free to browse our menu by clicking the button below.</p></center>
+						<a href="menu.html" title="Browse our menu">View Our Menu</a>
+						</div>
+			
             <div id="homeLocation">
                 <hr>
                 <section>
