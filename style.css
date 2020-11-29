@@ -462,6 +462,8 @@ max-width: 150px;
     box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
 }
 
+
+
 /* ------ ------ ID Styles ------ ------ */
 
 #footCopy {
@@ -582,4 +584,54 @@ max-width: 150px;
 
 #orderBackground {
     background: black;
+}
+
+.orderLeft {
+    width: 240px;
+    display: inline-block;
+    background-color: white;
+    border-right : 2px solid gray;
+}
+
+.orderCenter {
+    width: 950px;
+    display: inline-block;
+}
+
+.orderCenter table {
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+.orderCenter table tbody tr:nth-child(odd) {
+    background: #ffffff;
+}
+
+.orderCenter table tbody tr:nth-child(even) {
+    background: #dddddd;
+}
+
+.orderRight {
+    width: 240px;
+    display: inline-block;
+    background-color: white;
+    border-left : 2px solid gray;
+}
+
+.orderRight p, .orderRight h4 {
+    margin-left: 4px;
+    margin-bottom: 0;
+    margin-top: 2px;
+}
+
+.orderUserInfo {
+    border-bottom: 2px solid gray;
+}
+
+.orderCart {
+}
+
+.orderCheckout {
+    border-top: 2px solid gray;
 }
