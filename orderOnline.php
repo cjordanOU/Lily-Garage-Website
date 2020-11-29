@@ -26,7 +26,6 @@ require ('Includes/databaseHandler.php')
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         
         <!-- Scripts -->
-        <script src="Scripts/mainScripts.js"></script> 
     </head>
     <body>
         <?php
