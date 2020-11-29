@@ -10,7 +10,7 @@
 //This is where the slideshow pull the images from. In my file I have a folder named
 // rotateimages/. So for the project make a new folder and insert the name where it says 
 //rotate images.
-var prefix = "images/rotateimages/";
+var prefix = "Images/rotateimages/";
 
 //Use that prefix to put the proper sequence of image filenames into an array.
 //We also have to make sure the images we are using are .jpg. If we want to use
