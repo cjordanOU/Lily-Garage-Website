@@ -35,6 +35,7 @@ require ('Includes/databaseHandler.php')
         <!-- Main Webpage Content-->
         <main id="orderMain">
             <h2 class="standardPad">Please make sure your information below is correct before proceeding to the order page!</h2>
+            <hr>
             <form class="standardPad" action="orderOnline.php" method="post" id="userInformation" onsubmit="feedbackFormValidate()">
                 <label>First Name:</label>
                 <input type="text" name="first_name" size="40"
@@ -76,6 +77,7 @@ require ('Includes/databaseHandler.php')
                 <!-- Submit Button -->
                 <input type="submit" name="sub" value="Submit user information">
             </form>
+            <br><br><br>
         </main>
 
         <!-- Webpage Footer-->

@@ -44,21 +44,19 @@ require ('Includes/databaseHandler.php')
         <main id="orderMain">
             <div class="orderLeft">
                 <h4>Food Types</h4>
-                <a href="#handheld">test hand</a>
-                <p>combos</p>
-                <p>pancakes</p>
-                <a href="#combos">test combos</a>
-                <p>crepes</p>
-                <p>omelets</p>
-                <p>entree plates</p>
-                <p>burgers &amp; handhelds</p>
-                <p>pastas</p>
-                <p>wraps</p>
-                <p>finger foods</p>
-                <p>salads</p>
-                <p>non-alcoholic beverages</p>
-                <p>alcoholic beverages</p>
-                <p>desserts</p>
+                <a href="#combos">combos</a>
+                <a href="#pancakes">pancakes</a>
+                <a href="#crepes">crepes</a>
+                <a href="#omelet">omelets</a>
+                <a href="#plates">entree plates</a>
+                <a href="#handheld">burgers &amp; handhelds</a>
+                <a href="#pastas">pastas</a>
+                <a href="#wraps">wraps</a>
+                <a href="#appetizers">finger foods</a>
+                <a href="#salads">salads</a>
+                <a href="#non_alc">non-alcoholic beverages</a>
+                <a href="#alc">alcoholic beverages</a>
+                <a href="#desserts">desserts</a>
             </div>
             <div class="orderCenter">
                 <table>
