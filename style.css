@@ -27,6 +27,7 @@ html {
     background-size:40px 40px;
     background-position:0 0, 20px 20px;
     scroll-padding-top: 70px;
+    overflow-y: scroll;
 }
 
 body {
@@ -586,6 +587,11 @@ max-width: 150px;
 
 #orderBackground {
     background: black;
+    scroll-padding-top: 150px;
+}
+
+#orderBackground body {
+    scroll-padding-top: 150px;
 }
 
 .orderLeft {
@@ -593,6 +599,11 @@ max-width: 150px;
     display: inline-block;
     background-color: white;
     border-right : 2px solid gray;
+}
+
+.orderLeft a {
+    float: none;
+    display: block;
 }
 
 .orderCenter {
