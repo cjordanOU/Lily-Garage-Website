@@ -18,8 +18,8 @@ PHP requires a webserver to process the webpage before displaying it in your bro
 
 -import menu_items.sql into llg
 
--make sure $dbLocation is set to the proper database location on Includes/databaseHandler.php
+-make sure $dbLocation is set to the proper database location in the file "Includes/databaseHandler.php"
 
 -is configured for XAMPP by default
 
--set $dbUsername and $dbPassword
+-set $dbUsername and $dbPassword to the password used on your db
