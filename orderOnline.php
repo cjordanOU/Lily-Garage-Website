@@ -84,6 +84,15 @@ require ('Includes/databaseHandler.php')
                         echo "<p>$first_name $last_name</p>";
                         echo "<p>$email_address</p>";
                         echo "<p>$phone_number</p>";
+
+                        $userInsert = "INSERT INTO users (first_name,last_name,user_email,user_phone,store_location) VALUES ('$first_name','$last_name','$email_address','$phone_number','$location')";
+                        
+                        if (mysqli_query($conn, $userInsert)) {
+                            echo "<p>Your selected items will be shown below</p>";
+                        } else {
+                            echo "<p>Error!</p>";
+                        }
+                        mysqli_close($conn);
                     ?>
                 </div>
 
