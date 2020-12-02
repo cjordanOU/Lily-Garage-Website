@@ -1,7 +1,7 @@
 how to setup database using mySQL:
 
--Make new database called "llg"
--import menu_items.sql into llg
--make sure $dbLocation is set to the proper database location on Includes/databaseHandler.php
--is configured for XAMPP by default
+-import llg.sql into a new mySQL database
+-make sure $dbLocation is set to the proper location of the database on the file "Includes/databaseHandler.php"
+-the database handler is configured for XAMPP by default
 -set $dbUsername and $dbPassword
+-$dbName should remain constant
