@@ -44,6 +44,7 @@ require ('Includes/databaseHandler.php')
         <main id="orderMain">
             <div class="orderLeft">
                 <h4>Food Types</h4>
+                <hr>
                 <a href="#combos">combos</a>
                 <a href="#pancakes">pancakes</a>
                 <a href="#crepes">crepes</a>
@@ -59,7 +60,7 @@ require ('Includes/databaseHandler.php')
                 <a href="#desserts">desserts</a>
             </div>
             <div class="orderCenter">
-                <table>
+                <table class="orderTable">
                 <?php
                     // Select menu itms
                     $sql = 'SELECT * FROM menu_items';
@@ -67,7 +68,7 @@ require ('Includes/databaseHandler.php')
 
                     if ($result-> num_rows > 0) {
                         while ($row = $result-> fetch_assoc()) {
-                            echo "<tr id='". $row["food_category"] ."'><td>". $row["food_name"] ."</td><td>". $row["price"] ."</td><td>". $row["description"] ."</td></tr>";
+                            echo "<tr id='". $row["food_category"] ."'><td>". $row["food_name"] ."</td><td>&#36;". $row["price"] ."</td><td>". $row["description"] ."</td></tr>";
                         }
                         echo "</table>";
                     }
@@ -80,8 +81,7 @@ require ('Includes/databaseHandler.php')
                 <div class="orderUserInfo">
                     <?php
                         echo "<h4>Ordering For:</h4>";
-                        echo "<p>$first_name</p>";
-                        echo "<p>$last_name</p>";
+                        echo "<p>$first_name $last_name</p>";
                         echo "<p>$email_address</p>";
                         echo "<p>$phone_number</p>";
                     ?>
@@ -105,6 +105,6 @@ require ('Includes/databaseHandler.php')
         </main>
 
         <!-- Webpage Footer-->
-        <?php include('footer.php'); ?>
+        
     </body>
 </html>
