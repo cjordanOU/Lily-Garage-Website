@@ -160,6 +160,7 @@ footer div nav a:hover, footer div address a:hover {
     width: 92.5%;
     height: 50%;
     margin: auto;
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
 }
 
 #homeSlideshowContainer a, .linkButton{
@@ -204,6 +205,7 @@ footer div nav a:hover, footer div address a:hover {
     margin: auto;
     margin-bottom: 2vh;
     margin-top: 2vh;
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
 }
 
 .mCenter {

@@ -632,6 +632,13 @@ max-width: 150px;
     background-color: #ffb5b5;
 }
 
+.orderLeft a:active {
+    color: #ffb5b5;
+    background-color: #3b0909;
+    transition: 0.5s;
+    -webkit-transition: 0.3s;
+}
+
 .orderCenter {
     width: 950px;
     display: inline-block;
