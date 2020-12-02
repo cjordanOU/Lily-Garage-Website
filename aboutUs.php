@@ -15,7 +15,8 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
         
         <!-- Styles -->
-        <link href="style.css" rel="stylesheet">
+        <link href="style.css" media="screen and (min-device-width: 1200px)" rel="stylesheet">
+		<link href="styleMobile.css" media="screen and (max-width: 1199px)" rel="stylesheet"/>
         
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
@@ -38,7 +39,7 @@
                 <h2>About Us</h2>
             </div>
 
-            <div class="standardPad">
+            <div class="standardPad mTop">
                 <p>At Lily’s Lil’ Garage, our goal is for good tasting food to hit you like a Mack Truck. We make all of our food with the precision and care of a mechanic working on a car. Lily’s started off with nothing but a garage, a grill, and a maple tree out back. From there we stretched into a multi-location franchise spread throughout Michigan. We also have a location in Japan where we source our A5 Wagyu Beef for our signature Radiator Burger.</p>
                 <h3>Lily’s Little Garage: Taking that home-made taste across the state!</h3>
             <div>

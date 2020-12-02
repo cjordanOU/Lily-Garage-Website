@@ -193,6 +193,11 @@ max-width: 150px;
     margin-top: 2vh;
 }
 
+.menuItem:first-child {
+    /* menuItem div; dinner, breakfast, etc... */
+    margin-top: 0px;
+}
+
 .menuItem h2 {
     /* Larger heading text inside of menuItem */
     text-decoration: underline;

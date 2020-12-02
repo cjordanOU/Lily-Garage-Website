@@ -16,8 +16,9 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
         
         <!-- Styles -->
-        <link href="style.css" rel="stylesheet">
-        
+        <link href="style.css" media="screen and (min-device-width: 1200px)" rel="stylesheet">
+		<link href="styleMobile.css" media="screen and (max-width: 1199px)" rel="stylesheet"/>
+		
         <!-- Scripts-->
 
         <!-- Fonts -->
@@ -53,7 +54,7 @@
             </div>
 
             <!-- ------ Dinner Menu ------ -->
-            <div class="menuItem" style="margin-top:0!important">
+            <div class="menuItem">
                 <h2 id="dinner">Dinner</h2>
             <!-- Combos -->
             <h3>Combos</h3>

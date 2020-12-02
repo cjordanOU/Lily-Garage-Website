@@ -15,8 +15,9 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
         
         <!-- Styles -->
-		<link href="style.css" rel="stylesheet">
+		<link href="style.css" media="screen and (min-device-width: 1200px)" rel="stylesheet">
 		<style>table {table-layout: fixed;width: 100%;}</style>
+		<link href="styleMobile.css" media="screen and (max-width: 1199px)" rel="stylesheet"/>
         
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
