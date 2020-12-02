@@ -165,9 +165,10 @@ footer div nav a:hover, footer div address a:hover {
 /* ------ menuItem ------ */
 .locationBorder {
     text-align: center;
-    border: 3px solid;
-    border-radius: 5px;
+    border: 2px solid;
+    border-radius: 3px;
     background-color: #a9a9a9;
+    box-shadow: 0 0 2px rgba(0,0,0,.14), 0 2px 4px rgba(0,0,0,.28);
   }
 
 .mTable{
@@ -559,6 +560,7 @@ max-width: 150px;
 #orderMain {
     margin-top: 150px;
     padding-bottom: 0;
+    padding-top: 0;
 }
 
 #orderStoreInfo {
@@ -594,21 +596,41 @@ max-width: 150px;
     scroll-padding-top: 150px;
 }
 
+.orderTable tbody tr {
+    padding: 5px;
+}
+
 .orderLeft {
     width: 240px;
     display: inline-block;
     background-color: white;
     border-right : 2px solid gray;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: fixed;
+    height: 100%;
 }
 
 .orderLeft a {
     float: none;
     display: block;
+    padding: 10px 0px;
+    color: #690f0f;
+    text-decoration: none;
+}
+
+.orderLeft a:hover {
+    border-left: 5px solid #690f0f;
+    transition: 0.5s;
+    -webkit-transition: 0.3s;
+    padding-left: 5px;
+    background-color: #ffb5b5;
 }
 
 .orderCenter {
     width: 950px;
     display: inline-block;
+    margin-left: 240px;
 }
 
 .orderCenter table {
@@ -626,10 +648,12 @@ max-width: 150px;
 }
 
 .orderRight {
-    width: 240px;
+    width: 250px;
     display: inline-block;
     background-color: white;
     border-left : 2px solid gray;
+    position: fixed;
+    height: 100%;
 }
 
 .orderRight p, .orderRight h4 {
@@ -647,8 +671,4 @@ max-width: 150px;
 
 .orderCheckout {
     border-top: 2px solid gray;
-}
-
-.combos .pancakes .crepes .omelet .plates .handheld .pastas .wraps .appetizers .salads .non_alc .alc .desserts {
-
 }
