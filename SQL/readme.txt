@@ -1,4 +1,4 @@
-how to setup database using mySQL:
+#how to setup database using mySQL:
 
 -import llg.sql into a new mySQL database
 -make sure $dbLocation is set to the proper location of the database on the file "Includes/databaseHandler.php"
