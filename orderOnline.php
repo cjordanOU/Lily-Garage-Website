@@ -90,7 +90,7 @@ require ('Includes/databaseHandler.php')
                         if (mysqli_query($conn, $userInsert)) {
                             echo "<p>Your selected items will be shown below</p>";
                         } else {
-                            echo "<p>Error!</p>";
+                            echo "<p>Error! please resubmit your information</p>";
                         }
                         mysqli_close($conn);
                     ?>
