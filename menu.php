@@ -8,6 +8,7 @@
         <meta name="keywords" content="Lily's Lil' Garage, Lily's Garage, Lily's Little Garage, Restaurant, Menu, Food">
         <meta name="author" content="Jerrod Dutcher, Cameron Jordan, James Moseley, Trent Toyryla, Alden Metzmaker">
         <meta name="theme-color" content="#43ccff">
+		
 
         <!-- Webpage Title -->
         <title>Lily's Lil' Garage - Menu</title>
@@ -16,9 +17,8 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
         
         <!-- Styles -->
-        <link href="style.css" media="screen and (min-device-width: 1200px)" rel="stylesheet">
-		<link href="styleMobile.css" media="screen and (max-width: 1199px)" rel="stylesheet"/>
-		
+        <link href="style.css" rel="stylesheet">
+        
         <!-- Scripts-->
 
         <!-- Fonts -->
@@ -44,20 +44,21 @@
             <!-- ------ Menu Selection ------ -->
             <div>
                 <nav class="menuBar">
-                    <a href="#dinner" title="Jump to our Dinner selection">Dinner</a>
-                    <a href="#appetizers" title="Jump to our Appetizers and Sides selection">Appetizers &amp; Sides</a>
-                    <a href="#drinks" title="Jump to our Drinks Selection">Drinks</a>
-                    <a href="#desserts" title="Jump to our Desserts Selection">Desserts</a>
-                    <a href="#lunch" title="Jump to our lunch Selection">Lunch</a>
                     <a href="#breakfast" title="Jump to our Breakfast Selection">Breakfast</a>
+					<a href="#entrées" title="Jump to our Entrées selection">Entrées</a>
+					<a href="#desserts" title="Jump to our Desserts Selection">Desserts</a>
+					<a href="#appetizers" title="Jump to our Appetizers and Sides selection">Appetizers &amp; Sides</a>
+                    <a href="#drinks" title="Jump to our Drinks Selection">Drinks</a>
                 </nav>
             </div>
 
             <!-- ------ Dinner Menu ------ -->
-            <div class="menuItem">
-                <h2 id="dinner">Dinner</h2>
+            <div class="menuItem" style="margin-top:0!important">
+                <h2 id="breakfast">Breakfast</h2>
+
             <!-- Combos -->
             <h3>Combos</h3>
+
                 <ul>
 				<table class="mTable">
 					<tr>
@@ -76,7 +77,7 @@
 							<li>Getaway Driver  <span class="price">$12.99</span></li>
 							2 Grilled cheese sandwiches filled with eggs, hash browns, bacon, with optional sides of either pancakes or an omelet.
 							<!--<img src="Images/GetawayDriver.jpg" alt ="GetawayDriver" style="width:15%; height:10%;">-->
-						<td class = "TEdit">
+						</td>
 					</tr>
 				</table>
 				</ul>
@@ -92,7 +93,8 @@
 						</td>
 						<td class = "TEdit">
 							<li>Oil Change Slapjacks  <span class="price">$11.49</span></li>
-							Rich chocolate chip slapjacks topped with freshly melted Hershey’s chocolate.
+							Rich chocolate chip slapjacks topped with our finest freshly melted Hershey’s chocolate.
+							
 						</td>
 					</tr>
 					<tr>
@@ -103,10 +105,10 @@
 						</td>
 						<td class = "TEdit">
 							<li>WAP (Wet Amazing Pancakes)  <span class="price">$10.49</span></li>
-							Drizzled with home-styled glistening syrup made from our tree in the back.
+							Fluffy pancakes drizzled with our home-styled glistening syrup made from our tree in the back.
 						</td>
 					<tr>
-				<table class="mTable">
+				</table>
                 </ul>
 
                 <!-- Crepes -->
@@ -150,12 +152,11 @@
 					</tr>
 				</table>
                 </ul>
-                
             </div>
             
             <!-- ------ Entrée Menu ------ -->
             <div class="menuItem">
-                <h2>Entrées</h2>
+                <h2 id="entrées">Entrées</h2>
 
                 <!-- Plates -->
                 <h3>Plates</h3>
@@ -205,7 +206,7 @@
 						</td>
 						<td class = "TEdit">
 							<li>4-Cylinder/6-Cylinder Sliders  <span class="price">$9.50|4 - $14.00|6</span></li>
-							4/6 Sliders topped with your choice of cheese and sauteed onion.
+							4 or 6 sliders topped with your choice of cheese, condements, vegetables and sauteed onion.
 							<!--<img src = "Images/Sliders.jpg" alt = "Sliders" style="width:15%; height:10%;">-->
 						</td>
                     </tr>
@@ -236,7 +237,7 @@
 							&frac13; pound sirloin burger, Kaiser Roll, Caramelized onions, Tomatoes, and arugula topped with chipotle mayo and blue cheese crumbles.
 						</td>
 					</tr>
-			   <table class="mTable">
+			   </table>
 				</ul>
 
                 <!-- Pasta-->
@@ -286,7 +287,7 @@
 						</td>
 						<td class = "TEdit">
 							<li>Tire Iron  <span class="price">$12.99</span></li>
-							Steak wrap with lettuce, tomato, onion, and spicy ranch dressing.
+							Pan-seared chopped steak wrap with lettuce, tomato, onion, and spicy ranch dressing.
 						</td>
 					</tr>
 					<tr>
@@ -296,7 +297,7 @@
 						</td>
 						<td class = "TEdit">
 							<li>Lot Lizard  <span class="price">$13.99</span></li>
-							Corned beef, swiss cheese, thousand island, turkey, pressed flat.
+							Fresh corned beef with swiss cheese, thousand island, and turkey then is pressed flat.
 							<!--<img src = "Images/LotLizard.jpg" alt = "LotLizard" style="width:15%; height:10%;">-->
 						</td>
 					</tr>
@@ -308,7 +309,36 @@
 					</tr>
 				</table>
                 </ul>
+			</div>
 
+                <!-- Desserts -->
+				<div class="menuItem">
+                <h2 id="desserts">Desserts</h2>
+				
+				<h3>Dessers</h3>
+                <ul>
+                <table class="mTable">
+					<tr>
+						<td class = "TEdit">
+							<li>Stoplight Brownies  <span class="price">$5.99</span></li>
+							Brownies with red, yellow, and green m&ms on top.
+						</td>
+						<td class = "TEdit">
+							<li>Spare Tire  <span class="price">$3.99</span></li>
+							Chocolate covered donut with white frosting.
+							<!--<img src = "Images/Donuts.jpg" alt = "Donuts" style="width:15%; height:10%;">-->
+						</td>
+					</tr>
+					<tr>
+						<td class = "TEdit">
+							<li>Construction Cone  <span class="price">$4.99</span></li>
+							Your choice of ice cream served in an orange waffle cone.
+						</td>
+					</tr>
+				</table>
+                </ul>
+            </div>
+			
                 <!-- ------ Appetizers and Sides Menu ------ -->
                 <div class="menuItem">
                 <h2 id="appetizers">Appetizers & Sides</h2>
@@ -320,7 +350,7 @@
 					<tr>
 						<td class = "TEdit">
 							<li>Mozzarella Sticks  <span class="price">$8.99</span></li>
-							Mozzarella with a nice golden breading, fried to perfection.
+							Deep-fried mozzarella coated with a nice golden breading, fried to absolute perfection.
 						</td>
 						<td class = "TEdit">
 							<li>Wings  <span class="price">$5.49</span></li>
@@ -335,7 +365,7 @@
 						</td>
 						<td class = "TEdit">
 							<li>Chips and Queso  <span class="price">$5.99</span></li>
-							White queso with peppers, served with tortilla chips.
+							A nice and simple white queso with peppers, that is served with our home-made tortilla chips.
 						</td>
 					</tr>
 				</table>
@@ -362,7 +392,7 @@
 							Romaine lettuce, spinach, avocado, corn salsa, tomatoes, onion, chicken and chipotle vinaigrette.
 						</td>
 					</tr>
-				<table class="mTable">
+				</table>
                 </ul>
             </div>
 
@@ -417,31 +447,7 @@
 					</tr>
 				</table>
                 </ul>
-
-                <!-- Desserts -->
-                <h3 id="desserts">Desserts</h3>
-                <ul>
-                <table class="mTable">
-					<tr>
-						<td class = "TEdit">
-							<li>Stoplight Brownies  <span class="price">$5.99</span></li>
-							Brownies with red, yellow, and green m&ms on top.
-						</td>
-						<td class = "TEdit">
-							<li>Spare Tire  <span class="price">$3.99</span></li>
-							Chocolate covered donut with white frosting.
-							<!--<img src = "Images/Donuts.jpg" alt = "Donuts" style="width:15%; height:10%;">-->
-						</td>
-					</tr>
-					<tr>
-						<td class = "TEdit">
-							<li>Construction Cone  <span class="price">$4.99</span></li>
-							Your choice of ice cream served in an orange waffle cone.
-						</td>
-					</tr>
-				</table>
-                </ul>
-            </div>
+			</div>
         </main>
 
         <!-- ------ ------ Webpage Footer ------ ------ -->
