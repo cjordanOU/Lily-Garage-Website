@@ -1,8 +1,9 @@
-// Runtime Scripts
+/* ------ ------ Declarations ------ ------ */
+var mediaQuery = window.matchMedia("screen and (max-width: 1199px)");
 window.onscroll = function() {HeaderScroll()}; // When the window is scrolled, runs the HeaderScroll script
 
-
 /* ------ ------ ------ Script Definitions ------ ------ ------ */
+
 function HeaderScroll() {
   // Changes the styling on the webpage header when the user scrolls the mouse down from the top of the page
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -12,4 +13,13 @@ function HeaderScroll() {
     // When the webpage is not scrolled
     document.getElementById("header").style.cssText = "height: 96px; max-height: 96px;";
   }
-} 
+}
+
+
+function changeNavIcon(x) {
+  x.classList.toggle("expand");
+}
+
+
+// Runtime Scripts
+
