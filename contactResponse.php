@@ -28,7 +28,7 @@
         <section id="background"></section>
 
         <!-- Webpage Header -->
-        <?php include('header.php'); ?>
+        <?php include('Includes/header.php'); ?>
 
         <!-- Main Webpage Content-->
         <main class="standardPad">
@@ -41,10 +41,10 @@
             $lastName = $_POST['lastName'];
             $gender = $_POST['gender'];
             $email = $_POST['email'];
-            $phoneType = $_POST['phoneType'];
-            $phoneNumber = $_POST['phoneNumber'];
-            $contactEmail = $_POST['contactEmail'];
-            $contactPhone = $_POST['contactPhone'];
+            //$phoneType = $_POST['phoneType'];
+            //$phoneNumber = $_POST['phoneNumber'];
+            //$contactEmail = $_POST['contactEmail'];
+            //$contactPhone = $_POST['contactPhone'];
             $reason = $_POST['reason'];
             $location = $_POST['location'];
             $message = $_POST['message'];
@@ -102,6 +102,6 @@
         </main>
 
         <!-- Webpage Footer-->
-        <?php include('footer.php'); ?>
+        <?php include('Includes/footer.php'); ?>
 	</body>
 </html>
