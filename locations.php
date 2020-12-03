@@ -52,10 +52,7 @@
 										Mount Pleasant, MI 48858 <br>
 									</p>
 									<!-- Sets the user's store location to the specific store on orderOnline.php -->
-									<center><form action="orderOnline.php" method="post">
-										<input type="hidden" name="storeLocation" value="Mount Pleasant">
-										<input type="submit" class="linkButton" name="submitButton" value="Order Online Now!" title="Browse our menu">
-									</form></center>
+									<center><a class="linkButton" href="orderUser.php">Order Now</a></center>
 									<h4> Store Number: </h4>
 									<p> (012) 345-6789 </p>
 									<h4> Hours: </h4>
@@ -77,10 +74,7 @@
 										Ann Arbor, MI 48103 <br>
 									</p>
 									<!-- Sets the user's store location to the specific store on orderOnline.php -->
-									<center><form action="orderOnline.php" method="post">
-										<input type="hidden" name="storeLocation" value="Ann Arbor">
-										<input type="submit" class="linkButton" name="submitButton" value="Order Online Now!" title="Browse our menu">
-									</form></center>
+									<center><a class="linkButton" href="orderUser.php">Order Now</a></center>
 									<h4> Store Number: </h4>
 									<p> (123) 456-7890 </p>
 									<h4> Hours: </h4>
@@ -102,10 +96,7 @@
 										Pinckney, MI 48169 <br>
 									</p>
 									<!-- Sets the user's store location to the specific store on orderOnline.php -->
-									<center><form action="orderOnline.php" method="post">
-										<input type="hidden" name="storeLocation" value="Pickney">
-										<input type="submit" class="linkButton" name="submitButton" value="Order Online Now!" title="Browse our menu">
-									</form></center>
+									<center><a class="linkButton" href="orderUser.php">Order Now</a></center>
 									<h4> Store Number: </h4>
 									<p> (234) 567-8910 </p>
 									<h4> Hours: </h4>
@@ -127,10 +118,7 @@
 										Flushing, MI 48433 <br>
 									</p>
 									<!-- Sets the user's store location to the specific store on orderOnline.php -->
-									<center><form action="orderOnline.php" method="post">
-										<input type="hidden" name="storeLocation" value="Flushing">
-										<input type="submit" class="linkButton" name="submitButton" value="Order Online Now!" title="Browse our menu">
-									</form></center>
+									<center><a class="linkButton" href="orderUser.php">Order Now</a></center>
 									<h4> Store Number: </h4>
 									<p> (345) 678-9012 </p>
 									<h4> Hours: </h4>
@@ -154,10 +142,7 @@
 										Colon, MI 49040 <br>
 									</p>
 									<!-- Sets the user's store location to the specific store on orderOnline.php -->
-									<center><form action="orderOnline.php" method="post">
-										<input type="hidden" name="storeLocation" value="Colon">
-										<input type="submit" class="linkButton" name="submitButton" value="Order Online Now!" title="Browse our menu">
-									</form></center>
+									<center><a class="linkButton" href="orderUser.php">Order Now</a></center>
 									<h4> Store Number: </h4>
 									<p> (456) 789-0123 </p>
 									<h4> Hours: </h4>
@@ -179,10 +164,7 @@
 										Climax, MI 49034 <br>
 									</p>
 									<!-- Sets the user's store location to the specific store on orderOnline.php -->
-									<center><form action="orderOnline.php" method="post">
-										<input type="hidden" name="storeLocation" value="Climax">
-										<input type="submit" class="linkButton" name="submitButton" value="Order Online Now!" title="Browse our menu">
-									</form></center>
+									<center><a class="linkButton" href="orderUser.php">Order Now</a></center>
 									<h4> Store Number: </h4>
 									<p> (567) 890-1234 </p>
 									<h4> Hours: </h4>
@@ -205,10 +187,7 @@
 										Japan 156-0057 <br>
 									</p>
 									<!-- Sets the user's store location to the specific store on orderOnline.php -->
-									<center><form action="orderOnline.php" method="post">
-										<input type="hidden" name="storeLocation" value="Setagaya-Ku">
-										<input type="submit" class="linkButton" name="submitButton" value="Order Online Now!" title="Browse our menu">
-									</form></center>
+									<center><a class="linkButton" href="orderUser.php">Order Now</a></center>
 									<h4> Store Number: </h4>
 									<p> (678) 901-2345 </p>
 									<h4> Hours: </h4>
