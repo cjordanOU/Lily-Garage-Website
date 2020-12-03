@@ -44,7 +44,7 @@
             <div class="standardPad">
                 <h1>Lily's Lil Garage</h1>
                 <p> Welcome to Lily's Lil Garage website where you can browse our menu, find all our current restaurant locations,
-					and even order food online for in-store pick-up of delivery. We strive to serve our community with the finest quality 
+					and even order food online for in-store pick-up or delivery. We strive to serve our community with the finest quality 
 					food to give that "home-made" feel.</p>
             </div>
 
