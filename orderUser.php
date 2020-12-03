@@ -81,6 +81,6 @@ require ('Includes/databaseHandler.php')
         </main>
 
         <!-- Webpage Footer-->
-        <?php include('footer.php'); ?>
+        <?php include('Includes/footer.php'); ?>
     </body>
 </html>

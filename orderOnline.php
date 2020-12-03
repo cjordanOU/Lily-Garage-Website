@@ -37,7 +37,7 @@ require ('Includes/databaseHandler.php')
         ?>
         <header id="orderHeader">
             <a href="index.php" class="logo" title="Return to the homepage">Lily's Lil Garage</a>
-            <?php include('storeHeader.php'); ?>
+            <?php include('Includes/storeHeader.php'); ?>
         </header>
 
         <!-- Main Webpage Content-->
@@ -58,6 +58,7 @@ require ('Includes/databaseHandler.php')
                 <a href="#non_alc">non-alcoholic beverages</a>
                 <a href="#alc">alcoholic beverages</a>
                 <a href="#desserts">desserts</a>
+                <a href="#specials">location specials</a>
             </div>
             <div class="orderCenter">
                 <table class="orderTable">
@@ -68,7 +69,7 @@ require ('Includes/databaseHandler.php')
 
                     if ($result-> num_rows > 0) {
                         while ($row = $result-> fetch_assoc()) {
-                            echo "<tr id='". $row["food_category"] ."'><td>". $row["food_name"] ."</td><td>&#36;". $row["price"] ."</td><td>". $row["description"] ."</td></tr>";
+                            echo "<tr id='". $row["food_category"] ."'><td>". $row["food_name"] ."</td><td>&#36;". $row["price"] ."</td><td>". $row["description"] ."</td><td><button>Add to Cart</button>"."</td></tr>";
                         }
                         echo "</table>";
                     }
@@ -112,8 +113,6 @@ require ('Includes/databaseHandler.php')
                 </div>
             </div>
         </main>
-
-        <!-- Webpage Footer-->
         
     </body>
 </html>

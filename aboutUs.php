@@ -29,7 +29,7 @@
         <section id="background"></section>
         
         <!-- Webpage Header -->
-        <?php include('header.php'); ?>
+        <?php include('Includes/header.php'); ?>
 
         <!-- Main Webpage Content-->
         <main>
@@ -46,6 +46,6 @@
         </main>
 
         <!-- Webpage Footer-->
-        <?php include('footer.php'); ?>
+        <?php include('Includes/footer.php'); ?>
     </body>
 </html>
