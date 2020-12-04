@@ -25,7 +25,13 @@ var imageCounter = 0;
 function rotate()
 {
     var imageObject = document.getElementById('slideshowImage');
-    imageObject.src = imageArray[imageCounter];
+    var imageContainer = imageObject.parentNode;
+    //removes and adds animation class so it fires everytime the image changes
+    imageContainer.classList.remove('fade');
+    setTimeout(function(){
+        imageContainer.classList.add('fade');
+        imageObject.src = imageArray[imageCounter];
+    }, 50);
     ++imageCounter;
     if (imageCounter == 6) imageCounter = 0;
 }
@@ -39,5 +45,5 @@ function startRotation()
 	//change the 5 to the number below of what you used.
     document.getElementById('slideshowImage').src=imageArray[5];
 	//This is the speed of the slideshow, feel free to adjust it as you want
-    setInterval('rotate()', 2000);
+    setInterval('rotate()', 3000);
 }
