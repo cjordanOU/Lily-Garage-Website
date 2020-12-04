@@ -39,7 +39,17 @@
             </div>
 
             <div class="standardPad">
-                <p>At Lily’s Lil’ Garage, our goal is for good tasting food to hit you like a Mack Truck. We make all of our food with the precision and care of a mechanic working on a car. Lily’s started off with nothing but a garage, a grill, and a maple tree out back. From there we stretched into a multi-location franchise spread throughout Michigan. We also have a location in Japan where we source our A5 Wagyu Beef for our signature Radiator Burger.</p>
+                <h3> Who is Lily? </h3>
+                <p>Lily’s started off as nothing but a girl, a grill, and a dream. In her childhood home she would always lick the maple tree in the field, 
+                    until one day she realized that syrup would be great on pancakes. From there, her culinary career began to grow into the stunning legacy 
+                    it has become today. Rubbing pancakes on the maple tree to get that wonderful taste, cooking burgers on the hood of a semi on a hot day, 
+                    and putting just a little bit of motor oil in her pasta to add that lovely kick, she made the very first Lily’s Little Garage Location in Climax MI. </p>
+                <br>
+                <p>At Lily’s Lil’ Garage, our goal is for good tasting food to hit you like a Mack Truck. We make all of our food with 
+                    the precision and care of a mechanic working on a car. Lily’s started off with nothing but a garage, a grill, and a maple tree out back. 
+                    From there we stretched into a multi-location franchise spread throughout Michigan. We also have a location in Japan where we source our 
+                    A5 Wagyu Beef for our signature Radiator Burger.</p>
+                <br>
                 <h3>Lily’s Little Garage: Taking that home-made taste across the state!</h3>
             <div>
         </main>
