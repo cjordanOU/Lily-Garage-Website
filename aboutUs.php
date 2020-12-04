@@ -52,7 +52,7 @@
                     A5 Wagyu Beef for our signature Radiator Burger.</p>
                 <br>
                 <h3>Lily’s Little Garage: Taking that home-made taste across the state!</h3>
-            <div>
+            </div>
         </main>
 
         <!-- Webpage Footer-->
