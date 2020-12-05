@@ -605,6 +605,13 @@ max-width: 150px;
     padding: 5px;
 }
 
+.orderTable tbody tr td {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .orderLeft {
     width: 240px;
     display: inline-block;
