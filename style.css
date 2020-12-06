@@ -553,6 +553,8 @@ max-width: 150px;
     box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
 }
 
+
+/* ------ Order Page Specific CSS ------ */
 #orderHeader {
     height: 150px;
     max-height: 150px;
@@ -686,12 +688,24 @@ max-width: 150px;
 }
 
 .orderCart {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    min-height: 12px;
+    max-height: 50vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .orderCheckout {
     border-top: 2px solid gray;
 }
 
+.priceOfItem {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* ------ Slideshow Fade effect ------ */
 .fade {
     animation: fade ease 2s;
     -webkit-animation: fade ease 2s;
@@ -722,4 +736,19 @@ max-width: 150px;
 @-ms-keyframes fade {
 0% {opacity:0;}
 100% {opacity:1;}
+}
+
+/* ------ Menu Fade-in ------ */
+.fade-in-hidden {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
+}
+
+.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
 }
