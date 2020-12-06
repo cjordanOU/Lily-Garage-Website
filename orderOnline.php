@@ -101,8 +101,8 @@ require ('Includes/databaseHandler.php');
                 <div class="orderCart">
                 </div>
                 <div class="orderCheckout">
-                    <h4 id="orderTotalPrice">Total Price: No Charge</h4>
-                    <button value="checkout">Checkout</button>
+                    <h4 id="orderTotalPrice">Total Price: N/A</h4>
+                    <button id="orderCheckoutButton" value="checkout" disabled>Checkout</button>
                 </div>
             </div>
         </main>
