@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 // links to database
-require ('Includes/databaseHandler.php')
+require ('Includes/databaseHandler.php');
 ?>
 <html id="orderBackground">
     <head>
@@ -26,6 +26,7 @@ require ('Includes/databaseHandler.php')
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         
         <!-- Scripts -->
+        <script src="Scripts/orderLogic.js"></script>
     </head>
     <body>
         <?php
@@ -69,7 +70,7 @@ require ('Includes/databaseHandler.php')
 
                     if ($result-> num_rows > 0) {
                         while ($row = $result-> fetch_assoc()) {
-                            echo "<tr id='". $row["food_category"] ."'><td>". $row["food_name"] ."</td><td>&#36;". $row["price"] ."</td><td>". $row["description"] ."</td><td><button>Add to Cart</button>"."</td></tr>";
+                            echo "<tr id='". $row["food_category"] ."'><td>". $row["food_name"] ."</td><td>&#36;". $row["price"] ."</td><td>". $row["description"] ."</td><td><button name='". $row["food_name"] ."'value='". $row["price"] ."' onclick='addToCart(this.name,this.value)'>Add to Cart</button></td></tr>";
                         }
                         echo "</table>";
                     }
@@ -98,17 +99,9 @@ require ('Includes/databaseHandler.php')
                 </div>
 
                 <div class="orderCart">
-                    <table>
-                        <tbody>
-                            <tr><td>placeholder item</td><td>(price)</td></tr>
-                            <tr><td>placeholder item</td><td>(price)</td></tr>
-                            <tr><td>placeholder item</td><td>(price)</td></tr>
-                            <tr><td>placeholder item</td><td>(price)</td></tr>
-                        </tbody>
-                    </table>
                 </div>
                 <div class="orderCheckout">
-                    <h4>Total Price: placeholder</h4>
+                    <h4 id="orderTotalPrice">Total Price: No Charge</h4>
                     <button value="checkout">Checkout</button>
                 </div>
             </div>
