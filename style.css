@@ -677,7 +677,7 @@ max-width: 150px;
     height: 100%;
 }
 
-.orderRight p, .orderRight h4 {
+.orderRight p, .orderRight h4, #orderCheckoutButton {
     margin-left: 4px;
     margin-bottom: 0;
     margin-top: 2px;
@@ -704,6 +704,7 @@ max-width: 150px;
     font-size: 12px;
     font-weight: bold;
 }
+
 
 /* ------ Slideshow Fade effect ------ */
 .fade {
