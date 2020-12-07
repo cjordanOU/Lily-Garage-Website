@@ -102,7 +102,7 @@ require ('Includes/databaseHandler.php');
                 </div>
                 <div class="orderCheckout">
                     <h4 id="orderTotalPrice">Total Price: N/A</h4>
-                    <button id="orderCheckoutButton" value="checkout" disabled>Checkout</button>
+                    <button id="orderCheckoutButton" value="checkout" onclick="confirmationDialog()" disabled>Checkout</button>
                 </div>
             </div>
         </main>
