@@ -1,5 +1,7 @@
 // Global Variables
 var totalPrice = 0.0;
+var cartListPrice = new Array();
+var cartListName = new Array();
 
 // Add to Cart function used on 'orderOnline.php'
 function addToCart(itemName, itemPrice) {
@@ -14,6 +16,10 @@ function addToCart(itemName, itemPrice) {
     var cartLocation = document.getElementsByClassName("orderCart")[0];
     cartLocation.appendChild(orderItem);
     cartLocation.appendChild(orderPrice);
+
+    // Add the item and price to the respective cartList arrays
+    cartListPrice.push(itemPrice);
+    cartListName.push(itemName);
 
     // Update the total price
     updateTotalPrice(itemPrice);
@@ -35,4 +41,11 @@ function updateTotalPrice(value) {
     // Changes the total price on the page
     var totalLocation = document.getElementById("orderTotalPrice");
     totalLocation.innerHTML = "Total Price:  $" + totalPricePrint;
+}
+
+// Makes the user confirm their submission
+function confirmationDialog() {
+    if (confirm(`Total Price: $${totalPricePrint}\nDo you want to proceed with the checkout?`)) {
+        location.replace("orderSubmitted.php");
+    }
 }
