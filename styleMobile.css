@@ -50,6 +50,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 header nav {
@@ -105,6 +106,10 @@ footer div nav a:hover, footer div address a:hover {
     -webkit-transition: 0.2s;
 }
 
+main {
+    margin-top: 100px;
+}
+
 .logo {
     color: #ebc321;
     display: inline-block;
@@ -158,9 +163,10 @@ footer div nav a:hover, footer div address a:hover {
 #slideshowImage {
     display: block;
     width: 92.5%;
-    height: 50%;
+    height: 250px;
     margin: auto;
     box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    max-height: 280px;
 }
 
 #homeSlideshowContainer a, .linkButton{
@@ -225,6 +231,10 @@ footer div nav a:hover, footer div address a:hover {
     display: block;
 }
 
+.parallaxText1 {
+    display: none;
+}
+
 .locationBorder {
     text-align: center;
     border: 2px solid;
@@ -238,7 +248,8 @@ footer div nav a:hover, footer div address a:hover {
     width: 85%;
     margin: auto;
     margin-top: 10px;
-    padding-top: 33px
+    padding-top: 33px;
+    display: none;
 }
 
 .menuBar a {
@@ -294,6 +305,68 @@ footer div nav a:hover, footer div address a:hover {
     margin-bottom: 1.3em;
 }
 
-#contactForm fieldset, #contactForm fieldset table tbody{
+#contactForm fieldset, #contactForm fieldset table, #contactForm fieldset table tbody{
     width: 100%;
+}
+
+#orderLeft {
+    display: none;
+}
+
+#orderRight {
+    background-color: white;
+    border-top: 2px solid gray;
+}
+
+#orderUserInfo, .orderCart, .orderCheckout {
+    width: 80%;
+    margin: auto;
+}
+
+.orderCenter table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.orderCenter table tbody tr:nth-child(odd) {
+    background: #ffffff;
+}
+
+.orderCenter table tbody tr:nth-child(even) {
+    background: #dddddd;
+}
+
+
+/* ------ Slideshow Fade ------ */
+
+.fade {
+    animation: fade ease 2s;
+    -webkit-animation: fade ease 2s;
+    -moz-animation: fade ease 2s;
+    -o-animation: fade ease 2s;
+    -ms-animation: fade ease 2s;
+}
+@keyframes fade {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fade {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fade {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fade {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fade {
+0% {opacity:0;}
+100% {opacity:1;}
 }
