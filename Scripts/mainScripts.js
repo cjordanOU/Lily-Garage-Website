@@ -15,11 +15,17 @@ function HeaderScroll() {
   }
 }
 
-
+// Changes Nav Icon on Mobile
 function changeNavIcon(x) {
   x.classList.toggle("expand");
+  var hiddenHeader = document.getElementById(header-nav);
+
+  if (hiddenHeader.style.display === "block") {
+    hiddenHeader.style.display = "none";
+  } else {
+    hiddenHeader.style.display = "block";
+  }
 }
 
-
-// Runtime Scripts
+// Menu Page Fade-in
 
