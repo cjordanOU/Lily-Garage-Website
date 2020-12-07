@@ -20,7 +20,8 @@ require ('Includes/databaseHandler.php');
         
         <!-- Styles -->
         <link href="style.css" media="screen and (min-device-width: 800px)" rel="stylesheet">
-        
+        <link href="styleMobile.css" media="screen and (max-width: 1199px)" rel="stylesheet"/>
+
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -70,7 +71,7 @@ require ('Includes/databaseHandler.php');
 
                     if ($result-> num_rows > 0) {
                         while ($row = $result-> fetch_assoc()) {
-                            echo "<tr id='". $row["food_category"] ."'><td>". $row["food_name"] ."</td><td>&#36;". $row["price"] ."</td><td>". $row["description"] ."</td><td><button name='". $row["food_name"] ."'value='". $row["price"] ."' onclick='addToCart(this.name,this.value)'>Add to Cart</button></td></tr>";
+                            echo "<tr id='". $row["food_category"] ."'><td>". $row["food_name"] ."</td><td>". $row["description"] ."</td><td>&#36;". $row["price"] ."</td><td><button name='". $row["food_name"] ."'value='". $row["price"] ."' onclick='addToCart(this.name,this.value)'>Add to Cart</button></td></tr>";
                         }
                         echo "</table>";
                     }
