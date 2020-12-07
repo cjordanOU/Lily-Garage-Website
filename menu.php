@@ -18,7 +18,7 @@
         
         <!-- Styles -->
         <link href="style.css" media="screen and (min-device-width: 1200px)" rel="stylesheet">
-	<link href="styleMobile.css" media="screen and (max-width: 1199px)" rel="stylesheet"/>
+		<link href="styleMobile.css" media="screen and (max-width: 1199px)" rel="stylesheet"/>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
