@@ -33,24 +33,25 @@ require ('Includes/databaseHandler.php')
         </header>
 
         <!-- Main Webpage Content-->
+        <?php
+            date_default_timezone_set('America/Detroit');
+            $orderTime = date('h:i A', strtotime("+30 minutes"));
+        ?>
         <main id="orderMain">
             <div class="standardPad">
                 <h2>Thank you for chosing Lily's Lil Garage!</h2>
-                <h3>Your food will be available for pickup at [current time + 30]</h4>
+                <h3>
+                    Your food will be available for pickup at <?php echo "$orderTime";?>
+                </h3>
                 <hr>
             </div>
 
             <div class="standardPad">
-                <h4>Your order:
-                <p>Placeholder food item</p>
-                <p>Placeholder food item</p>
-                <p>Placeholder food item</p>
-                <p>Placeholder food item</p>
-                <p>Placeholder food item</p>
+                <h4 id="checkoutItems">Your order has been submitted!</h4>
             </div>
         </main>
 
         <!-- Webpage Footer-->
-        <?php include('footer.php'); ?>
+        <?php include('Includes/footer.php'); ?>
     </body>
 </html>
