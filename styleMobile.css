@@ -55,6 +55,8 @@ header {
 
 #headerNav {
     display: none;
+    position: fixed;
+    
 }
 
 footer {
@@ -371,4 +373,19 @@ main {
 @-ms-keyframes fade {
 0% {opacity:0;}
 100% {opacity:1;}
+}
+
+#slideShowText {
+    position: absolute;
+    top: 0;
+    background: black;
+    color: white;
+    opacity: .6; 
+    font-size: 20px;
+    padding: 4px;
+    box-shadow: 0 0 6px rgba(0,0,0,.14), 0 6px 10px rgba(0,0,0,.28);
+}
+
+#homeSlideshowContainer {
+    position: relative;
 }
