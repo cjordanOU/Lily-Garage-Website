@@ -15,8 +15,7 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
         
         <!-- Styles -->
-        <link href="style.css" media="screen and (min-device-width: 1200px)" rel="stylesheet">
-		<link href="styleMobile.css" media="screen and (max-width: 1199px)" rel="stylesheet"/>
+        <link href="style.css" rel="stylesheet">
         
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
@@ -41,7 +40,10 @@
 				<br>
 				
 			<!-- Contact Submission Form -->
-			<form class="standardPad" action="contactResponse.php" method="post" id="contactForm" onsubmit="feedbackFormValidate()">
+			<!--1<form class="standardPad" action="contactResponse.php" method="post" id="contactForm" onsubmit="feedbackFormValidate()"> -->
+			
+			<!-- Links to the test email works locally, but not on server -->
+			 <form id="contactForm" action="contactProcess.php" method="post">
 
 				<!-- Personal Information -->
 				<fieldset>
@@ -61,13 +63,6 @@
 							pattern="^[A-Z[a-z]*$" required></td>
 						</tr>
 
-						<tr>
-							<td>Gender: </td>
-							<td><input type="radio" name="gender">Male</td>
-							<td><input type="radio" name="gender">Female</td>
-							<td><input type="radio" name="gender">Other</td>
-							<td><input type="radio" name="gender">Prefer not to say</td>
-						</tr>
 					</table>
 				</fieldset>
 
@@ -96,11 +91,6 @@
 							pattern="^(\d{3}-)?\d{3}-\d{4}$" required></td>
 						</tr>
 
-						<tr>
-							<td colspan="2"> Preferred Contact Method: </td>
-							<td>E-mails: <input type="checkbox" name="contactEmail" value="true"></td>
-							<td>Calls: <input type="checkbox" name="contactPhone" value="true"></td>
-						</tr>
 					</table>
 				</fieldset>
 
