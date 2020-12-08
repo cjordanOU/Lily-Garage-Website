@@ -50,10 +50,10 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 100;
 }
 
-header nav {
+#headerNav {
     display: none;
 }
 
@@ -124,13 +124,14 @@ main {
     cursor: pointer;
     display: inline-block;
     width: 35px;
-    z-index: 5;
+    z-index: 102;
 }
 
 .headerContainer {
     float: right;
     width: 15%;
     margin: auto;
+    z-index: 101;
 }
 
 .bar1, .bar2, .bar3 {
@@ -139,6 +140,7 @@ main {
     background-color: #ffffff;
     margin: 6px 0;
     transition: 0.4s;
+    z-index: 103;
 }
 
 .expand .bar1 {
@@ -167,9 +169,6 @@ main {
     margin: auto;
     box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
     max-height: 280px;
-}
-#homeSlideshowContainer {
-    position: relative;
 }
 
 #homeSlideshowContainer a, .linkButton{
@@ -372,15 +371,4 @@ main {
 @-ms-keyframes fade {
 0% {opacity:0;}
 100% {opacity:1;}
-}
-#slideShowText{
-    position: absolute;
-    top: 0;
-    background: black;
-    color: white;
-    opacity: .6; 
-    font-size: 20px;
-    padding: 4px;
-    box-shadow: 0 0 6px rgba(0,0,0,.14), 0 6px 10px rgba(0,0,0,.28);
-
 }
