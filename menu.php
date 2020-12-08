@@ -314,7 +314,7 @@
 				<div class="menuItem">
                 <h2 id="desserts">Desserts</h2>
 				
-				<h3>Dessers</h3>
+				<h3>Desserts</h3>
                 <ul>
                 <table class="mTable">
 					<tr>
