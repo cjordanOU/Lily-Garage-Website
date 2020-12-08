@@ -48,6 +48,7 @@
 					<a href="#desserts" title="Jump to our Desserts Selection">Desserts</a>
 					<a href="#appetizers" title="Jump to our Appetizers and Sides selection">Appetizers &amp; Sides</a>
                     <a href="#drinks" title="Jump to our Drinks Selection">Drinks</a>
+					<a href="#specials" title="Jump to our Location Specials Selection">Specials</a>
                 </nav>
             </div>
 
@@ -446,6 +447,67 @@
 					</tr>
 				</table>
                 </ul>
+			</div>
+
+			<div class="menuItem">
+			<h2 id="specials">Location Specials</h2>
+				<details>
+					<summary>Ann Arbor</summary>
+						<p>The Long Johnny<span class="price">$20.99</span></p>
+						<h6>Italian sub on a 12” Italian cheese roll stuffed with pickles and our creamy aioli</h6>
+						<p>The Thunder Down Under<span class="price">$21.39</span></p>
+						<h6>A crawfish basket piled high with fries and hushpuppies</h6>
+				</details>
+
+				<details>
+					<summary>Climax</summary>
+						<p>The Ecstasy Burger<span class="price">$20.99</span></p>
+						<h6>1/3lb. Patty stuffed with your choice of cheese, applewood smoked bacon, sauteed onion, and a perfectly fried egg</h6>
+						<p>The Jimmy Wrap<span class="price">$21.39</span></p>
+						<h6>Grilled chicken wrap with lettuce, tomato, and topped with ranch dressing </h6>
+				</details>
+
+				<details>
+					<summary>Colon</summary>
+						<p>The Cleanser<span class="price">$20.99</span></p>
+						<h6>A prune based smoothie with yogurt and oatmeal topped with fresh apple slices and coffee beans</h6>
+						<p>The Windy Mill<span class="price">$21.39</span></p>
+						<h6>A tossed salad of fresh spinach and broccoli with a prune vinaigrette</h6>
+				</details>
+
+				<details>
+					<summary>Flushing</summary>
+						<p>The Swirly<span class="price">$20.99</span></p>
+						<h6>A chocolate vanilla ice cream shake topped with Kitkat bites and With a peanut butter drizzle</h6>
+						<p>The Jimmy Wrap<span class="price">$21.39</span></p>
+						<h6>Two golden brown waffles drizzled with Hershey’s Chocolate sauce and chocolate chips</h6>
+				</details>
+				
+				<details>
+					<summary>Japan</summary>
+						<p>Tamagoyaki<span class="price">$6.49</span></p>
+						<h6>Japanese style rolled omelette with a honey siracha dipping sauce.</h6>
+						<p>Sashimi<span class="price">$1.99</span></p>
+						<h6>Fresh rice and sashimi made to order. Your Choice of Tuna, Salmon, Shrimp, or Whitefish.</h6>
+						<p>Brown Rice Curry<span class="price">$11.99</span></p>
+						<h6>Spicy Curry with chicken and brown rice served with a fresh veggie bowl.</h6>
+				</details>
+
+				<details>
+					<summary>Mount Pleasant</summary>
+						<p>The Cleanser<span class="price">$20.99</span></p>
+						<h6>A prune based smoothie with yogurt and oatmeal topped with fresh apple slices and coffee beans.</h6>
+						<p>Brown Rice Curry<span class="price">$11.99</span></p>
+						<h6>Spicy Curry with chicken and brown rice served with a fresh veggie bowl.</h6>
+				</details>
+
+				<details>
+					<summary>Pickney</summary>
+						<p>The Lava Burger<span class="price">$12.49</span></p>
+						<h6>A pepper infused angus beef burger topped with habaneros and fried jalapeno and onions rings.</h6>
+						<p>Burning Ring of Fire<span class="price">$12.49</span></p>
+						<h6>Onion rings covered with a habanero cheese sauce and a spiced minced beef.</h6>
+				</details>
 			</div>
         </main>
 
