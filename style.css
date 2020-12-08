@@ -10,7 +10,6 @@
 * {
     box-sizing: border-box;
     font-family:"Open Sans", cursive, sans-serif;
-    /*font-family:"Comic Sans MS", cursive, sans-serif;*/
 }
 
 /* ------ ------ Standard HTML Styles ------ ------ */
@@ -45,13 +44,10 @@ header {
     height: 96px;
     max-height: 96px;
     background-color: black;
-    /*background: rgb(2,0,36);
-	background: linear-gradient(90deg, rgba(2,0,36,1) 9%, rgba(9,9,121,1) 37%, rgba(0,212,255,1) 73%);*/
     position: fixed;
     width: 1440px;
     max-width: 1440px;
     padding: 2.375vh 3%;
-    /*box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);*/
     z-index: 100;
     top: 0;
     transition: 0.2s;
@@ -71,7 +67,6 @@ header nav {
 header nav a {
     /* Header nav bar links */
     display: inline-block;
-    /*color: rgb(43, 43, 43);*/
     color: rgb(190, 190, 190);
     text-decoration: none;
     text-align: center;
@@ -84,6 +79,7 @@ header nav a {
 }
 
 header nav a:last-child {
+    /* Effects the order online button on the header */
     border: 1px solid rgb(190, 190, 190);
     margin-left: 172px;
     background-color: white;
@@ -99,6 +95,7 @@ header nav a:hover {
 }
 
 header nav a:last-child:hover {
+    /* Hover effect for the order online button on the header */
     background-color: black;
     border: 1px solid rgb(190, 190, 190);
     color: white;
@@ -110,7 +107,6 @@ main {
     width: 100%;
     padding: 92px 0 18px 0;
     margin: 0;
-    /*box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);*/
 }
 
 /* ------ footer ------ */
@@ -118,7 +114,6 @@ footer {
     /* Entire footer box area */
     width: 100%;
     height: 104px;
-	/*background: linear-gradient(270deg, rgba(2,0,36,1) 9%, rgba(9,9,121,1) 37%, rgba(90,212,255,1) 73%);*/
     padding: 1vh 1vw;
     color: rgb(210, 212, 214);
     background-color: #4e4e4e;
@@ -175,6 +170,7 @@ details p {
 
 /* ------ menuItem ------ */
 .locationBorder {
+    /* Border around store locations */
     text-align: center;
     border: 2px solid;
     border-radius: 3px;
@@ -183,6 +179,7 @@ details p {
   }
 
 .mTable{
+    /* Menu table styling */
 	width: 100%;
 	padding-left:15px;
 	padding-right:15px;
@@ -192,8 +189,9 @@ details p {
 }
 
 .TEdit {
-word-wrap:break-word;
-max-width: 150px;
+    /* Style that effects the menu items */
+    word-wrap:break-word;
+    max-width: 150px;
 }
 
 .menuItem {
@@ -244,6 +242,7 @@ max-width: 150px;
 }
 
 .menuBar {
+    /* Menu bar that jumps user to different parts of the menu */
     height: 90px;
     width: 85%;
     margin: auto;
@@ -251,6 +250,7 @@ max-width: 150px;
 }
 
 .menuBar a {
+    /* Links inside the menu bar */
     padding: 12px;
     color: #690f0f;
     font-size: 24px;
@@ -262,6 +262,7 @@ max-width: 150px;
 }
 
 .menuBar a:hover {
+    /* Links inside the menu bar when hovered over */
     border-bottom: 5px solid #690f0f;
     transition: 0.5s;
     -webkit-transition: 0.3s;
@@ -465,16 +466,19 @@ max-width: 150px;
 }
 
 .standardPad {
+    /* Centers elements on page w/ padding-esque technique */
     width: 85%;
     margin: auto;
 }
 
 .headerFull {
+    /* Header style when user is at the top of the page */
     height: 96px;
     max-height: 96px;
 }
 
 .headerSmall {
+    /* Header style when user is scrolled down on the page */
     height: 68px;
     max-height: 68px;
     padding: 1vh 3%;
@@ -566,58 +570,53 @@ max-width: 150px;
 
 /* ------ Order Page Specific CSS ------ */
 #orderHeader {
+    /* Order-specific header */
     height: 150px;
     max-height: 150px;
 }
 
 #orderHeader .logo {
+    /* Order-specific header logo */
     padding-top: 25px;
 }
 
 #orderMain {
+    /* Main content for order pages */
     margin-top: 150px;
     padding-bottom: 0;
     padding-top: 0;
 }
 
 #orderStoreInfo {
+    /* Box that shows store location info on orderOnline */
     width: 70%;
     color: white;
     float: right;
 }
 
 #orderStoreInfo p, #orderStoreInfo h2 {
+    /* Box that shows store location info on orderOnline */
     margin: 0;
 }
 
-#orderMenuSelections {
-    overflow: scroll;
-    height: 80vh;
-    width: 20%;
-}
-
-#orderMenuSelections a {
-    float:none;
-}
-
-#orderMenu {
-    width: 60%;
-}
-
 #orderBackground {
+    /* Order-specific black background */
     background: black;
     scroll-padding-top: 150px;
 }
 
 #orderBackground body {
+    /* sets scroll-padding to 150px to account for the order-specific larger header */
     scroll-padding-top: 150px;
 }
 
 .orderTable tbody tr {
+    /* Adds padding to each tablerow of the menu */
     padding: 5px;
 }
 
 .orderTable tbody tr td {
+    /* Adds padding to each tablerow td of the menu */
     padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 10px;
@@ -625,6 +624,7 @@ max-width: 150px;
 }
 
 .orderLeft {
+    /* List that takes you to specific sections of the menu */
     width: 240px;
     display: inline-block;
     background-color: white;
@@ -636,6 +636,7 @@ max-width: 150px;
 }
 
 .orderLeft a {
+    /* orderLeft red links */
     float: none;
     display: block;
     padding: 10px 0px;
@@ -644,6 +645,7 @@ max-width: 150px;
 }
 
 .orderLeft a:hover {
+    /* Hover style for orderLeft red links */
     border-left: 5px solid #690f0f;
     transition: 0.5s;
     -webkit-transition: 0.3s;
@@ -652,6 +654,7 @@ max-width: 150px;
 }
 
 .orderLeft a:active {
+    /* Active style for orderLeft red links */
     color: #ffb5b5;
     background-color: #3b0909;
     transition: 0.5s;
@@ -659,26 +662,30 @@ max-width: 150px;
 }
 
 .orderCenter {
+    /* Order-specific Main container for menu items */
     width: 950px;
     display: inline-block;
     margin-left: 240px;
 }
 
 .orderCenter table {
+    /* hides border from menu table */
     border-collapse: collapse;
     width: 100%;
-
 }
 
 .orderCenter table tbody tr:nth-child(odd) {
+    /* Alternates menu background colors for increased readability */
     background: #ffffff;
 }
 
 .orderCenter table tbody tr:nth-child(even) {
+    /* Alternates menu background colors for increased readability */
     background: #dddddd;
 }
 
 .orderRight {
+    /* Right side order container */
     width: 250px;
     display: inline-block;
     background-color: white;
@@ -688,16 +695,19 @@ max-width: 150px;
 }
 
 .orderRight p, .orderRight h4, #orderCheckoutButton {
+    /* Margins for certain orderRight children */
     margin-left: 4px;
     margin-bottom: 0;
     margin-top: 2px;
 }
 
 .orderUserInfo {
+    /* Separation border for user info and cart */
     border-bottom: 2px solid gray;
 }
 
 .orderCart {
+    /* Cart where users selected items are placed */
     padding-top: 6px;
     padding-bottom: 6px;
     min-height: 12px;
@@ -707,17 +717,14 @@ max-width: 150px;
 }
 
 .orderCheckout {
+    /* container for checkout button and total price */
     border-top: 2px solid gray;
-}
-
-.priceOfItem {
-    font-size: 12px;
-    font-weight: bold;
 }
 
 
 /* ------ Slideshow Fade effect ------ */
 .fade {
+    /* Slideshow fade */
     animation: fade ease 2s;
     -webkit-animation: fade ease 2s;
     -moz-animation: fade ease 2s;
@@ -725,41 +732,31 @@ max-width: 150px;
     -ms-animation: fade ease 2s;
 }
 @keyframes fade {
-0% {opacity:0;}
-100% {opacity:1;}
+    /* Keyframes for slideshow fade */
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 
 @-moz-keyframes fade {
-0% {opacity:0;}
-100% {opacity:1;}
+    /* Keyframes for slideshow fade */
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 
 @-webkit-keyframes fade {
-0% {opacity:0;}
-100% {opacity:1;}
+    /* Keyframes for slideshow fade */
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 
 @-o-keyframes fade {
-0% {opacity:0;}
-100% {opacity:1;}
+    /* Keyframes for slideshow fade */
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 
 @-ms-keyframes fade {
-0% {opacity:0;}
-100% {opacity:1;}
-}
-
-/* ------ Menu Fade-in ------ */
-.fade-in-hidden {
-    opacity: 0;
-    transform: translateY(20vh);
-    visibility: hidden;
-    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
-    will-change: opacity, visibility;
-}
-
-.is-visible {
-    opacity: 1;
-    transform: none;
-    visibility: visible;
+    /* Keyframes for slideshow fade */
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
