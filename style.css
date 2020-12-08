@@ -160,6 +160,17 @@ footer div nav a:hover, footer div address a:hover {
     -webkit-transition: 0.2s;
 }
 
+details h6 {
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+
+details p {
+    margin-bottom: 0;
+    margin-top: 6px;
+}
+
+
 /* ------ ------ Class Styles ------ ------ */
 
 /* ------ menuItem ------ */
@@ -489,7 +500,6 @@ max-width: 150px;
     margin: auto;
     width: 50%;
     margin-bottom: 7vh;
-    position: relative;
 }
 
 #homeSlideshowContainer img {
@@ -753,16 +763,4 @@ max-width: 150px;
     opacity: 1;
     transform: none;
     visibility: visible;
-}
-
-#slideShowText{
-    position: absolute;
-    top: 0;
-    background: black;
-    color: white;
-    opacity: .6; 
-    font-size: 20px;
-    padding: 4px;
-    box-shadow: 0 0 6px rgba(0,0,0,.14), 0 6px 10px rgba(0,0,0,.28);
-
 }
