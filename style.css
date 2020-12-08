@@ -489,6 +489,7 @@ max-width: 150px;
     margin: auto;
     width: 50%;
     margin-bottom: 7vh;
+    position: relative;
 }
 
 #homeSlideshowContainer img {
@@ -752,4 +753,16 @@ max-width: 150px;
     opacity: 1;
     transform: none;
     visibility: visible;
+}
+
+#slideShowText{
+    position: absolute;
+    top: 0;
+    background: black;
+    color: white;
+    opacity: .6; 
+    font-size: 20px;
+    padding: 4px;
+    box-shadow: 0 0 6px rgba(0,0,0,.14), 0 6px 10px rgba(0,0,0,.28);
+
 }

@@ -52,8 +52,10 @@
                 <br><br>
             </div>
                 <div id="homeSlideshowContainer">
+
                     <div class="fade">
                         <img id="slideshowImage" src=" " alt="A slideshow of our delicious foods and drinks" width="720" height="420">
+                        <div id = "slideShowText"></div>    
                     </div>
                     <center><p>Feel free to browse our menu by clicking the button below.</p></center>
                     <a href="menu.php" title="Browse our menu">View Our Menu</a>
