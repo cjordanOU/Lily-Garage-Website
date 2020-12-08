@@ -168,6 +168,9 @@ main {
     box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
     max-height: 280px;
 }
+#homeSlideshowContainer {
+    position: relative;
+}
 
 #homeSlideshowContainer a, .linkButton{
     /* Button inside the slideshow container that brings the user to the menu */
@@ -369,4 +372,15 @@ main {
 @-ms-keyframes fade {
 0% {opacity:0;}
 100% {opacity:1;}
+}
+#slideShowText{
+    position: absolute;
+    top: 0;
+    background: black;
+    color: white;
+    opacity: .6; 
+    font-size: 20px;
+    padding: 4px;
+    box-shadow: 0 0 6px rgba(0,0,0,.14), 0 6px 10px rgba(0,0,0,.28);
+
 }
