@@ -79,7 +79,7 @@ INSERT INTO `menu_items` (`id`, `food_category`, `food_name`, `price`, `is_speci
 (36, 'appetizers', 'Wings', 5.49, 0, '6 wings of your choice, either boneless or bone-in. Flavors include Mango Habanero, Honey BBQ, Hot BBQ, Parm and Garlic, and Buffalo.'),
 (37, 'appetizers', 'Deep Fried Pickles', 7.99, 0, 'Sliced dill pickles breaded and fried, served with your choice of ranch or chipotle ranch.'),
 (38, 'appetizers', 'Chips and Queso', 5.99, 0, 'White queso with peppers, served with tortilla chips.'),
-(39, 'salads', 'Chef\'s Special', 7.99, 0, 'Spinach, romaine and iceberg lettuce, with tomatoes, onion, carrots, and mozzarella cheese. Served with your choice of meat, either chicken, turkey, or bacon.'),
+(39, 'salads', 'Chefs Special', 7.99, 0, 'Spinach, romaine and iceberg lettuce, with tomatoes, onion, carrots, and mozzarella cheese. Served with your choice of meat, either chicken, turkey, or bacon.'),
 (40, 'salads', 'Caesar', 8.49, 0, 'Romaine lettuce, spinach, tomatoes, egg, parmesan cheese, tossed in caesar dressing.'),
 (41, 'salads', 'Southwest Chicken Avocado', 8.99, 0, 'Romaine lettuce, spinach, avocado, corn salsa, tomatoes, onion, chicken and chipotle vinaigrette.'),
 (42, 'non_alc', 'Radiator Water', 0, 0, 'As simple as it gets. Chilled water served with ice cubes. With or without lemon.'),
