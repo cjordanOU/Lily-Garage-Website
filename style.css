@@ -512,6 +512,11 @@ details p {
     box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
 }
 
+#slideShowText {
+    text-align: center;
+    font-style: italic;
+}
+
 #homeSlideshowContainer a {
     /* Button inside the slideshow container that brings the user to the menu */
     display: block;
