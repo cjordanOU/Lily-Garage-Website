@@ -1,76 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <!-- Webpage Metadata-->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <meta name="description" content="Lily's Lil' Garage, A good place to get some good food.">
-        <meta name="keywords" content="Lily's Lil' Garage, Lily's Garage, Lily's Little Garage, Restaurant, Menu, Food">
-        <meta name="author" content="Jerrod Dutcher, Cameron Jordan, James Moseley, Trent Toyryla, Alden Metzmaker">
+        <?php require('Includes/metadata.php'); ?>
 
-        <!-- Webpage Title -->
-        <title>Lily's Lil' Garage - Home</title>
+        <title>Resolution Holdings - Home</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-        <!-- Website Icon -->
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-        
         <!-- Styles -->
-        <link href="style.css" media="screen and (min-device-width: 1200px)" rel="stylesheet">
-        <link href="styleMobile.css" media="screen and (max-width: 1199px)" rel="stylesheet"/>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
-        <!-- Scripts -->
-        <script src="Scripts/mainScripts.js"></script> 
-        <script src="Scripts/slideshow.js"></script>
+        <link href="style.css" rel="stylesheet">
     </head>
-    <body onload = startRotation()>
-        <section id="background"></section>
-        
-        <!-- Webpage Header -->
-        <?php include('header.php'); ?>
 
-        <!-- Main Webpage Content-->
-        <main>
-            <!-- First Parallax Class -->
-            <div class="parallaxBG-large" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.801), transparent), url('Images/RestaurantOutsideBlur.jpg');"></div>
-            <div class="parallaxText1">
-                <h2>Welcome to Lily's Lil Garage</h2>
-                <a href="orderOnline.html">Order Online Now</a>
-            </div>
-            
-            <div class="standardPad">
-                <h1>Lily's Lil Garage</h1>
-                <p> Welcome to Lily's Lil Garage website where you can browse our menu, find all our current restaurant locations,
-					and even order food online for in-store pick-up of delivery. We strive to serve our community with the finest quality 
-					food to give that "home-made" feel.</p>
+    <body>
+        <?php require('Includes/loginCheckBasic.php'); ?>
+        <?php require('Includes/header.php'); ?>
+
+        <section>
+            <div class="centered container">
+                <img src="Images/img-placeholder.png" alt="this is the alt text">
             </div>
 
-            <div>
-                <br><br>
+            <div class="centered container">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in nisl nec ex rhoncus ullamcorper.
+                    Aliquam maximus ex quis orci mattis, eu accumsan leo lacinia. Curabitur id turpis at neque congue tempor. 
+                    Quisque ultricies justo ut ex accumsan, a pellentesque magna condimentum. Nullam et bibendum nisl. Maecenas pulvinar finibus quam, 
+                    at luctus sapien consectetur non. Sed suscipit nisi et felis molestie, in sodales elit eleifend. Morbi posuere, neque vel dapibus venenatis, 
+                    ante diam commodo tortor, ac dignissim purus neque eu risus.
+                </p>
             </div>
+        </section>
 
-						<div id="homeSlideshowContainer">
-						<img id="slideshowImage" src=" " alt="A slideshow of our delicious foods and drinks" width="420" height="320">
-						<center><p>Feel free to browse our menu by clicking the button below.</p></center>
-						<a href="menu.html" title="Browse our menu">View Our Menu</a>
-						</div>
-			
-            <div id="homeLocation">
-                <hr>
-                <section>
-                    <h2 class="noMargin">We've got what you want, when you need it</h2>
-                    <p>We work our hardest to bring exactly what our customers want. With menu items tailored specifically to each restaurant, you're sure to find something you'll love.</p>
-                    <a class="linkButton" href="locations.html" title="Choose a location">Choose a location</a>
-                </section>
-                <img src="Images/RadiatorBurger.JPG">
+        <section class="type-2">
+        <div class="centered container">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in nisl nec ex rhoncus ullamcorper.
+                    Aliquam maximus ex quis orci mattis, eu accumsan leo lacinia. Curabitur id turpis at neque congue tempor. 
+                    Quisque ultricies justo ut ex accumsan, a pellentesque magna condimentum. Nullam et bibendum nisl. Maecenas pulvinar finibus quam, 
+                    at luctus sapien consectetur non. Sed suscipit nisi et felis molestie, in sodales elit eleifend. Morbi posuere, neque vel dapibus venenatis, 
+                    ante diam commodo tortor, ac dignissim purus neque eu risus.
+                </p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in nisl nec ex rhoncus ullamcorper.
+                    Aliquam maximus ex quis orci mattis, eu accumsan leo lacinia. Curabitur id turpis at neque congue tempor. 
+                    Quisque ultricies justo ut ex accumsan, a pellentesque magna condimentum. Nullam et bibendum nisl. Maecenas pulvinar finibus quam, 
+                    at luctus sapien consectetur non. Sed suscipit nisi et felis molestie, in sodales elit eleifend. Morbi posuere, neque vel dapibus venenatis, 
+                    ante diam commodo tortor, ac dignissim purus neque eu risus.
+                </p>
+
             </div>
-
-        </main>
-
-        <!-- Webpage Footer-->
-        <?php include('footer.php'); ?>
+        </section>
     </body>
 </html>

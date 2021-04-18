@@ -3,7 +3,7 @@
     <head>
         <?php require('Includes/metadata.php'); ?>
 
-        <title>Resolution Holdings - Contact Us</title>
+        <title>Resolution Holdings - Home</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
         <!-- Styles -->
@@ -11,12 +11,12 @@
     </head>
 
     <body>
-        <?php require('Includes/loginCheckBasic.php'); ?>
         <?php require('Includes/header.php'); ?>
 
         <section>
-            <div class="centered container">
-                <h1>Contact Information</h1>
+            <div class="centered container warning">
+                <h1>Warning!</h1>
+                <p>Please <a href="login.php">login</a> to view your account</p>
             </div>
         </section>
     </body>

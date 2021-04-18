@@ -1,585 +1,149 @@
-/* --------------------------------------------------------------------------------------- */
-/* -------------- Created by Jerrod Dutcher, Cameron Jordan, James Moseley, -------------- */
-/* ---------------------------- Trent Toyryla, Alden Metzmaker --------------------------- */
-/* --------------------------------------------------------------------------------------- */
-/* ------------------- This stylesheet is for desktop browser styling -------------------- */
-/* --------------------------------------------------------------------------------------- */
-
-
-/* ------ ------ Applies to All HTML elements ------ ------ */
-* {
+html, body {
     box-sizing: border-box;
-    font-family:"Open Sans", cursive, sans-serif;
-    /*font-family:"Comic Sans MS", cursive, sans-serif;*/
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* ------ ------ Standard HTML Styles ------ ------ */
-
-/* ------ body & html ------ */
-
 html {
-    margin: 0;
-    width: 100%;
-    min-width: 100%;
-    top: 0;
-    background-color: #212121;
-    background-image: radial-gradient(closest-side, transparent 95%, #212121 90%), radial-gradient(closest-side, transparent 95%, #272727 99%);
-    background-size:40px 40px;
-	background-position:0 0, 20px 20px;
+    min-width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-rendering: optimizeLegibility;
 }
 
 body {
-    max-width: 1440px;
-    margin: 0 auto;
-    background: rgb(225, 225, 225);
-    top: 0;
-    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    background-color: #183f6f;
+    color: #b8b8b8;
 }
 
-/* ------ header ------ */
-header {
-    /* Entire header box area */
-    height: 96px;
-    max-height: 96px;
-    background-color: black;
-    /*background: rgb(2,0,36);
-	background: linear-gradient(90deg, rgba(2,0,36,1) 9%, rgba(9,9,121,1) 37%, rgba(0,212,255,1) 73%);*/
-    position: fixed;
-    width: 1440px;
-    max-width: 1440px;
-    padding: 2.375vh 3%;
-    /*box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);*/
-    z-index: 100;
-    top: 0;
-    transition: 0.2s;
-    -webkit-transition: 0.2s;
+nav {
+    display: flex;
+    align-items: stretch;
+    min-height: 3rem;
+    text-align: center;
+    z-index: 5;
 }
 
-header nav {
-    /* Header nav bar, buttons that show locations, menu, and contact */ 
-    width: 70%;
-    display: inline-block;
-    height: 48px;
-    padding-left: 80px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.nav-left, .nav-right {
+    display: flex;
+    overflow-x: auto;
+    align-items: stretch;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 0;
 }
 
-header nav a {
-    /* Header nav bar links */
-    display: inline-block;
-    /*color: rgb(43, 43, 43);*/
-    color: rgb(190, 190, 190);
+.nav-left {
+    justify-content: flex-start;
+}
+
+.nav-right {
+    justify-content: flex-end;
+}
+
+nav a {
+    color: #cccccc;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 1.1rem;
+    padding: .65rem .8rem;
     text-decoration: none;
+}
+
+nav a:hover {
+    color: #ffffff;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+section {
+    padding: 3.5rem 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin : 0 auto;
+}
+
+.centered {
     text-align: center;
-    font-size: 18px;
-    transition: 0.2s;
-    margin-right: 18px;
-    -webkit-transition: 0.2s;
-    padding: 4px;
-    height: 34px;
 }
 
-header nav a:last-child {
-    border: 1px solid rgb(190, 190, 190);
-    margin-left: 172px;
-    background-color: white;
-    border: 1px solid white;
-    color: black;
+.type-2 {
+    background-color: #1e2f52;
 }
 
-header nav a:hover {
-    /* Header nav bar links when hovered over */
-    color: rgb(196, 97, 5);
-    transition: 0.2s;
-    -webkit-transition: 0.2s;
-}
-
-header nav a:last-child:hover {
-    background-color: black;
-    border: 1px solid rgb(190, 190, 190);
-    color: white;
-}
-
-/* ------ main ------ */
-main {
-    /* Main webpage area, where main webpage content is */
-    width: 100%;
-    padding: 92px 0 18px 0;
-    margin: 0;
-    /*box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);*/
-}
-
-/* ------ footer ------ */
-footer {
-    /* Entire footer box area */
-    width: 100%;
-    height: 104px;
-	/*background: linear-gradient(270deg, rgba(2,0,36,1) 9%, rgba(9,9,121,1) 37%, rgba(90,212,255,1) 73%);*/
-    padding: 1vh 1vw;
-    color: rgb(210, 212, 214);
-    background-color: #4e4e4e;
-  }
-
-footer div {
-    /* The three divs of the footer styling */
-    display: inline-block;
-    vertical-align: top;
-    width:32%;
-    text-align: center;
-    height: 9vh;
-    padding-top: .55vh;
-}
-
-footer div:first-child {
-    /* Applies to the first of the three div of the footer */
-    padding-top: 0;
-}
-
-footer div nav {
-    /* The nav bar inside of the footer divs */
-    float: none;
-}
-
-footer div nav a, footer div address a {
-    /* Links inside nav bar and adress links */
-    color: rgb(133, 166, 197);
+.link-1 {
+    color: azure;
     text-decoration: none;
-    transition: 0.2s;
-    -webkit-transition: 0.2s;
 }
 
-footer div nav a:hover, footer div address a:hover {
-    /* Links inside nav bar and adress links when hovered over */
-    color: rgb(197, 219, 240);
+.link-1:hover {
+    color: rgb(181, 212, 212);
     text-decoration: underline;
-    transition: 0.2s;
-    -webkit-transition: 0.2s;
 }
 
-/* ------ ------ Class Styles ------ ------ */
-
-/* ------ menuItem ------ */
-.locationBorder {
-    text-align: center;
-    border: 3px solid;
-    border-radius: 5px;
-    background-color: #a9a9a9;
-  }
-
-.mTable{
-	width: 100%;
-	padding-left:15px;
-	padding-right:15px;
-	margin-left:auto;
-	margin-right:auto;
-	
+.link-1:active {
+    color: rgb(146, 187, 187);
 }
 
-.TEdit {
-padding:none;
-word-wrap:break-word;
-max-width: 150px;
+.login-area {
+    padding: 3.5rem 3rem 6rem 3rem;
+    background: #182644;
+    box-shadow: 0 0 2px rgba(0,0,0,.14), 0 2px 4px rgba(0,0,0,.28);
+    max-width: 500px;
 }
 
-.menuItem {
-    /* menuItem div; dinner, breakfast, etc... */
-    background-color: white;
-    padding: .15vh 1vw;
-    margin-top: 2vh;
+#loginForm input, #signupForm input {
+    margin: .5rem 0;
+    border-radius: 4px;
 }
 
-.menuItem h2 {
-    /* Larger heading text inside of menuItem */
-    text-decoration: underline;
-    padding-left: .5vw;
-}
-
-.menuItem h3 {
-    /* Smaller heading text inside of menuItem */
-    border-bottom: 2px solid black;
-    margin-bottom: .75vh;
-    padding-left: 1vw;
-}
-
-.menuItem ul {
-    /* List area inside of menuItem */
-    list-style-type: none;
-    margin: 0;
-    padding-left: 1.5vw;
-}
-
-.menuItem ul li {
-    /* Individual list item inside of menuItem */
-    font-weight: bold;
-    background-color: lightgrey;
+.fancyButton-1 {
+    background: #396fe4;
     border-radius: 2px;
-    padding-left: .35vw;
-}
-
-.menuItem ul p {
-    /* Text description for menu items */
-    margin-top: 4px;
-    text-indent: 1.65vw;
-    margin-bottom: 1.3em;
-}
-
-.menuBar {
-    height: 90px;
-    width: 85%;
-    margin: auto;
-    padding-top: 33px
-}
-
-.menuBar a {
-    padding: 12px;
-    color: #690f0f;
-    font-size: 24px;
-    text-align: center;
-    text-decoration: none;
-    width: 25%;
-    transition: 0.2s;
-    -webkit-transition: 0.2s;
-}
-
-.menuBar a:hover {
-    border-bottom: 5px solid #690f0f;
-    transition: 0.5s;
-    -webkit-transition: 0.3s;
-}
-
-.logo {
-    /* The large website logo text, appears on header etc... */
-    font-family: 'Permanent Marker', cursive;
-    width: 26%;
-    display: inline-block;
-    color: #ebc321;
-    text-decoration: none;
-    float: left;
-    font-size: 2.5rem;
-    top: 50%;
-    line-height: 4.75vh;
-    vertical-align: middle;
-    height: 4.75vh;
-    transition: 0.2s;
-    -webkit-transition: 0.2s;
-}
-
-.logo:hover {
-    /* The large website logo text when hovered on */
-    color: #eb8d21;
-    transition: 0.2s;
-    -webkit-transition: 0.2s;
-}
-
-.logoSmall {
-    /* The small website logo text, appears on footer */
-    font-family: 'Permanent Marker', cursive;
-    width: auto;
-    color: whitesmoke;
-    text-decoration: none;
-    float:none;
-    font-size: 1.4em;
-    top: 50%;
-    margin: 0;
-}
-
-.logoSmall:hover {
-    /* The small website logo text when hovered on */
-    font-family: 'Permanent Marker', cursive;
-    width: auto;
-    color: rgb(221, 221, 221);
-    text-decoration: none;
-    float: none;
-    font-size: 1.4em;
-    top: 50%;
-    transition: 0.2s;
-    -webkit-transition: 0.2s;
-}
-
-.noMargin {
-    /* Sets the margin of the element to 0 */
-    margin: 0;
-}
-
-.noFloat {
-    /* Sets the float value of an element to 0 */
-    float: none;
-    display: block;
-}
-
-.price {
-    /* Smaller text for price on the menu */
-    margin-top: 0;
-    margin-bottom: 12px!important;
-    font-style: italic;
-    font-size: .75em;
-}
-
-.parallaxBG-large {
-    /* Makes a parallax image background (Large) */
-    min-height: 75vh; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 5vh 5vw;
-    /* Specify the background image in HTML using the style attribute */
-}
-
-.parallaxBG-small {
-    /* Makes a parallax image background (Small) */
-    min-height: 300px; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 5vh 5vw;
-    /* Specify the background image in HTML using the style attribute */
-}
-
-.parallaxText1 {
-    /* Positions the parallaxText to be on top of the parallaxBG div */
-    position: absolute;
-    top: 62.5%;
-    left: 39.5%;
-    transform: translate(-45%, -65%);
-    z-index: 2;
-    width: 80%;
-    padding: 20px;
-    text-align: center;
-}
-
-.parallaxText1 h2, .parallaxText2 h2 {
-    /* Header2 Text for parallaxText */
-    color: white;
-    font-size: 3em;
-}
-
-.parallaxText1 a {
-    /* The parallaxText button */
-    position: absolute;
-    transform: translateX(-175%);
-    background: red;
-    padding: 24px;
+    padding: 12px 36px;
     color: white;
     text-decoration: none;
-    transition: 0.2s;
-    -webkit-transition: 0.2s;
 }
 
-.parallaxText1 a:hover {
-    /* Changes color of the parallaxText button when hovered over */
-    background: salmon;
-    transition: 0.2s;
-    -webkit-transition: 0.2s;
+.fancyButton-1:hover {
+    background: #466dc0;
+    -webkit-transition: background 0.2s;
+    transition: background 0.2s;
 }
 
-.parallaxText2 {
-    /* Positions the parallaxText to be on top of the parallaxBG div */
-    position: absolute;
-    top: 620px;
-    left: 700px;
-    transform: translate(-1100px, -415px);
-    z-index: 2;
-    width: 80%;
-    padding: 20px;
-    text-align: center;
+.fancyButton-1:active {
+    background: #123862;
 }
 
-.blur1 {
-    /* Applies a 1px blur to the element */
-    filter: blur(1px);
-    -webkit-filter: blur(1px);
-}
-
-.blur2 {
-    /* Applies a 2px blur to the element */
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
-}
-
-.blur3 {
-    /* Applies a 3px blur to the element */
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
-}
-
-.mediumBreak {
-    /* creates a 10vh line break */
-    height: 10vh;
-}
-
-.linkButton {
-    /* A nice looking button that can be used to link to other pages */
-    display: block;
-    margin-top: 2vh;
-    text-align: center;
+.fancyButton-2 {
+    background: white;
+    border-radius: 2px;
+    padding: 12px 36px;
+    color: #182644;
     text-decoration: none;
-    color: black;
-    background-color: transparent;
-    padding: 1rem;
-    transition: 0.2s;
-    -webkit-transition: 0.2s;
-    width: 50%;
-    border: 1px solid black;
 }
 
-.linkButton:hover {
-    /* what changes when the linkButton is hovered over */
-    color: whitesmoke;
-    background-color: black;
-    transition: 0.2s;
-    -webkit-transition: 0.2s;
-    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+.fancyButton-2:hover {
+    background: #7988a8;
+    -webkit-transition: background 0.2s;
+    transition: background 0.2s;
 }
 
-.messageContent {
-    /* The style applied to the sent message on contactResponse */
-    font-size: .75em;
-    font-style: italic;
+.fancyButton-2:active {
+    background: #5d738a;
 }
 
-.largeQuote {
-    /* The style applied on the quotes around the sent message on contactResponse */
-    font-size: 1.5em;
+.form-warning {
+    font-size: .6rem;
+    color: red;
 }
 
-.standardPad {
-    width: 85%;
-    margin: auto;
-}
-
-.headerFull {
-    height: 96px;
-    max-height: 96px;
-}
-
-.headerSmall {
-    height: 68px;
-    max-height: 68px;
-    padding: 1vh 3%;
-    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
-}
-
-/* ------ ------ ID Styles ------ ------ */
-
-#footCopy {
-    /* The copyright text on the footer */
-    color: rgb(255, 255, 255);
-    margin: .1vh 0;
-}
-
-
-/* ------ ------ Homepage Specific ID Styles ------ ------ */
-
-#homeSlideshowContainer {
-    /* The container for the slideshow, NOT the actual image */
-    margin: auto;
-    width: 50%;
-    margin-bottom: 7vh;
-}
-
-#homeSlideshowContainer img {
-    /* The image inside of the slideshow container */
-    width: 100%;
-    max-width: 100%;
-    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
-}
-
-#homeSlideshowContainer a {
-    /* Button inside the slideshow container that brings the user to the menu */
-    display: block;
-    margin-top: 15px;
-    text-align: center;
-    text-decoration: none;
-    border: 1px solid black;
-    color: black;
-    background-color: transparent;
-    padding: 1rem;
-    transition: 0.2s;
-    -webkit-transition: 0.2s;
-}
-
-#homeSlideshowContainer a:hover {
-    /* when the slideshow button is hovered over */
-    color: whitesmoke;
-    background-color: black;
-    transition: 0.2s;
-    -webkit-transition: 0.2s;
-    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
-}
-
-#homeLocation {
-    /* The container for the location portion of the home page */
-    margin: auto;
-    margin-top: 7vh;
-    margin-bottom: 7vh;
-    width: 85%;
-    height: 30vh;
-}
-
-#homeLocation hr {
-    /* The horizontal line in the location portion of the homepage */
-    margin-bottom: 4vh;
-}
-
-#homeLocation section {
-    /* The container for the text and link in the location portion of the homepage */
-    display: inline-block;
-    width: 60%;
-    float: left;
-}
-
-#homeLocation img {
-    /* The image inside of the location portion of the homepage */
-    display: inline-block;
-    width: 40%;
-    max-width: 40%;
-    float: right;
-    max-height: 30vh;
-    object-fit: cover;
-    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
-}
-
-#orderHeader {
-    height: 150px;
-    max-height: 150px;
-}
-
-#orderHeader .logo {
-    padding-top: 25px;
-}
-
-#orderMain {
-    padding-top: 150px;
-    padding-bottom: 0;
-}
-
-#orderStoreInfo {
-    width: 70%;
-    color: white;
-    float: right;
-}
-
-#orderStoreInfo p, #orderStoreInfo h2 {
-    margin: 0;
-}
-
-#orderMenuSelections {
-    overflow: scroll;
-    height: 80vh;
-    width: 20%;
-}
-
-#orderMenuSelections a {
-    float:none;
-}
-
-#orderMenu {
-    width: 60%;
-}
-
-#orderBackground {
-    background: black;
+.warning {
+    background: rgba(0,0,0,.58);
+    color: red;
 }

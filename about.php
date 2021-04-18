@@ -3,7 +3,7 @@
     <head>
         <?php require('Includes/metadata.php'); ?>
 
-        <title>Resolution Holdings - Contact Us</title>
+        <title>Resolution Holdings - About Us</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
         <!-- Styles -->
@@ -16,7 +16,7 @@
 
         <section>
             <div class="centered container">
-                <h1>Contact Information</h1>
+                <h1>About us</h1>
             </div>
         </section>
     </body>
