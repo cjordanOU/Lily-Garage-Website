@@ -17,4 +17,6 @@ if ($connection-> connect_error) {
     die("ERROR: Connection to database failed. ". $connection-> connect_error);
 }
 
+echo "<p>dbConfig successfully linked!</p>"; // Debug string
+
 ?>

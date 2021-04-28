@@ -11,6 +11,9 @@
     </head>
 
     <body>
-        
+        <?php
+            require_once('Includes/webLogicHandler.php');
+            require_once('Includes/header.php');
+        ?>
     </body>
 </html>

@@ -22,7 +22,8 @@
                 <p>Please fill out this form to create an account</p>
 
                 <!-- Form is protected from SQL injection by using htmlspecialchars -->
-                <form id="signupForm" action="signupHandler()" method="post">
+                <form name="signupForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                    <input type="hidden" name="formType" value="signUp"> <!-- Important -->
                     <div class="form-section">
                         <label>First Name:</label>
                         <input type="text" name="firstName" size="40" title="Enter your first name" required>
@@ -64,20 +65,17 @@
 
                     <div class="form-section <?php echo (!empty($usernameError)) ? 'has-error' : ''; ?>">
                         <label>Username:</label>
-                        <input type="text" name="username" value="<?php echo $username; ?>" required>
-                        <span class="form-warning"><?php echo $usernameError; ?></span>
+                        <input type="text" name="username" required>
                     </div>
 
                     <div class="form-section <?php echo (!empty($passwordError)) ? 'has-error' : ''; ?>">
                         <label>Password:</label>
-                        <input type="password" name="password1" value="<?php echo $password1; ?>" required>
-                        <span class="form-warning"><?php echo $passwordError; ?></span>
+                        <input type="password" name="password1" required>
                     </div>
 
                     <div class="form-section <?php echo (!empty($confirmPasswordError)) ? 'has-error' : ''; ?>">
                         <label>Confirm Password:</label>
-                        <input type="password" name="password2" value="<?php echo $password2; ?>" required>
-                        <span class="form-warning"><?php echo $confirmPasswordError; ?></span>
+                        <input type="password" name="password2" required>
                     </div>
 
                     <div class="form-section">

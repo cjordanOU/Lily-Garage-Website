@@ -4,9 +4,16 @@
     // dbConfig include
     require_once 'Includes/dbConfig.php';
 
-    echo "<p>webLogicHandler successfully linked</p>"; // Debug string
+    echo "<p>webLogicHandler successfully linked!</p>"; // Debug string
     
-    
+    if(isset($_POST['submit'])){
+        $formType = trim($_POST["formType"]);
+        echo $formType;
+        if($formType == "signUp") {
+            signupHandler();
+            echo "<p>SignupHandler run!</p>";
+        }
+    }
 
     // ----------- Functions -----------
     
@@ -78,7 +85,7 @@
                 // Prepare a select statement
                 $sql = "SELECT ACCOUNT_ID, USERNAME, PASSWORD FROM accounts WHERE USERNAME = ?";
 
-                if($stmt = mysqli_prepare($connection, $sql)) {
+                if($stmt = mysqli_prepare($GLOBALS['connection'], $sql)) {
                     // Bind variables to the prepared statement as parameters
                     mysqli_stmt_bind_param($stmt, "s", $param_username);
 
@@ -108,10 +115,10 @@
 
                                     // Employee Check
                                     $empCheck = "SELECT * FROM employees WHERE ACCOUNT_ID=$id and WHEN_TERMINATED IS NULL";
-                                    $checkEmployee = $connection-> query($empCheck);
+                                    $checkEmployee = $GLOBALS['connection']-> query($empCheck);
 
                                     $loginAttemptStatement = "INSERT INTO login_attempts (`TIME`, `SUCCESS`, `ACCOUNT_ID`) VALUES(NOW(), 1 ,$id)";
-                                    if($stmt = mysqli_prepare($connection, $loginAttemptStatement)) {
+                                    if($stmt = mysqli_prepare($GLOBALS['connection'], $loginAttemptStatement)) {
                                         mysqli_stmt_execute($stmt);
                                     }
 
@@ -129,7 +136,7 @@
                                 } else{
 
                                     $loginAttemptStatement = "INSERT INTO login_attempts (`TIME`, `SUCCESS`, `ACCOUNT_ID`) VALUES(NOW(), 0 ,$id)";
-                                    if($stmt = mysqli_prepare($connection, $loginAttemptStatement)) {
+                                    if($stmt = mysqli_prepare($GLOBALS['connection'], $loginAttemptStatement)) {
                                         mysqli_stmt_execute($stmt);
                                     }
 
@@ -152,12 +159,13 @@
             }
 
             // Close connection
-            mysqli_close($connection);
+            mysqli_close($GLOBALS['connection']);
         }
     }
 
     // Process Signup Form
     function signupHandler() {
+        echo "Test1";
         // Define/Initialize variables
         $firstName = "";
         $lastName = "";
@@ -174,22 +182,22 @@
 
         // Processing form data when form is submitted
         if($_SERVER["REQUEST_METHOD"] == "POST"){
-        
+            // Non-Validated information
             $firstName = trim($_POST["firstName"]);
             $lastName = trim($_POST["lastName"]);
             $phoneNumber = trim($_POST["phoneNumber"]);
             $homeAddress = trim($_POST["homeAddress"]);
             $email = trim($_POST["email"]);
-
+            $preferredStore = trim($_POST["preferredStore"]);
 
             // Validate username
             if(empty(trim($_POST["username"]))){
                 $usernameError = "Please enter a username.";
             } else{
                 //$username = trim($_POST["username"]);
-                $usernameCheck = "SELECT ACCOUNT_ID FROM accounts WHERE username = ?";
+                $usernameCheck = "SELECT ACCOUNT_ID FROM accounts WHERE USERNAME = ?";
 
-                if($stmt = mysqli_prepare($connection, $usernameCheck)){
+                if($stmt = mysqli_prepare($GLOBALS['connection'], $usernameCheck)){
                     // Bind variables to the prepared statement as parameters
                     mysqli_stmt_bind_param($stmt, "s", $param_username);
 
@@ -198,7 +206,6 @@
 
                     // Attempt to execute the prepared statement
                     if(mysqli_stmt_execute($stmt)){
-                        /* store result */
                         mysqli_stmt_store_result($stmt);
 
                         if(mysqli_stmt_num_rows($stmt) == 1){
@@ -237,18 +244,18 @@
             
             // Check input errors before inserting in database
             if(empty($usernameError) && empty($passwordError) && empty($confirmPasswordError)){
-                
+                echo "Test2";
                 // Prepare an insert statement
-                $sql = "INSERT INTO accounts (first_name, last_name, preferred_store, phone, address, email, username, password) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                $sql = "INSERT INTO accounts (`FIRST_NAME`, `LAST_NAME`, `PREFERRED_STORE`, `PHONE`, `ADDRESS`, `EMAIL`, `USERNAME`, `PASSWORD`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
                 
-                if($stmt = mysqli_prepare($connection, $sql)){
+                if($stmt = mysqli_prepare($GLOBALS['connection'], $sql)){
                     // Bind variables to the prepared statement as parameters
                     mysqli_stmt_bind_param($stmt, "ssssssss", $firstName, $lastName, $preferredStore , $phoneNumber, $homeAddress, $email, $param_username, $param_password);
                     
                     // Set parameters
                     $param_username = $username;
                     $param_password = password_hash($password1, PASSWORD_DEFAULT); // Creates a password hash
-
+                    echo "Test3";
 
                     // Attempt to execute the prepared statement
                     if(mysqli_stmt_execute($stmt)){
@@ -264,11 +271,10 @@
             }
             
             // Close connection
-            mysqli_close($connection);
+            mysqli_close($GLOBALS['connection']);
         }
 
-
     }
-
+    
 
 ?>
