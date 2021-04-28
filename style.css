@@ -1,0 +1,18 @@
+/* --------------------------------------------------------------------------------------- */
+/* -------------- Created by Jerrod Dutcher, Cameron Jordan, James Moseley, -------------- */
+/* ---------------------------- Trent Toyryla, Alden Metzmaker --------------------------- */
+/* --------------------------------------------------------------------------------------- */
+
+
+/* ------ ------ Applies to All HTML elements ------ ------ */
+* {
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* ------ ------ Standard HTML Styles ------ ------ */
+
+/* ------ body & html ------ */
+html {
+    scroll-behavior: smooth;
+  }
