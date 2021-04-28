@@ -3,7 +3,7 @@
     <head>
         <?php require_once('Includes/metadata.php'); ?>
 
-        <title>Home - Lily's Lil' Garage</title>
+        <title>Contact Us - Lily's Lil' Garage</title>
         <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
 
         <!-- Styles -->
