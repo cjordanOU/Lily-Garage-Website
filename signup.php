@@ -13,7 +13,9 @@
     <body>
         <?php
             require_once('Includes/webLogicHandler.php');
-            require_once('Includes/header.php');
+            require_once('Includes/userAuthHandler.php');
+            displayHeader();
+            signupHandler();
         ?>
 
         <section>
@@ -23,30 +25,29 @@
 
                 <!-- Form is protected from SQL injection by using htmlspecialchars -->
                 <form name="signupForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-                    <input type="hidden" name="formType" value="signUp"> <!-- Important -->
                     <div class="form-section">
                         <label>First Name:</label>
-                        <input type="text" name="firstName" size="40" title="Enter your first name" required>
+                        <input type="text" name="firstName" size="40" title="Enter your first name" autocomplete="given-name" required>
                     </div>
 
                     <div class="form-section">
                         <label>Last Name:</label>
-                        <input type="text" name="lastName" size="40" title="Enter your last name" required>
+                        <input type="text" name="lastName" size="40" title="Enter your last name" autocomplete="family-name" required>
                     </div>
 
                     <div class="form-section">
                         <label>Email Address:</label>
-                        <input type="text" name="email" size="40" title="Enter your email address" required>
+                        <input type="text" name="email" size="40" title="Enter your email address" autocomplete="email" required>
                     </div>
 
                     <div class="form-section">
                         <label>Phone Number:</label>
-                        <input type="text" name="phoneNumber" size="40" title="Hint: 012-345-6789" pattern="^(\d{3}-)?\d{3}-\d{4}$" required>
+                        <input type="text" name="phoneNumber" size="40" title="Hint: 012-345-6789" pattern="^(\d{3}-)?\d{3}-\d{4}$" autocomplete="tel" required>
                     </div>
 
                     <div class="form-section">
                         <label>Address:</label>
-                        <input type="text" name="homeAddress" size="40" title="Enter your home address" required>
+                        <input type="text" name="homeAddress" size="40" title="Enter your home address" autocomplete="street-address" required>
                     </div>
 
                     <div class="form-section">
@@ -65,17 +66,17 @@
 
                     <div class="form-section <?php echo (!empty($usernameError)) ? 'has-error' : ''; ?>">
                         <label>Username:</label>
-                        <input type="text" name="username" required>
+                        <input type="text" name="username" autocomplete="username" required>
                     </div>
 
                     <div class="form-section <?php echo (!empty($passwordError)) ? 'has-error' : ''; ?>">
                         <label>Password:</label>
-                        <input type="password" name="password1" required>
+                        <input type="password" name="password1" autocomplete="new-password" required>
                     </div>
 
                     <div class="form-section <?php echo (!empty($confirmPasswordError)) ? 'has-error' : ''; ?>">
                         <label>Confirm Password:</label>
-                        <input type="password" name="password2" required>
+                        <input type="password" name="password2" autocomplete="one-time-code" required>
                     </div>
 
                     <div class="form-section">

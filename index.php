@@ -13,7 +13,8 @@
     <body>
         <?php
             require_once('Includes/webLogicHandler.php');
-            require_once('Includes/header.php');
+            loginCheckBasic();
+            displayHeader();
         ?>
     </body>
 </html>
