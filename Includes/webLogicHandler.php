@@ -4,8 +4,6 @@
     // dbConfig include
     require_once 'Includes/dbConfig.php';
 
-    echo "<p>webLogicHandler successfully linked!</p>"; // Debug string
-
     // ----------- Functions -----------
     
     // Basic Login Check
