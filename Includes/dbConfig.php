@@ -2,7 +2,7 @@
 // Specifies location of database and database name
 // The location needs to be changed when hosted online
 $dbLocation = 'localhost:3306';
-$dbName = 'resolution-holdings';
+$dbName = 'llg-advanced';
 
 // Database username and password
 // This needs to be changed when hosted online
