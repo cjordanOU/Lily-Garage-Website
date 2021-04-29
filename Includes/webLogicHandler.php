@@ -40,9 +40,10 @@
     }
     
     function displayHeader() {
-        echo '<header><nav class="container"><div class="nav-left"><a href="index.php" title="Click here to return to the homepage">Home</a><a href="about.php" title="View information about our organization">About</a><a href="contact.php" title="View our contact information">Contact</a></div>';
+        echo '<header><nav class="container"><div class="nav-left"><a href="index.php" class="logo" title="Return to the homepage">Lily&#39;s Lil Garage</a><a href="locations.php" title="View our store locations">Locations</a><a href="menu.php" title="Browse our menu">Menu</a><a href="contact.php" title="View our contact information">Contact</a><a href="about.php" title="View information about our organization">About</a></div>';
         echo '<div class="nav-right">';
         // If user isn't logged in, will show login page
+        loginCheckBasic();
         if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             echo "<a href='login.php' title='Click here to login'>Login</a> <a href='signup.php' title='Click here to sign up'>Sign Up</a>";
         }

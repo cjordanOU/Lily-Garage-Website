@@ -4,15 +4,72 @@
 /* --------------------------------------------------------------------------------------- */
 
 
-/* ------ ------ Applies to All HTML elements ------ ------ */
+
+
+/* ------ ------ ------ Standard HTML Styles ------ ------ ------ */
+
+/* ------  Applies to All HTML elements ------ */
 * {
     box-sizing: border-box;
     font-family:Arial, Helvetica, sans-serif;
 }
 
-/* ------ ------ Standard HTML Styles ------ ------ */
-
 /* ------ body & html ------ */
 html {
+    margin: 0;
+    width: 100%;
+    min-width: 100%;
+    top: 0;
+    background-color: #212121;
+    background-image: radial-gradient(closest-side, transparent 95%, #212121 90%), radial-gradient(closest-side, transparent 95%, #272727 99%);
+    background-size:40px 40px;
+    background-position:0 0, 20px 20px;
+    scroll-padding-top: 70px;
+    overflow-y: scroll;
     scroll-behavior: smooth;
-  }
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    background: rgb(225, 225, 225);
+    top: 0;
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    scroll-padding-top: 70px;
+}
+
+/* ------ ------ ------ Class Styles ------ ------ ------ */
+
+/* ------ ------ Card ------ ------ */
+/* Three columns side by side */
+.cardColumn {
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+    .cardColumn {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.cardContainer {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+.cardContainer::after, .cardRow::after {
+    content: "";
+    clear: both;
+    display: table;
+}
