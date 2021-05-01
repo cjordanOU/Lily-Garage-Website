@@ -24,12 +24,13 @@
         </div>
         <br>
 
-        <div class="cardRow">
+        
+        <section class="cardRow">
 
             <!-- Mount Pleasant -->
             <div class="cardColumn">
                 <div class="card">
-                    <img src="Images/garageMountPleasant.jpg" alt="Our Restaurant in Mount Pleasant" style="width:100%;">
+                    <img src="Images/garageMountPleasant.jpg" alt="Our Restaurant in Mount Pleasant">
                     <div class="cardContainer">
                         <h3>LLG Mount Pleasant</h3>
                         <p>1217 S. Crapo St.</p>
@@ -54,7 +55,7 @@
             <!-- Ann Arbor -->
             <div class="cardColumn">
                 <div class="card">
-                <img src="Images/garageAnnArbor.jpg" alt="garage1" style="width:100%;">
+                    <img src="Images/garageAnnArbor.jpg" alt="garage1">
                     <div class="cardContainer">
                         <h3>LLG Ann Arbor</h3>
                         <p>1217 S. Crapo St.</p>
@@ -79,7 +80,7 @@
             <!-- Pickney -->
             <div class="cardColumn">
                 <div class="card">
-                <img src="Images/garagePickney.jpg" alt="garage2" style="width:100%;">
+                    <img src="Images/garagePickney.jpg" alt="garage2">
                     <div class="cardContainer">
                         <h3>LLG Pickney</h3>
                         <p>1217 S. Crapo St.</p>
@@ -104,7 +105,7 @@
             <!-- Flushing -->
             <div class="cardColumn">
                 <div class="card">
-                <img src="Images/garageFlushing.jpg" alt="garage3" style="width:100%;">
+                    <img src="Images/garageFlushing.jpg" alt="garage3">
                     <div class="cardContainer">
                         <h3>LLG Flushing</h3>
                         <p>1217 S. Crapo St.</p>
@@ -126,10 +127,13 @@
                 </div>
             </div>
 
+    </section>
+    <section class="cardRow">
+
             <!-- Colon -->
             <div class="cardColumn">
                 <div class="card">
-                <img src="Images/garageColon.jpg" alt="garage4" style="width:100%;">
+                    <img src="Images/garageColon.jpg" alt="garage4">
                     <div class="cardContainer">
                         <h3>LLG Colon</h3>
                         <p>1217 S. Crapo St.</p>
@@ -154,7 +158,7 @@
             <!-- Climax -->
             <div class="cardColumn">
                 <div class="card">
-                <img src="Images/garageClimax.jpg" alt="garage5" style="width:100%;">
+                    <img src="Images/garageClimax.jpg" alt="garage5">
                     <div class="cardContainer">
                         <h3>LLG Climax</h3>
                         <p>1217 S. Crapo St.</p>
@@ -179,7 +183,7 @@
             <!-- Setagaya-Ku -->
             <div class="cardColumn">
                 <div class="card">
-                <img src="Images/garageSetagaya-Ku.jpg" alt="garage5" style="width:100%;">
+                    <img src="Images/garageSetagaya-Ku.jpg" alt="garage5">
                     <div class="cardContainer">
                         <h3>LLG Setagaya-Ku</h3>
                         <p>1217 S. Crapo St.</p>
@@ -201,17 +205,17 @@
                 </div>
             </div>
 
-            <!-- New Locations -->
+            <!-- New Locations soon -->
             <div class="cardColumn">
                 <div class="card">
-                <img src="Images/garageNewLocations.jpg" alt="garage7" style="width:50%; height:50%;">
+                    <img src="Images/garageNewLocations.jpg" alt="garage7">
                     <div class="cardContainer">
                         <h1>New locations to be added soon!</h1>
                     </div>
                 </div>
             </div>
 
-        </div>
+        </section>
         
     </body>
 </html>

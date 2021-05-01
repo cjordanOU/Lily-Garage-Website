@@ -27,52 +27,52 @@
 
             <div class="cardColumn">
                 <div class="card">
-                    <img src="Images/default.png" alt="Jerrod Dutcher" style="width:100%">
+                    <img src="Images/default.png" alt="Jerrod Dutcher" style="height:60%">
                     <div class="cardContainer">
                         <h2>Jerrod Dutcher</h2>
                         <p class="title">CEO & Team Lead</p>
                         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                         <p>example@example.com</p>
-                        <p><button class="button">Contact</button></p>
+                        <p><a href="mailto:" class="linkButton">Contact</a></p>
                     </div>
                 </div>
             </div>
 
             <div class="cardColumn">
                 <div class="card">
-                    <img src="Images/default.png" alt="Cameron Jordan" style="width:100%">
+                    <img src="Images/default.png" alt="Cameron Jordan" style="height:60%">
                     <div class="cardContainer">
                         <h2>Cameron Jordan</h2>
                         <p class="title">Design Director</p>
                         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                         <p>cjordan@oakland.edu</p>
-                        <p><button class="button">Contact</button></p>
+                        <p><a href="mailto:cjordan@oakland.edu" class="linkButton">Contact</a></p>
                     </div>
                 </div>
             </div>
 
             <div class="cardColumn">
                 <div class="card">
-                    <img src="Images/default.png" alt="James Moseley" style="width:100%">
+                    <img src="Images/default.png" alt="James Moseley" style="height:60%">
                     <div class="cardContainer">
                         <h2>James Moseley</h2>
                         <p class="title">CTO & Designer</p>
                         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                         <p>example@example.com</p>
-                        <p><button class="button">Contact</button></p>
+                        <p><a href="mailto:" class="linkButton">Contact</a></p>
                     </div>
                 </div>
             </div>
 
             <div class="cardColumn">
                 <div class="card">
-                    <img src="Images/default.png" alt="Trent Toyryla" style="width:100%">
+                    <img src="Images/default.png" alt="Trent Toyryla" style="height:60%">
                     <div class="cardContainer">
                         <h2>Trent Toyryla</h2>
                         <p class="title">Head Chef & Designer</p>
                         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                         <p>example@example.com</p>
-                        <p><button class="button">Contact</button></p>
+                        <p><a href="mailto:" class="linkButton">Contact</a></p>
                     </div>
                 </div>
             </div>
@@ -80,13 +80,13 @@
             <!--
             <div class="cardColumn">
                 <div class="card">
-                    <img src="Images/default.png" alt="Alden Metzmaker" style="width:100%">
+                    <img src="Images/default.png" alt="Alden Metzmaker" style="height:60%">
                     <div class="cardContainer">
                         <h2>Alden Metzmaker</h2>
                         <p class="title">Fry Cook & Janitor</p>
                         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                         <p>example@example.com</p>
-                        <p><button class="button">Contact</button></p>
+                        <p><button class="linkButton">Contact</button></p>
                     </div>
                 </div>
             </div>
