@@ -711,7 +711,35 @@ header .headContainer .headOrder {
     margin-top: 0;
 }
 
+@media only screen and (max-width: 600px) {
+    .menuCard {
+        width: 99%;
+    }
+}
 
+@media only screen and (min-width: 600px) {
+    .menuCard {
+        width: 99%;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    .menuCard {
+        width: 99%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .menuCard {
+        width: 49.8%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .menuCard {
+        width: 49.8%;
+    }
+}
 
 /* ------ menuBar ------ */
 .menuBar {
@@ -719,7 +747,9 @@ header .headContainer .headOrder {
     height: 90px;
     width: 85%;
     margin: auto;
-    padding-top: 33px
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 .menuBar a {
@@ -739,6 +769,59 @@ header .headContainer .headOrder {
     border-bottom: 5px solid #690f0f;
     transition: 0.5s;
     -webkit-transition: 0.3s;
+}
+
+@media only screen and (max-width: 600px) {
+    .menuBar {
+        height: 360px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .menuBar a {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .menuBar {
+        flex-wrap: wrap;
+        height: 250px;
+    }
+    .menuBar a {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    .menuBar {
+        flex-wrap: wrap;
+        height: 250px;
+    }
+    .menuBar a {
+        width: 33%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .menuBar {
+        height: 90px;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .menuBar a {
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .menuBar {
+        height: 90px;
+        width: 85%;
+        flex-wrap: nowrap;
+    }
+    .menuBar a {
+        width: 25%;
+    }
 }
 
 

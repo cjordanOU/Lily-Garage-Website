@@ -29,7 +29,7 @@
                     <a href="#breakfast" title="Jump to our Breakfast Selection">Breakfast</a>
 					<a href="#entrées" title="Jump to our Entrées selection">Entrées</a>
 					<a href="#desserts" title="Jump to our Desserts Selection">Desserts</a>
-					<a href="#appetizers" title="Jump to our Appetizers and Sides selection">Appetizers &amp; Sides</a>
+					<a href="#appetizers" title="Jump to our Appetizers and Sides selection">Appetizers</a>
                     <a href="#drinks" title="Jump to our Drinks Selection">Drinks</a>
 					<a href="#specials" title="Jump to our Location Specials Selection">Specials</a>
                 </nav>
