@@ -38,5 +38,6 @@
 
             
         </main>
+        <?php displayFooter(); ?>
     </body>
 </html>

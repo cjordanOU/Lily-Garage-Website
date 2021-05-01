@@ -18,13 +18,18 @@
             displayHeader();
         ?>
 
-        <section>
-            <div class="centered container">
-                <h1>Now viewing account for <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>.</h1>
+        <main>
+            <!-- Parallax Hero Image -->
+            <div class="parallaxBG-small" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.801), transparent), url('Images/garageGeneric.jpg'); background-position: right 320%;"></div>
+            <div class="parallaxText2">
+                <h2>Account View</h2>
             </div>
 
-            <div class="centered container">
-            </div>
-        </section>
+            <section class="widePad">
+                <div>
+                    <h1>Now viewing account for <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>.</h1>
+                </div>
+            </section>
+        </main>
     </body>
 </html>

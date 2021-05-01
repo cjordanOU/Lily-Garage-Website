@@ -27,19 +27,51 @@ html {
     scroll-padding-top: 70px;
     overflow-y: scroll;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
-    max-width: 1440px;
+    width: 75vw;
+    max-width: 75vw;
     margin: 0 auto;
     background: rgb(225, 225, 225);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 96px, rgba(255,255,255,1) 97px, rgba(255,255,255,1) 100%);
     top: 0;
     box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
     scroll-padding-top: 70px;
 }
 
-@media only screen and (min-width: 2400px) {
+main {
+    /* Main webpage area, where main webpage content is */
+    width: 100%;
+    padding: 92px 0 18px 0;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
     body {
+        width: 100vw;
+        max-width: 100vw;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        width: 100vw;
+        max-width: 100vw;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    body {
+        width: 1440px;
+        max-width: 1440px;
+    }
+}
+
+@media only screen and (min-width: 2440px) {
+    body {
+        width: 75vw;
         max-width: 75vw;
     }
 }
@@ -155,6 +187,97 @@ footer div nav a:hover, footer div address a:hover {
         margin-top: 0;
     }
 }
+
+/* ------ ------ Header ------ ------ */
+header {
+    height: 96px;
+    max-height: 96px;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    padding: 2.375vh 0 1.375vh 3%;
+    z-index: 100;
+    top: 0;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+}
+
+header .headContainer {
+    display: flex;
+    align-items: center;
+}
+
+header .headContainer #headLogo {
+    flex: 1.5;
+}
+
+header .headContainer #headLinks {
+    flex: 3;
+    justify-content: space-between;
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+}
+
+header .headContainer #headLinks a {
+    flex: 1;
+    width: 80%;
+    color: rgb(190, 190, 190);
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+header .headContainer #headLinks a:hover {
+    color: rgb(196, 97, 5);
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+}
+
+header .headContainer #headLinks a:active {
+    color: rgb(155, 31, 9);
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+}
+
+header .headContainer .headOrder {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        width: 100vw;
+        max-width: 100vw;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    header {
+        width: 100vw;
+        max-width: 100vw;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    header {
+        width: 1440px;
+        max-width: 1440px;
+    }
+}
+
+@media only screen and (min-width: 2440px) {
+    header {
+        width: 75vw;
+        max-width: 75vw;
+    }
+}
+
+
 /* ------ ------ ------ Class Styles ------ ------ ------ */
 
 .centerText {
@@ -166,10 +289,67 @@ footer div nav a:hover, footer div address a:hover {
     margin: 0;
 }
 
+.noMarginBottom {
+    margin-bottom: 0;
+}
+
 .noFloat {
     /* Sets the float value of an element to 0 */
     float: none;
     display: block;
+}
+
+.standardPad {
+    /* Centers elements on page w/ padding-esque technique */
+    width: 90%;
+    margin: auto;
+}
+
+.widePad {
+    /* Centers elements on page w/ padding-esque technique */
+    width: 95%;
+    margin: auto;
+}
+
+.extraWidePad {
+    /* Centers elements on page w/ padding-esque technique */
+    width: 98%;
+    margin: auto;
+}
+.narrowPad {
+    /* Centers elements on page w/ padding-esque technique */
+    width: 85%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .mTop {
+        margin-top: 4vh;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .mTop {
+        margin-top: 0;
+    }
+}
+
+.headButton {
+    width: 60%;
+    margin: auto;
+    border: 1px solid rgb(190, 190, 190);
+    padding: 5% 0;
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.headButton:hover {
+    background-color: black;
+    border: 1px solid rgb(190, 190, 190);
+    color: white;
 }
 
 /* ------ ------ Card ------ ------ */
@@ -196,9 +376,11 @@ footer div nav a:hover, footer div address a:hover {
 @media only screen and (max-width: 600px) {
     .cardRow {
         flex-direction: column;
+        justify-content: space-between;
     }
     .cardColumn {
         width: 100%;
+        margin: 0;
     }
     .card {
         padding-bottom: 5.5%;
@@ -211,9 +393,11 @@ footer div nav a:hover, footer div address a:hover {
 @media only screen and (min-width: 600px) {
     .cardRow {
         flex-direction: column;
+        justify-content: space-between;
     }
     .cardColumn {
         width: 100%;
+        margin: 0;
     }
     .card {
         height: 97%;
@@ -227,9 +411,11 @@ footer div nav a:hover, footer div address a:hover {
 @media only screen and (min-width: 760px) {
     .cardRow {
         flex-direction: row;
+        justify-content: space-between;
     }
     .cardColumn {
         width: 49.5%;
+        margin: 0 0 3% 0;
     }
     .card {
         height: 99%;
@@ -243,9 +429,11 @@ footer div nav a:hover, footer div address a:hover {
 @media only screen and (min-width: 992px) {
     .cardRow {
         flex-direction: row;
+        justify-content: center;
     }
     .cardColumn {
         width: 32.6%;
+        margin: 0 .55% .75% 0;
     }
 }
 
@@ -253,9 +441,11 @@ footer div nav a:hover, footer div address a:hover {
 @media only screen and (min-width: 1200px) {
     .cardRow {
         flex-direction: row;
+        justify-content: space-between;
     }
     .cardColumn {
         width: 24.5%;
+        margin: 0;
     }
 }
 
@@ -333,12 +523,53 @@ footer div nav a:hover, footer div address a:hover {
     /* Positions the parallaxText to be on top of the parallaxBG div */
     position: absolute;
     top: 620px;
-    left: 700px;
-    transform: translate(-1100px, -415px);
+    left: 40vw;
+    transform: translate(-50vw, -415px);
     z-index: 2;
     width: 80%;
     padding: 20px;
-    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .parallaxText2 {
+        transform: translate(-26vw, -485px);
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .parallaxText2 {
+        transform: translate(-35vw, -435px);
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    .parallaxText2 {
+        transform: translate(-35vw, -435px);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .parallaxText2 {
+        transform: translate(-34vw, -415px);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .parallaxText2 {
+        transform: translate(-20vw, -405px);
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .parallaxText2 {
+        transform: translate(-26vw, -405px);
+    }
+}
+
+@media only screen and (min-width: 1680px) {
+    .parallaxText2 {
+        transform: translate(-20vw, -405px);
+    }
 }
 
 /* ------ ------ Links & Buttons ------ ------ */
@@ -382,11 +613,10 @@ footer div nav a:hover, footer div address a:hover {
 .logo {
     /* The large website logo text, appears on header etc... */
     font-family: 'Permanent Marker', cursive;
-    width: 26%;
+    width: 100%;
     display: inline-block;
     color: #ebc321;
     text-decoration: none;
-    float: left;
     font-size: 2.5rem;
     top: 50%;
     line-height: 4.75vh;
