@@ -13,7 +13,7 @@
     <body>
         <?php
             require_once('Includes/webLogicHandler.php');
-            loginCheckBasic();
+            loginCheck();
             displayHeader();
         ?>
 
@@ -26,7 +26,7 @@
 
             <section class="widePad">
                 <div>
-                    <h1>Now viewing account for <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>.</h1>
+                    <h1>Now viewing account for <b><?php echo htmlspecialchars($_SESSION["username"]); if($_SESSION["employee"] == true){echo " (Employee)";}?></b>.</h1>
                 </div>
             </section>
         </main>
