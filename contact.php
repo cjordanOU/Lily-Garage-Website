@@ -15,8 +15,19 @@
             require_once('Includes/webLogicHandler.php');
             loginCheckBasic();
             displayHeader();
+            processContact();
         ?>
 
-        <h1>Home</h1>
+        <main>
+            <!-- Parallax Hero Image -->
+            <div class="parallaxBG-small" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.801), transparent), url('Images/garageFlushing.jpg'); background-position: left 320%"></div>
+            <div class="parallaxText2">
+                <h2>Contact Us</h2>
+            </div>
+
+            <section>
+                <?php displayContact(); ?>
+            </section>
+        </main>
     </body>
 </html>
