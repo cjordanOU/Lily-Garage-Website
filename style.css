@@ -8,13 +8,13 @@
 
 /* ------ ------ ------ Standard HTML Styles ------ ------ ------ */
 
-/* ------  Applies to All HTML elements ------ */
+/* ------ ------ Applies to All HTML elements ------ ------ */
 * {
     box-sizing: border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", cursive, sans-serif;
 }
 
-/* ------ body & html ------ */
+/* ------ ------ Body & Html ------ ------ */
 html {
     margin: 0;
     width: 100%;
@@ -38,38 +38,225 @@ body {
     scroll-padding-top: 70px;
 }
 
+@media only screen and (min-width: 2400px) {
+    body {
+        max-width: 75vw;
+    }
+}
+
+/* ------ ------ Footer ------ ------ */
+footer {
+    /* Entire footer box area */
+    display: flex;
+    flex-wrap:wrap;
+    width: 100%;
+    height: 104px;
+    padding: 1vh 1vw;
+    color: rgb(210, 212, 214);
+    background-color: #4e4e4e;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+footer div {
+    height: 100%;
+    width:33%;
+    text-align: center;
+    padding-top: .55vh;
+}
+
+footer div nav a, footer div address a {
+    /* Links inside nav bar and adress links */
+    margin-left: 3px;
+    margin-right: 3px;
+    color: rgb(133, 166, 197);
+    text-decoration: none;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+}
+
+footer div nav a:hover, footer div address a:hover {
+    /* Links inside nav bar and adress links when hovered over */
+    color: rgb(197, 219, 240);
+    text-decoration: underline;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        height:300px;
+    }
+    footer div {
+        height: 33%;
+        width:100%;
+    }
+    footer div:last-child {
+        height: 33%;
+        width:100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    footer {
+        height:300px;
+    }
+    footer div {
+        height: 33%;
+        width:100%;
+    }
+    footer div:last-child {
+        height: 33%;
+        width:100%;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    footer {
+        height:270px;
+    }
+    footer div {
+        height: 50%;
+        width:50%;
+    }
+    footer div:last-child {
+        height: 50%;
+        width: 100%;
+        margin-top: 2vh;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    footer {
+        height: 114px;
+    }
+    footer div {
+        height: 100%;
+        width:33%;
+    }
+    footer div:last-child {
+        height: 100%;
+        width: 33%;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    footer {
+        height: 104px;
+    }
+    footer div {
+        height: 100%;
+        width:33%;
+    }
+    footer div:last-child {
+        width: 33%;
+        margin-top: 0;
+    }
+}
 /* ------ ------ ------ Class Styles ------ ------ ------ */
 
 .centerText {
     text-align: center;
 }
 
+.noMargin {
+    /* Sets the margin of the element to 0 */
+    margin: 0;
+}
+
+.noFloat {
+    /* Sets the float value of an element to 0 */
+    float: none;
+    display: block;
+}
+
 /* ------ ------ Card ------ ------ */
 /* Cards display side by side */
 .cardRow {
     display: flex;
+    flex-wrap:wrap;
     width: 98.5%;
     justify-content: space-between;
     margin: auto;
     margin-bottom: 1.75%;
 }
 
+.card {
+    height: 99%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #a9a9a9;
+    padding-bottom: 7.5%;
+    margin-top: 5.5%;
+    margin-bottom: 7.5%;
+}
+
 /* Cards display one per column on mobile */
-@media screen and (max-width: 650px) {
+@media only screen and (max-width: 600px) {
     .cardRow {
         flex-direction: column;
     }
+    .cardColumn {
+        width: 100%;
+    }
+    .card {
+        padding-bottom: 5.5%;
+        margin-top: .5%;
+        margin-bottom: .5%;
+    }
 }
 
-.cardColumn {
-    width: 24.5%;
+/* Cards display one per column portrait tablets and large phones */
+@media only screen and (min-width: 600px) {
+    .cardRow {
+        flex-direction: column;
+    }
+    .cardColumn {
+        width: 100%;
+    }
+    .card {
+        height: 97%;
+        padding-bottom: 5.5%;
+        margin-top: .5%;
+        margin-bottom: .5%;
+    }
 }
 
-.card {
-    height: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: #a9a9a9;
-    padding-bottom: 5.5%;
+/* Cards display two per column on large mobile */
+@media only screen and (min-width: 760px) {
+    .cardRow {
+        flex-direction: row;
+    }
+    .cardColumn {
+        width: 49.5%;
+    }
+    .card {
+        height: 99%;
+        padding-bottom: 7.5%;
+        margin-top: 5.5%;
+        margin-bottom: 7.5%;
+    }
+}
+
+/* Cards display three per column on laptops/desktops */
+@media only screen and (min-width: 992px) {
+    .cardRow {
+        flex-direction: row;
+    }
+    .cardColumn {
+        width: 32.6%;
+    }
+}
+
+/* Cards display four per column on large laptops/desktops */
+@media only screen and (min-width: 1200px) {
+    .cardRow {
+        flex-direction: row;
+    }
+    .cardColumn {
+        width: 24.5%;
+    }
 }
 
 .card img {
@@ -188,4 +375,64 @@ body {
     transition: 0.2s;
     -webkit-transition: 0.2s;
     box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+}
+
+/* ------ ------ LLG Logo ------ ------ */
+
+.logo {
+    /* The large website logo text, appears on header etc... */
+    font-family: 'Permanent Marker', cursive;
+    width: 26%;
+    display: inline-block;
+    color: #ebc321;
+    text-decoration: none;
+    float: left;
+    font-size: 2.5rem;
+    top: 50%;
+    line-height: 4.75vh;
+    vertical-align: middle;
+    height: 4.75vh;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+}
+
+.logo:hover {
+    /* The large website logo text when hovered on */
+    color: #eb8d21;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+}
+
+.logoSmall {
+    /* The small website logo text, appears on footer */
+    font-family: 'Permanent Marker', cursive;
+    width: auto;
+    color: whitesmoke;
+    text-decoration: none;
+    float:none;
+    font-size: 1.4em;
+    top: 50%;
+    margin: 0;
+}
+
+.logoSmall:hover {
+    /* The small website logo text when hovered on */
+    font-family: 'Permanent Marker', cursive;
+    width: auto;
+    color: rgb(221, 221, 221);
+    text-decoration: none;
+    float: none;
+    font-size: 1.4em;
+    top: 50%;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+}
+
+
+/* ------ ------ ------ ID Styles ------ ------ ------ */
+
+#footCopy {
+    /* The copyright text on the footer */
+    color: rgb(255, 255, 255);
+    margin: .1vh 0;
 }

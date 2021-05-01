@@ -127,9 +127,6 @@
                 </div>
             </div>
 
-    </section>
-    <section class="cardRow">
-
             <!-- Colon -->
             <div class="cardColumn">
                 <div class="card">
@@ -217,5 +214,6 @@
 
         </section>
         
+        <?php displayFooter(); ?>
     </body>
 </html>
