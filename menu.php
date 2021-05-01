@@ -104,13 +104,13 @@
                 </div>
 
                 <div class="menuHeading">
-                    <h2>Entrées</h2>
+                    <h2 id="entrées">Entrées</h2>
                     
                     <h3 class="noMarginBottom">Plates</h3>
                     <div class="menuRow">
                         <div class="menuCard">
                             <p><b>Bird in a Windshield <span class="price">$14.49</span></b></p>
-                            <p class="menuDescription">Fried chicken breast on a bed of vinaigrette slaw</p>
+                            <p class="menuDescription">Fried chicken breast on a bed of vinaigrette slaw.</p>
                         </div>
                         <div class="menuCard">
                             <p><b>Oil Change Slapjacks <span class="price">$14.99</span></b></p>
@@ -129,7 +129,182 @@
                             <p class="menuDescription">Angus steak platter served with a baked potato and steak sauce.</p>
                         </div>
                     </div>
+
+                    <h3 class="noMarginBottom">Burgers &amp; Handhelds</h3>
+                    <div class="menuRow">
+                        <div class="menuCard">
+                            <p><b>Radiator Burger <span class="price">$76.99</span></b></p>
+                            <p class="menuDescription">½ Pound burger with A5 Wagyu Japanese Beef, topped with lettuce, onion, tomato, and pickle.</p>
+                        </div>
+                        <div class="menuCard">
+                            <p><b>4-Cylinder/6-Cylinder Sliders <span class="price">$9.50|4 - $14.00|6</span></b></p>
+                            <p class="menuDescription">4 or 6 sliders topped with your choice of cheese, condements, vegetables and sauteed onion.</p>
+                        </div>
+                        <div class="menuCard">
+                            <p><b>Grilled Chicken Sandwich <span class="price">$15.49</span></b></p>
+                            <p class="menuDescription">Chicken grilled to perfection served on a bun with lettuce and tomato.</p>
+                        </div>
+                        <div class="menuCard">
+                            <p><b>The Alternator Fish Sandwich <span class="price">$14.99</span></b></p>
+                            <p class="menuDescription">Breaded fish filet served on a toasted bun with made in-house tartar sauce.</p>
+                        </div>
+                        <div class="menuCard">
+                            <p><b>BMT (Big Mack Truck) <span class="price">$16.49</span></b></p>
+                            <p class="menuDescription">Big Meat trio (Burger, pulled pork, bacon) Bbq sauce, and onion rings.</p>
+                        </div>
+                        <div class="menuCard">
+                            <p><b>Full Throttle Turkey Sandwich <span class="price">$14.99</span></b></p>
+                            <p class="menuDescription">Mesquite Smoked turkey sandwich with a Chipotle Aioli.</p>
+                        </div>
+                        <div class="menuCard">
+                            <p><b>Monster Truck Burger <span class="price">$16.99</span></b></p>
+                            <p class="menuDescription">⅓ pound sirloin burger, Kaiser Roll, Caramelized onions, Tomatoes, and arugula topped with chipotle mayo and blue cheese crumbles.</p>
+                        </div>
+                    </div>
+
+                    <h3 class="noMarginBottom">Pastas</h3>
+                    <div class="menuRow">
+                        <div class="menuCard">
+                            <p><b>Bird in a Windshield <span class="price">$14.49</span></b></p>
+                            <p class="menuDescription">Fried chicken breast on a bed of vinaigrette slaw.</p>
+                        </div>
+                        <div class="menuCard">
+                            <p><b>Oil Change Slapjacks <span class="price">$14.99</span></b></p>
+                            <p class="menuDescription">Chopped Pork plate, but shaped like stringy roadkill with two sides of choice.</p>
+                        </div>
+                        <div class="menuCard">
+                            <p><b>All-Terrain Platter <span class="price">$19.99</span></b></p>
+                            <p class="menuDescription">A platter with a fish filet, freshly fried chicken, and perfectly grilled steak.</p>
+                        </div>
+                        <div class="menuCard">
+                            <p><b>Grilled Chicken Platter <span class="price">$17.49</span></b></p>
+                            <p class="menuDescription">Two pieces of exquisitely grilled chicken served with your choice of side.</p>
+                        </div>
+                        <div class="menuCard">
+                            <p><b>ABS (Angus Beef Steak) <span class="price">$18.49</span></b></p>
+                            <p class="menuDescription">Angus steak platter served with a baked potato and steak sauce.</p>
+                        </div>
+                    </div>
+
+                    <h3 class="noMarginBottom">Wraps</h3>
+                    <div class="menuRow">
+                        <div class="menuCard">
+                            <p><b>Amphibious Special <span class="price">$15.99</span></b></p>
+                            <p class="menuDescription">Surf and turf pasta alfredo with shrimp and chicken.</p>
+                        </div>
+                        <div class="menuCard">
+                            <p><b>Pasta Marinara <span class="price">$12.99</span></b></p>
+                            <p class="menuDescription">Classic spaghetti with marinara sauce. Add Meatballs for extra. +$1.99</p>
+                        </div>
+                        <div class="menuCard">
+                            <p><b>Grilled Chicken Alfredo <span class="price">$15.49</span></b></p>
+                            <p class="menuDescription">Freshly grilled chicken mixed in a pasta alfredo.</p>
+                        </div>
+                        <div class="menuCard">
+                            <p><b>Oil Change <span class="price">$15.99</span></b></p>
+                            <p class="menuDescription">Squid Ink Pasta with a scallop white wine sauce.</p>
+                        </div>
+                        <div class="menuCard">
+                            <p><b>Piston Pasta <span class="price">$13.99</span></b></p>
+                            <p class="menuDescription">Rotelle noodles served with a creamy butter sauce.</p>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="menuHeading">
+                    <h2 id="desserts">Desserts</h2>
+                    
+                    <h3 class="noMarginBottom">Desserts</h3>
+                    <div class="menuRow">
+                        <div class="menuCard">
+                            <p><b>Stoplight Brownies <span class="price">$5.49</span></b></p>
+                            <p class="menuDescription">Three delicious homemade Brownies with red, yellow, and green m&amp;ms on top.</p>
+                        </div>
+                        <div class="menuCard">
+                            <p><b>Spare Tire <span class="price">$3.99</span></b></p>
+                            <p class="menuDescription">A large chocolate covered donut with white frosting.</p>
+                        </div>
+                        <div class="menuCard">
+                            <p><b>Construction Cone <span class="price">$4.99</span></b></p>
+                            <p class="menuDescription">Your choice of ice cream served in an orange waffle cone.</p>
+                        </div>
+                    </div>
+                <div>
+
+                <div class="menuHeading">
+                    <h2 id="appetizers">Appetizers &amp; Sides</h2>
+                    
+                    <h3 class="noMarginBottom">Finger Foods</h3>
+                    <div class="menuRow">
+                        <div class="menuCard">
+                            <p><b>Mustang Mozzarella Sticks <span class="price">$8.99</span></b></p>
+                            <p class="menuDescription">Deep-fried mozzarella coated with a nice golden breading, fried to absolute perfection just the way it should be.</p>
+                        </div>
+                        <div class="menuCard">
+                            <p><b>Aero Wings <span class="price">$3.99</span></b></p>
+                            <p class="menuDescription">6 wings of your choice, either boneless or bone-in. Flavors include Mango Habanero, Honey BBQ, Hot BBQ, Parm and Garlic, and Buffalo.</p>
+                        </div>
+                        <div class="menuCard">
+                            <p><b>Engine Fried Pickles <span class="price">$4.99</span></b></p>
+                            <p class="menuDescription">Sliced dill pickles breaded and fried, served with your choice of ranch or chipotle ranch.</p>
+                        </div>
+                        <div class="menuCard">
+                            <p><b>Crusin&#39; Chips and Queso <span class="price">$4.99</span></b></p>
+                            <p class="menuDescription">A nice and simple white queso with peppers, that is served with our home-made tortilla chips.</p>
+                        </div>
+                    </div>
+
+                    <h3 class="noMarginBottom">Salads</h3>
+                    <div class="menuRow">
+                        <div class="menuCard">
+                            <p><b>Chef's Special <span class="price">$7.99</span></b></p>
+                            <p class="menuDescription">Spinach, romaine and iceberg lettuce, with tomatoes, onion, carrots, and mozzarella cheese. Served with your choice of meat, either chicken, turkey, or bacon.</p>
+                        </div>
+                        <div class="menuCard">
+                            <p><b>The Chevy Caesar <span class="price">$8.49</span></b></p>
+                            <p class="menuDescription">Romaine lettuce, spinach, tomatoes, egg, parmesan cheese, tossed in caesar dressing.</p>
+                        </div>
+                        <div class="menuCard">
+                            <p><b>Southwest Chicken Avocado <span class="price">$8.99</span></b></p>
+                            <p class="menuDescription">Romaine lettuce, spinach, avocado, corn salsa, tomatoes, onion, chicken and chipotle vinaigrette.</p>
+                        </div>
+                    </div>
+
+                    <div class="menuHeading">
+                    <h2 id="drinks">Drinks</h2>
+                    
+                    <h3 class="noMarginBottom">Non-Alcoholic Beverages</h3>
+                    <div class="menuRow">
+                        <div class="menuCard">
+                            <p><b>Radiator Water <span class="price">No Charge</span></b></p>
+                            <p class="menuDescription">As simple as it gets. Chilled water served with ice cubes. With or without lemon.</p>
+                        </div>
+                        <div class="menuCard">
+                            <p><b>Carbureted Coffee <span class="price">$1.99</span></b></p>
+                            <p class="menuDescription">A hot cup of coffee served with your choices of creamer and sugar.</p>
+                        </div>
+                        <div class="menuCard">
+                            <p><b>Superspeed Soft Drink <span class="price">$2.49</span></b></p>
+                            <p class="menuDescription">Any soft drink you would like, we have.</p>
+                        </div>
+                    </div>
+
+                    <h3 class="noMarginBottom">Alcoholic Beverages</h3>
+                    <div class="menuRow">
+                        <div class="menuCard">
+                            <p><b>Chef's Special <span class="price">$4.99</span></b></p>
+                            <p class="menuDescription">A hard apple cider with a splash of vodka added. Served with ice.</p>
+                        </div>
+                        <div class="menuCard">
+                            <p><b>The Chevy Caesar <span class="price">$3.99</span></b></p>
+                            <p class="menuDescription">Vodka, ginger beer, and fresh lime juice. Served with a lime.</p>
+                        </div>
+                        <div class="menuCard">
+                            <p><b>Backseat Driver <span class="price">$4.99</span></b></p>
+                            <p class="menuDescription">Patron, Honey syrup, mango puree, lemon juice, and a hint of orange juice. Served with a lemon.</p>
+                        </div>
+                    </div>
+                <div>
             </section>
             
         </main>

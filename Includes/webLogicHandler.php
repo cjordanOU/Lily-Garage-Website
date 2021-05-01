@@ -57,4 +57,8 @@
         echo '<div><address><a class="noFloat" href="tel:555-555-5555" title="Call our phone number">555-555-5555</a><a class="noFloat" href="mailto:contact@llg.com" title="Send us an email">Contact@llg.com</a><p class="noMargin">2200 N Squirrel Rd Rochester MI</p></address></div>';
         echo '<div><p class="noMargin">Our Motto</p><p class="noMargin"><i>A great place to get great food!</i></p></div></footer>';
     }
+
+    function accountView(){
+        echo '<p>Under Construction</p>';
+    }
 ?>
