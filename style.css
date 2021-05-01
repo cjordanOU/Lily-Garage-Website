@@ -35,7 +35,7 @@ body {
     max-width: 75vw;
     margin: 0 auto;
     background: rgb(225, 225, 225);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 96px, rgba(255,255,255,1) 97px, rgba(255,255,255,1) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 96px, rgba(225,225,225,1) 97px, rgba(225,225,225,1) 100%);
     top: 0;
     box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
     scroll-padding-top: 70px;
@@ -291,6 +291,10 @@ header .headContainer .headOrder {
 
 .noMarginBottom {
     margin-bottom: 0;
+}
+
+.noMarginTop {
+    margin-top: 0;
 }
 
 .noFloat {
@@ -656,6 +660,85 @@ header .headContainer .headOrder {
     top: 50%;
     transition: 0.2s;
     -webkit-transition: 0.2s;
+}
+
+/* ------ ------ Menu ------ ------ */
+
+.price {
+    /* Smaller text for price on the menu */
+    margin-top: 0;
+    margin-bottom: 12px!important;
+    font-style: italic;
+    font-size: .75em;
+}
+
+.menu {
+    background-color: white;
+    padding: .75% 2%;
+}
+
+.menuHeading h2 {
+    text-decoration: underline;
+}
+
+.menuHeading h3 {
+    border-bottom: 2px solid black;
+    width: 100%;
+    margin-bottom: 1.35vh;
+}
+
+.menuRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+
+.menuDescription {
+    word-wrap: break-word;
+    margin-top: 0;
+}
+
+.menuCard {
+    width: 49.8%;
+}
+
+.menuCard p:first-child {
+    background: lightgray;
+    border-radius: 2px;
+    padding-left: .35vw;
+    margin-bottom: .1vh;
+    margin-top: 0;
+}
+
+
+
+/* ------ menuBar ------ */
+.menuBar {
+    /* Menu bar that jumps user to different parts of the menu */
+    height: 90px;
+    width: 85%;
+    margin: auto;
+    padding-top: 33px
+}
+
+.menuBar a {
+    /* Links inside the menu bar */
+    padding: 12px;
+    color: #690f0f;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    width: 25%;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+}
+
+.menuBar a:hover {
+    /* Links inside the menu bar when hovered over */
+    border-bottom: 5px solid #690f0f;
+    transition: 0.5s;
+    -webkit-transition: 0.3s;
 }
 
 

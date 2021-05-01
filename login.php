@@ -14,7 +14,6 @@
         <?php
             require_once('Includes/webLogicHandler.php');
             require_once('Includes/userAuthHandler.php');
-            loginCheckBasic();
             displayHeader();
             loginHandler();
         ?>
@@ -39,7 +38,7 @@
                         <input type="password" name="password" class="form-control" autocomplete="current-password" required>
                         <br>
 
-                        <input type="submit" name="loginSubmit" value="Login" class="fancyButton-1">
+                        <input type="submit" name="Submit" value="Login" class="fancyButton-1">
                     </form>
                     <p>Need to register for an account? <a href="signup.php" title="Click here to go to the sign up page" class="link-1">Sign up here.</a></p>
                 </div>

@@ -13,8 +13,7 @@
     <body>
         <?php
             require_once('Includes/webLogicHandler.php');
-            require_once('Includes/userAuthHandler.php');
-            loginCheck();
+            loginCheckBasic();
             displayHeader();
         ?>
 

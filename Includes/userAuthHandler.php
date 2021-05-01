@@ -1,9 +1,9 @@
 <?php
+    // dbConfig include
+    require_once 'Includes/dbConfig.php';
+    
     // Process Login Form
     function loginHandler() {
-        // Start the user session
-        session_start();
-
         // Checks to see if user is already logged in
         loginCheckBasic();
 

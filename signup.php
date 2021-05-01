@@ -87,7 +87,7 @@
                         </div>
 
                         <div class="form-section">
-                            <input type="submit" class="fancyButton-1" value="Submit">
+                            <input type="submit" class="fancyButton-1" value="Sign Up">
                             <input type="reset" class="fancyButton-2" value="Reset">
                         </div>
                     </form>
