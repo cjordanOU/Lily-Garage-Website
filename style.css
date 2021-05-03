@@ -280,6 +280,21 @@ header .headContainer .headOrder {
 
 /* ------ ------ ------ Class Styles ------ ------ ------ */
 
+.largeh1 {
+    /* Overrides default webkit behavior for h1 */
+    font-size: 2em;
+}
+
+.mHide {
+    display: initial;
+}
+
+@media only screen and (max-width: 760px) {
+    .mHide {
+        display: none;
+    }
+}
+
 .centerText {
     text-align: center;
 }
@@ -295,6 +310,31 @@ header .headContainer .headOrder {
 
 .noMarginTop {
     margin-top: 0;
+}
+
+.orderMain {
+    width: 100%;
+    padding: 150px 0 18px 0;
+    margin: 0;
+}
+
+.orderBody {
+    scroll-padding-top: 150px;
+}
+
+.orderBG {
+    margin: 0;
+    width: 100%;
+    min-width: 100%;
+    top: 0;
+    background-color: #151111;
+    background-image: radial-gradient(closest-side, transparent 95%, #000000 90%), radial-gradient(closest-side, transparent 95%, #080808 99%);
+    background-size:40px 40px;
+    background-position:0 0, 20px 20px;
+    scroll-padding-top: 150px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .noFloat {
@@ -741,7 +781,7 @@ header .headContainer .headOrder {
     }
 }
 
-/* ------ menuBar ------ */
+/* ------ ------ menuBar ------ ------ */
 .menuBar {
     /* Menu bar that jumps user to different parts of the menu */
     height: 90px;
@@ -824,6 +864,45 @@ header .headContainer .headOrder {
     }
 }
 
+/* ------ ------ Slideshow Fade effect ------ ------ */
+.fade {
+    /* Slideshow fade */
+    animation: fade ease 2s;
+    -webkit-animation: fade ease 2s;
+    -moz-animation: fade ease 2s;
+    -o-animation: fade ease 2s;
+    -ms-animation: fade ease 2s;
+}
+@keyframes fade {
+    /* Keyframes for slideshow fade */
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fade {
+    /* Keyframes for slideshow fade */
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fade {
+    /* Keyframes for slideshow fade */
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fade {
+    /* Keyframes for slideshow fade */
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fade {
+    /* Keyframes for slideshow fade */
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
 
 /* ------ ------ ------ ID Styles ------ ------ ------ */
 
@@ -831,4 +910,98 @@ header .headContainer .headOrder {
     /* The copyright text on the footer */
     color: rgb(255, 255, 255);
     margin: .1vh 0;
+}
+
+#homeSlideshowContainer {
+    margin: auto;
+    width: 60%;
+    margin-bottom: 7vh;
+    text-align: center;
+}
+
+#homeSlideshowContainer a {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    background-color: transparent;
+    padding: 1rem;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+#homeSlideshowContainer a:hover {
+    color: whitesmoke;
+    background-color: black;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+}
+
+#homeSlideshowContainer a:active {
+    color: rgb(211, 195, 195);
+    background-color: rgb(36, 30, 30);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+}
+
+#homeLocation {
+    /* The container for the location portion of the home page */
+    margin: auto;
+    margin-top: 3.5vh;
+    margin-bottom: 7vh;
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#homeLocation hr {
+    /* The horizontal line in the location portion of the homepage */
+    margin-bottom: 4vh;
+}
+
+#homeLocation div {
+    /* The container for the text and link in the location portion of the homepage */
+    width: 55%;
+}
+
+#homeLocation img {
+    /* The image inside of the location portion of the homepage */
+    width: 40%;
+    max-width: 40%;
+    max-height: 30vh;
+    object-fit: cover;
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+}
+
+#headerOrder {
+    height: 150px;
+    max-height: 150px;
+    padding: 5vh 3%;
+    
+}
+
+#headerOrder .headContainer .headerOrderLinks {
+    flex: .35;
+}
+
+#headerOrder .headContainer .headerOrderLinks a {
+    color: rgb(190, 190, 190);
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 3%;
+}
+
+#headerOrder .headContainer .headerOrderLinks a:hover {
+    color: rgb(196, 97, 5);
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+}
+
+#headerOrder .headContainer .headerOrderLinks a:active {
+    color: rgb(155, 31, 9);
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
 }

@@ -29,5 +29,7 @@
                 <?php displayContact(); ?>
             </section>
         </main>
+
+        <?php displayFooter(); ?>
     </body>
 </html>

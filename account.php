@@ -27,6 +27,7 @@
             <section class="widePad">
                 <div>
                     <h1>Now viewing account for <b><?php echo htmlspecialchars($_SESSION["username"]); if($_SESSION["employee"] == true){echo " (Employee)";}?></b>.</h1>
+                    <p>Preferred Store: <b><?php echo htmlspecialchars($_SESSION["storeLocation"]); ?></b></p>
                     <?php accountView(); ?>
                 </div>
             </section>

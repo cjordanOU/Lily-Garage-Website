@@ -20,7 +20,7 @@
             // Validate credentials
             if(empty($username_err) && empty($password_err)) {
                 // Prepare a select statement
-                $sql = "SELECT `ACCOUNT_ID`, `USERNAME`, `PASSWORD` FROM accounts WHERE `USERNAME` = ?";
+                $sql = "SELECT `ACCOUNT_ID`, `USERNAME`, `PASSWORD`, `PREFERRED_STORE` FROM accounts WHERE `USERNAME` = ?";
 
                 if($stmt = mysqli_prepare($GLOBALS['connection'], $sql)) {
                     // Bind variables to the prepared statement as parameters
@@ -37,7 +37,7 @@
                         // Check if username exists, if yes then verify password
                         if(mysqli_stmt_num_rows($stmt) == 1){                    
                             // Bind result variables
-                            mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password);
+                            mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password, $userStore);
 
 
                             if(mysqli_stmt_fetch($stmt)){
@@ -49,6 +49,7 @@
                                     $_SESSION["loggedin"] = true;
                                     $_SESSION["id"] = $id;
                                     $_SESSION["username"] = $username;
+                                    $_SESSION["storeLocation"] = $userStore;
 
                                     // Employee Check
                                     $empCheck = "SELECT * FROM employees WHERE ACCOUNT_ID=$id and WHEN_TERMINATED IS NULL";

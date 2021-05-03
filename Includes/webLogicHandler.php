@@ -41,13 +41,23 @@
         
         // If user isn't logged in, will show login page
         if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-            echo "<a href='login.php' title='Click here to login'>Login</a> <a href='signup.php' title='Click here to sign up'>Sign Up</a>";
+            echo "<a href='signup.php' title='Click here to sign up'>Sign Up</a> <a href='login.php' title='Click here to login'>Login</a>";
         }
         else {
             echo "<a href='account.php' title='View your account'>Account</a> <a href='Includes/logout.php' title='Click here to log out'>Log Out</a>";
         }
-        echo '</div><div class="headOrder"><a href="#" title="Click here to make an online order" class="headButton">Order Online</a>';
+        echo '</div><div class="headOrder"><a href="order.php" title="Click here to make an online order" class="headButton">Order Online</a>';
         echo '</div></nav></header>';
+    }
+
+    function displayHeaderOrder() {
+        loginCheckBasic();
+        echo '<header id="headerOrder"><nav class="headContainer"><div id="headLogo"><a href="index.php" class="logo" title="Return to the homepage">Lily&#39;s Lil Garage</a></div>';
+        
+        if(isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] == true){
+            echo "<div class='headerOrderLinks'><a href='account.php' title='View your account'>Account</a> <a href='Includes/logout.php' title='Click here to log out'>Log Out</a></div>";
+        }
+        echo '</nav></header>';
     }
 
     function displayFooter(){
@@ -55,7 +65,7 @@
         echo '<nav><a href="index.php" title="Return to the homepage">Home</a><a href="locations.php" title="View our store locations">Locations</a>';
         echo '<a href="menu.php" title="Browse our menu">Menu</a><a href="contact.php" title="View our contact information">Contact</a></nav><p id="footCopy">Copyright &copy; 2021</p></div>';
         echo '<div><address><a class="noFloat" href="tel:555-555-5555" title="Call our phone number">555-555-5555</a><a class="noFloat" href="mailto:contact@llg.com" title="Send us an email">Contact@llg.com</a><p class="noMargin">2200 N Squirrel Rd Rochester MI</p></address></div>';
-        echo '<div><p class="noMargin">Our Motto</p><p class="noMargin"><i>A great place to get great food!</i></p></div></footer>';
+        echo '<div><p class="noMargin">Our Motto:</p><p class="noMargin"><i>Taking that home-made taste across the state!</i></p></div></footer>';
     }
 
     function accountView(){
@@ -67,7 +77,7 @@
             echo '<div class="widePad form-area"><form action="';
             echo htmlspecialchars($_SERVER["PHP_SELF"]);
             echo '" method="post">';
-            echo '<h4>Personal Information</h3><label>First Name:</label><input type="text" name="firstName" size="40" title="Enter your first name" autocomplete="given-name" required>';
+            echo '<h4>Personal Information<hr></h4><label>First Name:</label><input type="text" name="firstName" size="40" title="Enter your first name" autocomplete="given-name" required>';
             echo '<br><label>Last Name:</label><input type="text" name="lastName" size="40" title="Enter your last name" autocomplete="family-name" required>';
             echo '<h4>Contact Information<hr></h4><label>Email Address:</label><input type="text" name="email" size="40" title="Enter your email address" autocomplete="email" required>';
             echo '<br><label>Phone Number:</label><input type="text" name="phoneNumber" size="40" title="Enter your phone number. Hint: 012-345-6789" pattern="^(\d{3}-)?\d{3}-\d{4}$" autocomplete="tel" required>';
