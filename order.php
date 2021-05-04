@@ -16,11 +16,15 @@
             require_once('Includes/orderHandler.php');
             loginCheckBasic();
             displayHeaderOrder();
+            
         ?>
 
         <main class="orderMain">
             <section class="standardPad">
-                <?php orderInfoPrompt(); ?>
+                <?php
+                    orderInfoPrompt();
+                    orderInfoConfirm();
+                ?>
 
             </section>
         </main>

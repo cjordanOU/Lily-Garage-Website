@@ -57,6 +57,10 @@
         if(isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] == true){
             echo "<div class='headerOrderLinks'><a href='account.php' title='View your account'>Account</a> <a href='Includes/logout.php' title='Click here to log out'>Log Out</a></div>";
         }
+        else {
+            echo "<div class='headerOrderLinks'><a href='signup.php' title='Click here to sign up'>Sign Up</a> <a href='login.php' title='Click here to login'>Login</a></div>";
+        }
+
         echo '</nav></header>';
     }
 

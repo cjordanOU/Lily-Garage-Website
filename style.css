@@ -984,7 +984,7 @@ header .headContainer .headOrder {
 }
 
 #headerOrder .headContainer .headerOrderLinks {
-    flex: .35;
+    flex: .45;
 }
 
 #headerOrder .headContainer .headerOrderLinks a {
