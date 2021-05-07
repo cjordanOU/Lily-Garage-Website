@@ -25,6 +25,8 @@ function rotate() {
 }
 
 function HeaderScroll() {
+  var headerExists = document.getElementById("header");
+  if (headerExists != null) {
     // Changes the styling on the webpage header when the user scrolls the mouse down from the top of the page
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
       // When the webpage is scrolled 50px or more
@@ -33,6 +35,7 @@ function HeaderScroll() {
       // When the webpage is not scrolled
       document.getElementById("header").style.cssText = "height: 96px; max-height: 96px;";
     }
+  }
 }
 
 function startSlideshow() {

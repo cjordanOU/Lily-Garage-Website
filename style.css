@@ -104,16 +104,16 @@ footer div nav a, footer div address a {
     margin-right: 3px;
     color: rgb(133, 166, 197);
     text-decoration: none;
-    transition: 0.2s;
     -webkit-transition: 0.2s;
+    transition: 0.2s;
 }
 
 footer div nav a:hover, footer div address a:hover {
     /* Links inside nav bar and adress links when hovered over */
     color: rgb(197, 219, 240);
     text-decoration: underline;
-    transition: 0.2s;
     -webkit-transition: 0.2s;
+    transition: 0.2s;
 }
 
 @media only screen and (max-width: 600px) {
@@ -199,8 +199,8 @@ header {
     padding: 2.375vh 0 1.375vh 3%;
     z-index: 100;
     top: 0;
-    transition: 0.2s;
     -webkit-transition: 0.2s;
+    transition: 0.2s;
 }
 
 header .headContainer {
@@ -218,8 +218,8 @@ header .headContainer #headLinks {
     display: flex;
     font-size: 18px;
     align-items: center;
-    transition: 0.2s;
     -webkit-transition: 0.2s;
+    transition: 0.2s;
 }
 
 header .headContainer #headLinks a {
@@ -233,14 +233,14 @@ header .headContainer #headLinks a {
 
 header .headContainer #headLinks a:hover {
     color: rgb(196, 97, 5);
-    transition: 0.2s;
     -webkit-transition: 0.2s;
+    transition: 0.2s;
 }
 
 header .headContainer #headLinks a:active {
     color: rgb(155, 31, 9);
-    transition: 0.2s;
     -webkit-transition: 0.2s;
+    transition: 0.2s;
 }
 
 header .headContainer .headOrder {
@@ -310,31 +310,6 @@ header .headContainer .headOrder {
 
 .noMarginTop {
     margin-top: 0;
-}
-
-.orderMain {
-    width: 100%;
-    padding: 150px 0 18px 0;
-    margin: 0;
-}
-
-.orderBody {
-    scroll-padding-top: 150px;
-}
-
-.orderBG {
-    margin: 0;
-    width: 100%;
-    min-width: 100%;
-    top: 0;
-    background-color: #151111;
-    background-image: radial-gradient(closest-side, transparent 95%, #000000 90%), radial-gradient(closest-side, transparent 95%, #080808 99%);
-    background-size:40px 40px;
-    background-position:0 0, 20px 20px;
-    scroll-padding-top: 150px;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 .noFloat {
@@ -552,15 +527,15 @@ header .headContainer .headOrder {
     padding: 24px;
     color: white;
     text-decoration: none;
-    transition: 0.2s;
     -webkit-transition: 0.2s;
+    transition: 0.2s;
 }
 
 .parallaxText1 a:hover {
     /* Changes color of the parallaxText button when hovered over */
     background: salmon;
-    transition: 0.2s;
     -webkit-transition: 0.2s;
+    transition: 0.2s;
 }
 
 .parallaxText2 {
@@ -628,8 +603,8 @@ header .headContainer .headOrder {
     color: black;
     background-color: transparent;
     padding: 1rem;
-    transition: 0.2s;
     -webkit-transition: 0.2s;
+    transition: 0.2s;
     width: 50%;
     border: 1px solid black;
 }
@@ -638,8 +613,8 @@ header .headContainer .headOrder {
     /* what changes when the linkButton is hovered over */
     color: whitesmoke;
     background-color: black;
-    transition: 0.2s;
     -webkit-transition: 0.2s;
+    transition: 0.2s;
     box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
 }
 
@@ -647,8 +622,8 @@ header .headContainer .headOrder {
     /* what changes when the linkButton is clicked on */
     color: rgb(206, 197, 197);
     background-color: rgb(58, 50, 50);
-    transition: 0.2s;
     -webkit-transition: 0.2s;
+    transition: 0.2s;
     box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
 }
 
@@ -666,15 +641,15 @@ header .headContainer .headOrder {
     line-height: 4.75vh;
     vertical-align: middle;
     height: 4.75vh;
-    transition: 0.2s;
     -webkit-transition: 0.2s;
+    transition: 0.2s;
 }
 
 .logo:hover {
     /* The large website logo text when hovered on */
     color: #eb8d21;
-    transition: 0.2s;
     -webkit-transition: 0.2s;
+    transition: 0.2s;
 }
 
 .logoSmall {
@@ -698,8 +673,8 @@ header .headContainer .headOrder {
     float: none;
     font-size: 1.4em;
     top: 50%;
-    transition: 0.2s;
     -webkit-transition: 0.2s;
+    transition: 0.2s;
 }
 
 /* ------ ------ Menu ------ ------ */
@@ -800,15 +775,15 @@ header .headContainer .headOrder {
     text-align: center;
     text-decoration: none;
     width: 25%;
-    transition: 0.2s;
     -webkit-transition: 0.2s;
+    transition: 0.2s;
 }
 
 .menuBar a:hover {
     /* Links inside the menu bar when hovered over */
     border-bottom: 5px solid #690f0f;
-    transition: 0.5s;
-    -webkit-transition: 0.3s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
 }
 
 @media only screen and (max-width: 600px) {
@@ -867,11 +842,11 @@ header .headContainer .headOrder {
 /* ------ ------ Slideshow Fade effect ------ ------ */
 .fade {
     /* Slideshow fade */
-    animation: fade ease 2s;
     -webkit-animation: fade ease 2s;
     -moz-animation: fade ease 2s;
     -o-animation: fade ease 2s;
     -ms-animation: fade ease 2s;
+    animation: fade ease 2s;
 }
 @keyframes fade {
     /* Keyframes for slideshow fade */
@@ -903,6 +878,138 @@ header .headContainer .headOrder {
     100% {opacity:1;}
 }
 
+/* ------ ------ Order Page ------ ------ */
+
+.orderBody {
+    scroll-padding-top: 150px;
+}
+
+.orderMain {
+    display: flex;
+    width: 100%;
+    width: 100%;
+    padding: 15vh 0 18px 0;
+    margin: 0;
+}
+
+.orderBG {
+    margin: 0;
+    width: 100%;
+    min-width: 100%;
+    top: 0;
+    background-color: #151111;
+    background-image: radial-gradient(closest-side, transparent 95%, #000000 90%), radial-gradient(closest-side, transparent 95%, #080808 99%);
+    background-size:40px 40px;
+    background-position:0 0, 20px 20px;
+    scroll-padding-top: 150px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.orderLeft {
+    flex: .925;
+    height: 85vh;
+    background-color: white;
+    border-right: 2px solid gray;
+    padding: 0 1%;
+}
+
+.orderLeft a {
+    /* orderLeft red links */
+    float: none;
+    display: block;
+    padding: 10px 0px;
+    color: #690f0f;
+    text-decoration: none;
+}
+
+.orderLeft a:hover {
+    /* Hover style for orderLeft red links */
+    border-left: 5px solid #690f0f;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    padding-left: 5px;
+    background-color: #ffb5b5;
+}
+
+.orderLeft a:active {
+    /* Active style for orderLeft red links */
+    color: #ffb5b5;
+    background-color: #3b0909;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.orderCenter {
+    flex: 4;
+    height: 100%;
+}
+
+.orderCenter table {
+    /* hides border from menu table */
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.orderTable tbody tr {
+    /* Adds padding to each tablerow of the menu */
+    padding: 5px;
+}
+
+.orderTable tbody tr td {
+    /* Adds padding to each tablerow td of the menu */
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.orderCenter table tbody tr:nth-child(odd) {
+    /* Alternates menu background colors for increased readability */
+    background: #ffffff;
+}
+
+.orderCenter table tbody tr:nth-child(even) {
+    /* Alternates menu background colors for increased readability */
+    background: #dddddd;
+}
+
+.orderRight {
+    flex: 1.05;
+    height: 85vh;
+    background-color: white;
+    border-left: 2px solid gray;
+    
+}
+
+.orderRight p, .orderRight h4, #orderCheckoutButton {
+    /* Margins for certain orderRight children */
+    margin-left: 4px;
+    margin-bottom: 0;
+    margin-top: 2px;
+}
+
+.orderUserInfo {
+    /* Separation border for user info and cart */
+    border-bottom: 2px solid gray;
+    padding: 0 .125%;
+}
+
+.orderCart {
+    /* Cart where users selected items are placed */
+    padding-top: 6px;
+    padding-bottom: 6px;
+    min-height: 12px;
+    max-height: 50vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.orderCheckout {
+    /* container for checkout button and total price */
+    border-top: 2px solid gray;
+}
 
 /* ------ ------ ------ ID Styles ------ ------ ------ */
 
@@ -977,8 +1084,8 @@ header .headContainer .headOrder {
 }
 
 #headerOrder {
-    height: 150px;
-    max-height: 150px;
+    height: 15vh;
+    max-height: 15vh;
     padding: 5vh 3%;
     
 }
@@ -996,12 +1103,16 @@ header .headContainer .headOrder {
 
 #headerOrder .headContainer .headerOrderLinks a:hover {
     color: rgb(196, 97, 5);
-    transition: 0.2s;
     -webkit-transition: 0.2s;
+    transition: 0.2s;
 }
 
 #headerOrder .headContainer .headerOrderLinks a:active {
     color: rgb(155, 31, 9);
-    transition: 0.2s;
     -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+#orderPrompt {
+
 }

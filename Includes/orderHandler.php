@@ -27,10 +27,49 @@
             if($useInfo == "yes") {
                 echo "<p>test1</p>";
             }
+            else {
+                echo "<p>test2</p>";
+            }
+        }
+        
+    }
+
+    function displayMenu() {
+        // Select menu itms
+        $connection = $GLOBALS['connection'];
+        $previousCategory = "";
+        $sql = 'SELECT * FROM menu_items';
+        $result = $connection-> query($sql);
+
+        if ($result-> num_rows > 0) {
+            while ($row = $result-> fetch_assoc()) {
+                $currentCategory = $row["food_category"];
+                
+                if ($currentCategory != $previousCategory) {
+                    echo "<tr id='". $row["food_category"] ."'><td>". $row["food_name"] ."</td><td>". $row["description"] ."</td><td>&#36;". $row["price"] ."</td><td><button name='". $row["food_name"] ."'value='". $row["price"] ."' onclick='addToCart(this.name,this.value)'>Add to Cart</button></td></tr>";
+                    $previousCategory = $row["food_category"];
+                }
+                else {
+                    echo "<tr><td>". $row["food_name"] ."</td><td>". $row["description"] ."</td><td>&#36;". $row["price"] ."</td><td><button name='". $row["food_name"] ."'value='". $row["price"] ."' onclick='addToCart(this.name,this.value)'>Add to Cart</button></td></tr>";
+                    $previousCategory = $row["food_category"];
+                }
+            }
+            echo "</table>";
         }
         else {
-            echo "<p>test2</p>";
+            echo "0 results";
         }
+    }
+
+    function displayUserInfo() {
+        $first_name = $last_name = $email_address = $phone_number = "test";
+        $connection = $GLOBALS['connection'];
+        echo "<h4>Ordering For:</h4>";
+        echo "<p>$first_name $last_name</p>";
+        echo "<p>$email_address</p>";
+        echo "<p>$phone_number</p>";
+
+        echo "<p>Your selected items will be shown below</p>";
     }
 
 ?>
