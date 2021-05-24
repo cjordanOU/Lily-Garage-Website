@@ -50,20 +50,6 @@
         echo '</div></nav></header>';
     }
 
-    function displayHeaderOrder() {
-        loginCheckBasic();
-        echo '<header id="headerOrder"><nav class="headContainer"><div id="headLogo"><a href="index.php" class="logo" title="Return to the homepage">Lily&#39;s Lil Garage</a></div>';
-        
-        if(isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] == true){
-            echo "<div class='headerOrderLinks'><a href='account.php' title='View your account'>Account</a> <a href='Includes/logout.php' title='Click here to log out'>Log Out</a></div>";
-        }
-        else {
-            echo "<div class='headerOrderLinks'><a href='signup.php' title='Click here to sign up'>Sign Up</a> <a href='login.php' title='Click here to login'>Login</a></div>";
-        }
-
-        echo '</nav></header>';
-    }
-
     function displayFooter(){
         echo '<footer><div><p class="logoSmall">Lily&#39;s Lil Garage</p>';
         echo '<nav><a href="index.php" title="Return to the homepage">Home</a><a href="locations.php" title="View our store locations">Locations</a>';

@@ -21,9 +21,9 @@
 
         <section id="orderPrompt">
             <?php
-                //orderInfoPrompt();
-                //orderInfoConfirm();
-                ?>
+                getOrderInfo();
+                checkIfSessionStore();
+            ?>
         </section>
 
         <main class="orderMain">
