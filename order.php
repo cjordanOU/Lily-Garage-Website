@@ -8,13 +8,15 @@
 
         <!-- Styles -->
         <link href="style.css" rel="stylesheet">
+
+        <!-- Order Script -->
+        <script src="Scripts/orderLogic.js" type="text/javascript"></script>
     </head>
 
     <body class="orderBody">
         <?php
             require_once('Includes/webLogicHandler.php');
             require_once('Includes/orderHandler.php');
-            loginCheckBasic();
             displayHeaderOrder();
             
         ?>

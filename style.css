@@ -304,6 +304,10 @@ header .headContainer .headOrder {
     margin: 0;
 }
 
+.noMarginLeft {
+    margin-left: 0 !important;
+}
+
 .noMarginBottom {
     margin-bottom: 0;
 }
@@ -887,7 +891,7 @@ header .headContainer .headOrder {
 .orderMain {
     display: flex;
     width: 100%;
-    width: 100%;
+    min-width: 100%;
     padding: 15vh 0 18px 0;
     margin: 0;
 }
@@ -913,6 +917,18 @@ header .headContainer .headOrder {
     background-color: white;
     border-right: 2px solid gray;
     padding: 0 1%;
+}
+
+.orderLocationMain {
+    padding: 15vh 0 4vh 0;
+}
+
+.orderLocationMain hr {
+    margin-bottom: .95vh;
+}
+
+.orderLocationMain section h2 {
+    margin-top: 9.5vh;
 }
 
 .orderLeft a {
@@ -1011,6 +1027,7 @@ header .headContainer .headOrder {
     border-top: 2px solid gray;
 }
 
+
 /* ------ ------ ------ ID Styles ------ ------ ------ */
 
 #footCopy {
@@ -1087,11 +1104,13 @@ header .headContainer .headOrder {
     height: 15vh;
     max-height: 15vh;
     padding: 5vh 3%;
-    
+    display: flex;
 }
 
 #headerOrder .headContainer .headerOrderLinks {
     flex: .45;
+    margin-left: 24vw;
+    white-space: nowrap;
 }
 
 #headerOrder .headContainer .headerOrderLinks a {
@@ -1113,6 +1132,9 @@ header .headContainer .headOrder {
     transition: 0.2s;
 }
 
-#orderPrompt {
-
+#orderStoreInfo, #orderStoreInfo h2, #orderStoreInfo p{
+    color: white;
+    margin: 0;
+    padding: 0;
+    margin-left: .5vw;
 }

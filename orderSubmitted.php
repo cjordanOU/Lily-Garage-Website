@@ -3,7 +3,7 @@
     <head>
         <?php require_once('Includes/metadata.php'); ?>
 
-        <title>Order Location - Lily's Lil' Garage</title>
+        <title>Order Submitted - Lily's Lil' Garage</title>
         <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
 
         <!-- Styles -->
@@ -21,15 +21,7 @@
 
         <main class="orderLocationMain">
             <section class="narrowPad">
-                <h2>Please make sure your information below is correct before proceeding to the order page</h2>
-            </section>
-            <hr>
-            <section class="narrowPad">
-                <form action="order.php" method="post">
-                    <?php orderInfoPrompt();?>
-                    <br>
-                    <input type="submit" name="Submit" value="Submit User Information" class="fancyButton-1">
-                </form>
+                <h2>Your order has been submitted!</h2>
             </section>
         </main>
         <?php displayFooter(); ?>

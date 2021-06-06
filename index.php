@@ -46,7 +46,7 @@
                     <div>
                         <h2 class="noMargin">We've got what you want, when you need it</h2>
                         <p>We work our hardest to bring exactly what our customers want. With menu items tailored specifically to each restaurant, you're sure to find something you'll love.</p>
-                        <a class="linkButton mCenter" href="locations.php" title="Choose a location">Choose a location</a>
+                        <a class="linkButton noMarginLeft" href="locations.php" title="Choose a location">Choose a location</a>
                     </div>
                     <img alt="Our delicious Rear End Surprise Breakfast Burrito" title="Our delicious Rear End Breakfast Burrito" src="Images/RearEndSurprise.JPG">
                 </div>

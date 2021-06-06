@@ -9,23 +9,19 @@
         loginCheckBasic();
         echo '<header id="headerOrder"><nav class="headContainer"><div id="headLogo"><a href="index.php" class="logo" title="Return to the homepage">Lily&#39;s Lil Garage</a></div>';
         
-        if(isset($_SESSION["orderStore"])) {
-            $_SESSION['orderStore'] = $orderStore;
+        if($_SERVER["REQUEST_METHOD"] == "POST"){
+            $orderStore = trim($_POST["order_store"]);
             $connection = $GLOBALS['connection'];
-            $sql = "SELECT * FROM store_locations WHERE STORE_NAME={$orderStore}";
-            $result = $connection-> query($sql);
-
-            if ($result-> num_rows > 0) {
-                while ($row = $result-> fetch_assoc()) {
-                    echo "<div id='orderStoreInfo'><h2>". $row["STORE_NAME"] ."$</h2><p>". $row["STORE_STREET"] ."</p>";
-                    echo "<p>". $row["STORE_LOCATION"] ."</p>";
-                    echo "<p>". $row["STORE_PHONE"] ."</p></div>";
-                }
-            }
+            $sql = "SELECT * FROM store_locations WHERE STORE_NAME='$orderStore'";
+            $result = $connection-> query($sql) or die($connection->error);
+            $row = $result->fetch_assoc();
+            
+            echo "<div id='orderStoreInfo'><h2>". $row["STORE_NAME"] ."</h2><p>". $row["STORE_STREET"] ."</p>";
+            echo "<p>". $row["STORE_LOCATION"] ."</p>";
+            echo "<p>". $row["STORE_PHONE"] ."</p></div>";
         }
 
-
-        if(isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] == true){
+        if(isset($_SESSION["loggedin"]) == true){
             echo "<div class='headerOrderLinks'><a href='account.php' title='View your account'>Account</a> <a href='Includes/logout.php' title='Click here to log out'>Log Out</a></div>";
         }
         else {
@@ -39,6 +35,14 @@
         if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             echo "<label>First Name:</label><input type='text' name='first_name' size='40' title='Enter your first name' autocomplete='given-name' required><br>";
             echo "<label>Last Name:</label><input type='text' name='last_name' size='40' title='Enter your last name' autocomplete='family-name' required><br>";
+            echo "<label>E-mail Address:</label>";
+            echo "<input type='text' name='order_email' size='40' title='Enter your email address' autocomplete='email' required><br>";
+            echo "<label>Phone Number:</label>";
+            echo "<input type='text' name='order_phone' size='40' title='Enter your phone number' autocomplete='tel' pattern='^(\d{3}-)?\d{3}-\d{4}$' required><br>";
+            echo "<label>Store Location:</label>";
+            echo "<select name='order_store' title='Select which store you would like to order from' required><optgroup label='Michigan Locations'><option value='Mount Pleasant'>Mount Pleasant</option><option value='Ann Arbor'>Ann Arbor</option>";
+            echo "<option value='Pickney'>Pickney</option><option value='Flushing'>Flushing</option><option value='Colon'>Colon</option><option value='Climax'>Climax</option>";
+            echo "</optgroup><optgroup label='International Locations'><option value='Setagaya-Ku'>Setagaya-Ku</option></optgroup></select>";
         }
         else {
             $connection = $GLOBALS['connection'];
@@ -47,18 +51,19 @@
             if ($result-> num_rows > 0) {
                 while ($row = $result-> fetch_assoc()) {
                     echo "<label>First Name:</label>";
-                    //echo "<input type='text' name='first_name' size='40' title='Enter your first name' autocomplete='given-name' required value='". $row["FIRST_NAME"] ."><br>";
-                    echo "<input type='text' name='first_name' size='40' title='Enter your first name' autocomplete='given-name' required><br>";
+                    echo "<input type='text' name='first_name' size='40' title='Enter your first name' autocomplete='given-name' required value='". $row["FIRST_NAME"] ."'><br>";
+                    //echo "<input type='text' name='first_name' size='40' title='Enter your first name' autocomplete='given-name' required><br>";
                     echo "<label>Last Name:</label>";
-                    //echo "<input type='text' name='last_name' size='40' title='Enter your last name' autocomplete='family-name' required value='". $row["LAST_NAME"] ."><br>";
-                    echo "<input type='text' name='last_name' size='40' title='Enter your last name' autocomplete='family-name' required><br>";
+                    echo "<input type='text' name='last_name' size='40' title='Enter your last name' autocomplete='family-name' required value='". $row["LAST_NAME"] ."'><br>";
+                    //echo "<input type='text' name='last_name' size='40' title='Enter your last name' autocomplete='family-name' required><br>";
                     echo "<label>E-mail Address:</label>";
-                    echo "<input type='text' name='order_email' size='40' title='Enter your email address' autocomplete='email' required><br>";
+                    echo "<input type='text' name='order_email' size='40' title='Enter your email address' autocomplete='email' required value='". $row["EMAIL"] ."'><br>";
                     echo "<label>Phone Number:</label>";
-                    echo "<input type='text' name='order_phone' size='40' title='Enter your phone number' autocomplete='tel' pattern='^(\d{3}-)?\d{3}-\d{4}$' required><br>";
+                    echo "<input type='text' name='order_phone' size='40' title='Enter your phone number' autocomplete='tel' pattern='^(\d{3}-)?\d{3}-\d{4}$' required value='". $row["PHONE"] ."'><br>";
                     echo "<label>Store Location:</label>";
-                    echo "<select name='order_store' title='Select which store you would like to order from' required><option value='N/A'>N/A</option><option value='Mount Pleasant'>Mount Pleasant</option><option value='Ann Arbor'>Ann Arbor</option>";
-                    echo "<option value='Pickney'>Pickney</option><option value='Flushing'>Flushing</option><option value='Colon'>Colon</option><option value='Climax'>Climax</option><option value='Setagaya-Ku'>Setagaya-Ku</option></select>";
+                    echo "<select name='order_store' title='Select which store you would like to order from' required><optgroup label='Michigan Locations'><option value='Mount Pleasant'>Mount Pleasant</option><option value='Ann Arbor'>Ann Arbor</option>";
+                    echo "<option value='Pickney'>Pickney</option><option value='Flushing'>Flushing</option><option value='Colon'>Colon</option><option value='Climax'>Climax</option>";
+                    echo "</optgroup><optgroup label='International Locations'><option value='Setagaya-Ku'>Setagaya-Ku</option></optgroup></select>";
                 }
             }
         }

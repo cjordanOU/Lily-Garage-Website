@@ -296,7 +296,7 @@
                             <p class="menuDescription">A hard apple cider with a splash of vodka added. Served with ice.</p>
                         </div>
                         <div class="menuCard">
-                            <p><b>The Chevy Caesar <span class="price">$3.99</span></b></p>
+                            <p><b>E85 Special <span class="price">$3.99</span></b></p>
                             <p class="menuDescription">Vodka, ginger beer, and fresh lime juice. Served with a lime.</p>
                         </div>
                         <div class="menuCard">

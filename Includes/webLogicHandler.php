@@ -59,7 +59,13 @@
     }
 
     function accountView(){
-        echo '<p>Under Construction</p>';
+        // This should show user account information
+        echo "<h1>Now viewing account for <b>". $_SESSION["username"];
+        if($_SESSION["employee"] == true) {
+            echo " (Employee)";
+        }
+        echo "</b>.</h1>";
+        echo "<p>Preferred Store: <b>". $_SESSION["storeLocation"] ."</b></p>";
     }
 
     function displayContact() {
