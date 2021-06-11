@@ -14,9 +14,9 @@ You should now be able to see the website running at http://localhost/Lily-Garag
 PHP requires a webserver to process the webpage before displaying it in your browser, so you can't just open it like you can with an HTML document.
 
 # How to set up the SQL database
--Make new database called "llg"
+-Make new database called "llg-advanced"
 
--import menu_items.sql into llg
+-import llg-advanced.sql into llg-advanced
 
 -make sure $dbLocation is set to the proper database location in the file "Includes/databaseHandler.php"
 
